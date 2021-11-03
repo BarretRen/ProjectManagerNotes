@@ -1,0 +1,1162 @@
+<!DOCTYPE HTML>
+<html lang="en" class="sidebar-visible no-js light">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>理论题考点汇总 - Project Manager Examine Notes</title>
+        <!-- Custom HTML head -->
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff" />
+
+        <link rel="icon" href="../favicon.svg">
+        <link rel="shortcut icon" href="../favicon.png">
+        <link rel="stylesheet" href="../css/variables.css">
+        <link rel="stylesheet" href="../css/general.css">
+        <link rel="stylesheet" href="../css/chrome.css">
+        <link rel="stylesheet" href="../css/print.css" media="print">
+        <!-- Fonts -->
+        <link rel="stylesheet" href="../FontAwesome/css/font-awesome.css">
+        <link rel="stylesheet" href="../fonts/fonts.css">
+        <!-- Highlight.js Stylesheets -->
+        <link rel="stylesheet" href="../highlight.css">
+        <link rel="stylesheet" href="../tomorrow-night.css">
+        <link rel="stylesheet" href="../ayu-highlight.css">
+
+        <!-- Custom theme stylesheets -->
+    </head>
+    <body>
+        <!-- Provide site root to javascript -->
+        <script type="text/javascript">
+            var path_to_root = "../";
+            var default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "navy" : "light";
+        </script>
+
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script type="text/javascript">
+            try {
+                var theme = localStorage.getItem('mdbook-theme');
+                var sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script type="text/javascript">
+            var theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
+            if (theme === null || theme === undefined) { theme = default_theme; }
+            var html = document.querySelector('html');
+            html.classList.remove('no-js')
+            html.classList.remove('light')
+            html.classList.add(theme);
+            html.classList.add('js');
+        </script>
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script type="text/javascript">
+            var html = document.querySelector('html');
+            var sidebar = 'hidden';
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            }
+            html.classList.remove('sidebar-visible');
+            html.classList.add("sidebar-" + sidebar);
+        </script>
+
+        <nav id="sidebar" class="sidebar" aria-label="Table of contents">
+            <div class="sidebar-scrollbox">
+                <ol class="chapter"><li class="chapter-item expanded "><a href="../../index.html"><strong aria-hidden="true">1.</strong> README</a></li><li class="chapter-item expanded "><div><strong aria-hidden="true">2.</strong> 教材基础</div></li><li><ol class="section"><li class="chapter-item expanded "><a href="../教材基础/1信息化.html"><strong aria-hidden="true">2.1.</strong> 信息化</a></li><li class="chapter-item expanded "><a href="../教材基础/2项目管理基础.html"><strong aria-hidden="true">2.2.</strong> 项目管理基础</a></li><li class="chapter-item expanded "><a href="../教材基础/3立项管理.html"><strong aria-hidden="true">2.3.</strong> 立项管理</a></li><li class="chapter-item expanded "><a href="../教材基础/4整体管理.html"><strong aria-hidden="true">2.4.</strong> 整体管理</a></li><li class="chapter-item expanded "><a href="../教材基础/5范围管理.html"><strong aria-hidden="true">2.5.</strong> 范围管理</a></li><li class="chapter-item expanded "><a href="../教材基础/6进度管理.html"><strong aria-hidden="true">2.6.</strong> 进度管理</a></li><li class="chapter-item expanded "><a href="../教材基础/7成本管理.html"><strong aria-hidden="true">2.7.</strong> 成本管理</a></li><li class="chapter-item expanded "><a href="../教材基础/8质量管理.html"><strong aria-hidden="true">2.8.</strong> 质量管理</a></li><li class="chapter-item expanded "><a href="../教材基础/9人力资源管理.html"><strong aria-hidden="true">2.9.</strong> 人力资源管理</a></li><li class="chapter-item expanded "><a href="../教材基础/10沟通和干系人管理.html"><strong aria-hidden="true">2.10.</strong> 沟通和干系人管理</a></li><li class="chapter-item expanded "><a href="../教材基础/11风险管理.html"><strong aria-hidden="true">2.11.</strong> 风险管理</a></li><li class="chapter-item expanded "><a href="../教材基础/12采购管理.html"><strong aria-hidden="true">2.12.</strong> 采购管理</a></li><li class="chapter-item expanded "><a href="../教材基础/13合同管理.html"><strong aria-hidden="true">2.13.</strong> 合同管理</a></li><li class="chapter-item expanded "><a href="../教材基础/14文档和配置管理.html"><strong aria-hidden="true">2.14.</strong> 文档和配置管理</a></li><li class="chapter-item expanded "><a href="../教材基础/15组织级项目管理.html"><strong aria-hidden="true">2.15.</strong> 组织级项目管理</a></li><li class="chapter-item expanded "><a href="../教材基础/16流程管理.html"><strong aria-hidden="true">2.16.</strong> 流程管理</a></li><li class="chapter-item expanded "><a href="../教材基础/17项目集.html"><strong aria-hidden="true">2.17.</strong> 项目集</a></li><li class="chapter-item expanded "><a href="../教材基础/18信息安全管理.html"><strong aria-hidden="true">2.18.</strong> 信息安全管理</a></li><li class="chapter-item expanded "><a href="../教材基础/19测试管理.html"><strong aria-hidden="true">2.19.</strong> 测试管理</a></li><li class="chapter-item expanded "><a href="../教材基础/20法律法规.html"><strong aria-hidden="true">2.20.</strong> 法律法规</a></li><li class="chapter-item expanded "><a href="../教材基础/21技术标准.html"><strong aria-hidden="true">2.21.</strong> 技术标准</a></li></ol></li><li class="chapter-item expanded "><div><strong aria-hidden="true">3.</strong> 案例分析</div></li><li><ol class="section"><li class="chapter-item expanded "><a href="../案例分析/案例分析简介.html"><strong aria-hidden="true">3.1.</strong> 案例分析简介</a></li><li class="chapter-item expanded "><a href="../案例分析/常见问题和措施汇总.html"><strong aria-hidden="true">3.2.</strong> 常见问题和措施汇总</a></li><li class="chapter-item expanded "><a href="../案例分析/计算专题.html"><strong aria-hidden="true">3.3.</strong> 计算专题</a></li><li class="chapter-item expanded "><a href="../案例分析/理论题考点汇总.html" class="active"><strong aria-hidden="true">3.4.</strong> 理论题考点汇总</a></li></ol></li><li class="chapter-item expanded "><div><strong aria-hidden="true">4.</strong> 论文</div></li><li><ol class="section"><li class="chapter-item expanded "><a href="../论文/十大领域论文.html"><strong aria-hidden="true">4.1.</strong> 十大领域论文</a></li></ol></li><li class="chapter-item expanded "><div><strong aria-hidden="true">5.</strong> 错题记录</div></li><li><ol class="section"><li class="chapter-item expanded "><a href="../错题记录/历年上午真题.html"><strong aria-hidden="true">5.1.</strong> 历年上午真题</a></li><li class="chapter-item expanded "><a href="../错题记录/案例分析真题.html"><strong aria-hidden="true">5.2.</strong> 案例分析真题</a></li></ol></li></ol>
+            </div>
+            <div id="sidebar-resize-handle" class="sidebar-resize-handle"></div>
+        </nav>
+
+        <div id="page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                <div id="menu-bar-hover-placeholder"></div>
+                <div id="menu-bar" class="menu-bar sticky bordered">
+                    <div class="left-buttons">
+                        <button id="sidebar-toggle" class="icon-button" type="button" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
+                            <i class="fa fa-bars"></i>
+                        </button>
+                        <button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
+                            <i class="fa fa-paint-brush"></i>
+                        </button>
+                        <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                            <li role="none"><button role="menuitem" class="theme" id="light">Light (default)</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="rust">Rust</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
+                        </ul>
+                        <button id="search-toggle" class="icon-button" type="button" title="Search. (Shortkey: s)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="S" aria-controls="searchbar">
+                            <i class="fa fa-search"></i>
+                        </button>
+                    </div>
+
+                    <h1 class="menu-title">Project Manager Examine Notes</h1>
+
+                    <div class="right-buttons">
+                        <a href="../print.html" title="Print this book" aria-label="Print this book">
+                            <i id="print-button" class="fa fa-print"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div id="search-wrapper" class="hidden">
+                    <form id="searchbar-outer" class="searchbar-outer">
+                        <input type="search" id="searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+                    </form>
+                    <div id="searchresults-outer" class="searchresults-outer hidden">
+                        <div id="searchresults-header" class="searchresults-header"></div>
+                        <ul id="searchresults">
+                        </ul>
+                    </div>
+                </div>
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script type="text/javascript">
+                    document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="content" class="content">
+                    <main>
+                        <h1 id="一项目管理一般知识"><a class="header" href="#一项目管理一般知识">一，项目管理一般知识</a></h1>
+<h2 id="项目关键干系人"><a class="header" href="#项目关键干系人">项目关键干系人</a></h2>
+<ol>
+<li>项目经理</li>
+<li>执行组织</li>
+<li>项目团队成员</li>
+<li>项目发起人</li>
+<li>职能经理</li>
+<li>客户</li>
+<li>项目管理办公室(PMO)</li>
+</ol>
+<p> </p>
+<h2 id="项目经理的一般要求"><a class="header" href="#项目经理的一般要求">项目经理的一般要求</a></h2>
+<ol>
+<li>足够的知识</li>
+<li>丰富的项目管理经验</li>
+<li>良好的协调和沟通能力</li>
+<li>良好的职业道德</li>
+<li>一定的领导和管理能力</li>
+</ol>
+<p> </p>
+<h2 id="怎样当好一个项目经理"><a class="header" href="#怎样当好一个项目经理">怎样当好一个项目经理</a></h2>
+<ol>
+<li>真正理解项目经理的角色</li>
+<li>领导并管理项目团队</li>
+<li>依据项目进展的阶段，组织制订详细程度适宜的项目计划，监控计划的执行，根据实际情况、客户要求或其他变更要求对计划的变更进行管理</li>
+<li>真正理解“一把手工程”</li>
+<li>注重客户和用户参与</li>
+</ol>
+<p> </p>
+<h2 id="事业环境因素"><a class="header" href="#事业环境因素">事业环境因素</a></h2>
+<p>也叫<strong>企业环境因素，项目经理不可操控和裁剪的，来自组织外部</strong></p>
+<ul>
+<li>实施单位的<strong>企业文化和组织机构</strong></li>
+<li>国家标准和行业标准</li>
+<li>现有的设施和固定资产</li>
+<li>实施单位现有的人力资源、人员的专业和技能、人力资源政策、员工绩效评估和培训记录</li>
+<li>当时的市场状况</li>
+<li>项目干系人对风险的承受力</li>
+<li>行业数据库</li>
+<li>项目管理信息系统</li>
+</ul>
+<p> </p>
+<h2 id="组织过程资产"><a class="header" href="#组织过程资产">组织过程资产</a></h2>
+<p><strong>项目经理可以控制和裁剪，来自内部</strong></p>
+<ul>
+<li>过程和程序
+<ul>
+<li>组织的标准过程</li>
+<li>标准指导方针、模板、工作指南</li>
+<li>标准过程的修正指南</li>
+<li>组织的沟通要求，汇报制度</li>
+<li>项目收尾指南和要求</li>
+<li>财务控制程序</li>
+<li>问题和缺陷管理程序</li>
+<li>变更控制程序</li>
+<li>风险控制程序</li>
+<li>标准与发布工作授权程序</li>
+</ul>
+</li>
+<li>组织的全部知识
+<ul>
+<li>项目档案</li>
+<li>过程测量数据库</li>
+<li>经验学习系统</li>
+<li>问题和缺陷管理数据库</li>
+<li>配置管理数据库</li>
+<li>财务数据库 </li>
+</ul>
+</li>
+</ul>
+<p> </p>
+<h1 id="二立项管理"><a class="header" href="#二立项管理">二，立项管理</a></h1>
+<h2 id="项目立项的内容"><a class="header" href="#项目立项的内容">项目立项的内容</a></h2>
+<ol>
+<li>提交项目建议书</li>
+<li>项目可行性研究</li>
+<li>项目招标与投标</li>
+</ol>
+<p> </p>
+<h2 id="可行性研究内容"><a class="header" href="#可行性研究内容">可行性研究内容</a></h2>
+<ol>
+<li>投资必要性</li>
+<li>技术的可行性</li>
+<li>财务可行性</li>
+<li>组织可行性</li>
+<li>经济可行性</li>
+<li>社会可行性</li>
+<li>风险因素及对策</li>
+</ol>
+<h2 id="可行性研究步骤"><a class="header" href="#可行性研究步骤">可行性研究步骤</a></h2>
+<ol>
+<li>确定项目规模和目标</li>
+<li>研究正在运行的系统</li>
+<li>建立新系统的逻辑模型</li>
+<li>导出和评价各种方案</li>
+<li>推荐可行性方案</li>
+<li>编写可行性研究报告</li>
+<li>递交可行性研究报告</li>
+</ol>
+<p> </p>
+<h2 id="投资前期的四个阶段"><a class="header" href="#投资前期的四个阶段">投资前期的四个阶段</a></h2>
+<ol>
+<li>机会研究</li>
+<li>初步可行性研究</li>
+<li>详细可行性研究</li>
+<li>评估与决策</li>
+</ol>
+<h2 id="项目建议书的核心内容"><a class="header" href="#项目建议书的核心内容">项目建议书的核心内容</a></h2>
+<ol>
+<li>项目的必要性</li>
+<li>项目的市场预测</li>
+<li>产品方案或服务的市场预测</li>
+<li>项目建设必需的条件</li>
+</ol>
+<p> </p>
+<h2 id="承建方项目内部立项的内容"><a class="header" href="#承建方项目内部立项的内容">承建方项目内部立项的内容</a></h2>
+<ol>
+<li>项目资源估算</li>
+<li>项目资源分配</li>
+<li>准备项目任务书</li>
+<li>任命项目经理 </li>
+</ol>
+<h1 id="三整体管理"><a class="header" href="#三整体管理">三，整体管理</a></h1>
+<h2 id="活动图谱"><a class="header" href="#活动图谱">活动图谱</a></h2>
+<p><img src=".assets/1585032230678-f540cf27-82a5-465d-9ee6-280404b31937.png" alt="" /></p>
+<h2 id="项目章程的内容"><a class="header" href="#项目章程的内容">项目章程的内容</a></h2>
+<ol>
+<li>概括性的项目描述和项目产品描述。</li>
+<li>项目目的或批准项目的理由，即为什么要做这个项目。</li>
+<li>项目的总体要求，包括项目的总体范围和总体质量要求。</li>
+<li>可测量的项目目标和相关的成功标准。</li>
+<li>项目的主要风险，如项目的主要风险类别。</li>
+<li>总体里程碑进度计划。</li>
+<li>总体预算。</li>
+<li>项目的审批要求，即在项目的规划、执行、监控和收尾过程中，应该由谁来做出哪种批准。</li>
+<li>委派的项目经理及其职责和职权。</li>
+<li>发起人或其他批准项目章程的人员的姓名和职权</li>
+</ol>
+<p> </p>
+<h2 id="项目章程的作用"><a class="header" href="#项目章程的作用">项目章程的作用</a></h2>
+<ol>
+<li>明确项目地位；</li>
+<li>项目经理授权；</li>
+<li>规定总体目标（范围、时间、成本、质量等）；</li>
+<li>项目与战略计划联系起来</li>
+</ol>
+<p> </p>
+<h2 id="项目管理计划的制定步骤"><a class="header" href="#项目管理计划的制定步骤">项目管理计划的制定步骤</a></h2>
+<ol>
+<li>各具体知识领域制订各自的分项计划。</li>
+<li>整体管理知识领域收集各分项计划，整合成项目管理计划。</li>
+<li>用项目管理计划指导项目的执行和监控工作，并在执行过程中监控。</li>
+<li>对提出的必要的变更请求，报实施整体变更控制过程审批。</li>
+<li>根据经批准的变更请求，更新项目管理计划</li>
+</ol>
+<p> </p>
+<h2 id="项目管理计划的内容"><a class="header" href="#项目管理计划的内容">项目管理计划的内容</a></h2>
+<ol>
+<li>所使用的项目管理过程。</li>
+<li>每个特定项目管理过程的实施程度。</li>
+<li>完成这些过程的工具和技术的描述。</li>
+<li>项目所选用的生命周期及各阶段将采用的过程。</li>
+<li>如何用选定的过程来管理具体的项目。包括过程之间的依赖与交互关系和基本的输入和输出。</li>
+<li>如何执行工作来完成项目目标及对项目目标的描述。</li>
+<li>如何监督和控制变更，明确如何对变更进行监控。</li>
+<li>配置管理计划，用来明确如何开展配置管理。</li>
+<li>对维护项目绩效基线的完整性的说明。</li>
+<li>与项目干系人进行沟通的要求和技术。</li>
+<li>为项目选择的生命周期模型。</li>
+<li>为解决某些遗留问题和未定的决策，对于其内容、严重程度和紧迫程度进行的关键管理评审。</li>
+</ol>
+<h2 id="项目管理辅助计划"><a class="header" href="#项目管理辅助计划">项目管理辅助计划</a></h2>
+<ul>
+<li>范围管理计划</li>
+<li>需求管理计划</li>
+<li>进度管理计划</li>
+<li>成本管理计划</li>
+<li>质量管理计划</li>
+<li>过程改进计划</li>
+<li>人力资源管理计划</li>
+<li>沟通管理计划</li>
+<li>风险管理计划</li>
+<li>采购管理计划</li>
+<li>干系人管理计划</li>
+</ul>
+<p> </p>
+<h2 id="整体变更控制过程"><a class="header" href="#整体变更控制过程">整体变更控制过程</a></h2>
+<ol>
+<li>确定是否需要变更或者变更是否已经发生。</li>
+<li>对妨碍整体变更控制的因素施加影响，保证只实施经过批准的变更。</li>
+<li>审查和批准请求的变更。</li>
+<li>控制申请变更的流程，在发生变更时管理批准的变更。</li>
+<li>仅允许被批准的变更纳入到项目产品或服务之中，维护基准的完整，并维护项目产品或服务有关的配置与规划文件。</li>
+<li>审查与批准所有的纠正与预防措施建议。</li>
+<li>根据批准的变更控制与更新范围、成本、预算进度和质量要求，协调整个项目的变更。</li>
+<li>将请求的变更的全部影响记录在案。</li>
+<li>确认缺陷补救。</li>
+<li>根据质量报告并按照标准控制项目质量</li>
+</ol>
+<h2 id="项目收尾"><a class="header" href="#项目收尾">项目收尾</a></h2>
+<ul>
+<li>管理收尾
+<ul>
+<li>确定管理收尾程序</li>
+<li>移交成果</li>
+<li>执行程序</li>
+<li>经验总结</li>
+<li>项目归档</li>
+<li>资源遣散</li>
+</ul>
+</li>
+<li>合同收尾
+<ul>
+<li>产品验收</li>
+<li>合同管理收尾</li>
+</ul>
+</li>
+</ul>
+<h2 id="变更控制流程"><a class="header" href="#变更控制流程">变更控制流程</a></h2>
+<ol>
+<li>先沟通，书面申请；</li>
+<li>评估变更影响（范围，进度，成本，质量等）并将影响通知干系人；</li>
+<li>CCB按流程审批；</li>
+<li>变更审批不通过，则取消变更，纳入监控；变更审批通过则调整和更新项目管理计划和项目文件，并通知干系人；</li>
+<li>根据要求执行变更，记录变更实施情况；</li>
+<li>验证变更，归档； </li>
+</ol>
+<h1 id="四范围管理"><a class="header" href="#四范围管理">四，范围管理</a></h1>
+<h2 id="活动图谱-1"><a class="header" href="#活动图谱-1">活动图谱</a></h2>
+<p><img src=".assets/1585205011986-9437ea65-f87c-4188-ad23-65176167613b.png" alt="" /></p>
+<h2 id="范围说明书内容"><a class="header" href="#范围说明书内容">范围说明书内容</a></h2>
+<ol>
+<li>产品范围描述</li>
+<li>验收标准</li>
+<li>可交付成果</li>
+<li>项目的除外责任</li>
+<li>制约因素</li>
+<li>假设条件</li>
+</ol>
+<p> </p>
+<h2 id="wbs分解的方法"><a class="header" href="#wbs分解的方法">WBS分解的方法</a></h2>
+<ol>
+<li>项目生命周期各阶段作为分解的第二层，产品和项目可交付成果放在第三层</li>
+<li>主要可交付成果作为分解的第二层</li>
+<li>整合可能由项目团队以外的组织来实施的各种组件（例如，外包工作），然后作为外包工作的一部分，卖方需编制相应的合同WBS</li>
+</ol>
+<h2 id="wbs的表示形式"><a class="header" href="#wbs的表示形式">WBS的表示形式</a></h2>
+<ul>
+<li>分级的树形结构
+<ul>
+<li>WBS层次清晰，结构性强，但不易修改</li>
+<li>不适合大的复杂的项目，适合小项目</li>
+</ul>
+</li>
+<li>表格形式
+<ul>
+<li>直观性差</li>
+<li>能反映项目的所有工作要素，适合大项目</li>
+</ul>
+</li>
+</ul>
+<h2 id="项目工作分解成工作包的步骤"><a class="header" href="#项目工作分解成工作包的步骤">项目工作分解成工作包的步骤</a></h2>
+<ol>
+<li>识别和分析可交付成果及相关工作</li>
+<li>确定WBS的结构和编排方式</li>
+<li>自上而下逐层细化分解</li>
+<li>为WBS组件制定和分配标识编码</li>
+<li>核实可交付成果分解的程度是恰当的</li>
+</ol>
+<h2 id="wbs分析需要注意的8个方面"><a class="header" href="#wbs分析需要注意的8个方面">WBS分析需要注意的8个方面</a></h2>
+<ol>
+<li>WBS必须<strong>面向可交付成果</strong></li>
+<li>必须符合项目范围</li>
+<li>WBS的底层应该支持计划和控制</li>
+<li>WBS中的元素<strong>有且只有一个人负责</strong></li>
+<li>WBS应控制在<strong>4-6层</strong></li>
+<li>WBS应包括项目管理工作，和分包出去的工作</li>
+<li>WBS编制需要<strong>所有（主要）项目干系人和项目团队成员参与</strong></li>
+<li>WBS可以随项目进展逐步修改更新</li>
+</ol>
+<h2 id="wbs需要把握的原则"><a class="header" href="#wbs需要把握的原则">WBS需要把握的原则</a></h2>
+<ol>
+<li>在各层次上保持项目的完整性，避免遗漏必要的组成部分。</li>
+<li>一个工作单元只能从属于某个上层单元，避免变叉从属。</li>
+<li>相同层次的工作单元应有相同性质。</li>
+<li>工作单元应能分开不同的责任者和不同工作内容。</li>
+<li>便于项目管理进行计划和控制的管理需要。</li>
+<li>最低层工作应该具有可比性，是可管理的，可定量检查的。</li>
+<li>应包括项目管理工作（因为管理是项目具体工作的一部分），包括分包出去的工作</li>
+<li>WBS的最低层次的工作单元是工作包。一个项目的WBS是否分解到工作包</li>
+</ol>
+<h2 id="需求的状态"><a class="header" href="#需求的状态">需求的状态</a></h2>
+<p><strong>进行中、已取消、已推迟、新增加、已批准、已分配、己完成</strong></p>
+<h1 id="五进度管理"><a class="header" href="#五进度管理">五，进度管理</a></h1>
+<h2 id="活动图谱-2"><a class="header" href="#活动图谱-2">活动图谱</a></h2>
+<p><img src=".assets/1585272244593-396a2f25-d3e7-4137-8a7f-3422de389d9d.png" alt="" /></p>
+<h2 id="进度管理相关的工具技术"><a class="header" href="#进度管理相关的工具技术">进度管理相关的工具技术</a></h2>
+<ul>
+<li>估算活动资源
+<ul>
+<li><strong>专家判断</strong></li>
+<li><strong>备选方案分析</strong></li>
+<li><strong>发布的估算数据</strong></li>
+<li><strong>项目管理软件</strong></li>
+<li><strong>自下而上估算</strong></li>
+</ul>
+</li>
+<li>估算活动持续时间
+<ul>
+<li><strong>专家判断</strong></li>
+<li><strong>类比估算</strong></li>
+<li><strong>参数估算</strong></li>
+<li><strong>三点估算</strong></li>
+<li><strong>群体决策技术</strong></li>
+<li><strong>储备分析</strong></li>
+</ul>
+</li>
+<li>制定进度计划
+<ul>
+<li><strong>进度网络分析</strong></li>
+<li><strong>关键路径法</strong></li>
+<li><strong>关键链法</strong></li>
+<li><strong>资源优化技术</strong></li>
+<li><strong>建模技术</strong></li>
+<li><strong>提前量和滞后量</strong></li>
+<li><strong>进度压缩</strong></li>
+<li><strong>进度计划编制工具</strong></li>
+</ul>
+</li>
+<li>进度控制
+<ul>
+<li>绩效审查</li>
+<li>项目管理软件</li>
+<li>资源优化技术</li>
+<li>建模技术</li>
+<li>提前量和滞后量</li>
+<li>进度压缩</li>
+<li>进度计划编制工具</li>
+</ul>
+</li>
+</ul>
+<h2 id="缩短工期的方法"><a class="header" href="#缩短工期的方法">缩短工期的方法</a></h2>
+<ul>
+<li><strong>赶工</strong>，投入更多而资源或增加工作时间，<strong>以缩短关键活动的工期</strong></li>
+<li><strong>快速跟进</strong>，并行施工，<strong>以缩短关键路径的长度</strong></li>
+<li>使用高素质的资源或经验丰富的人员</li>
+<li>减小活动范围或降低活动要求</li>
+<li>改进方法或技术，以<strong>提高生产效率</strong></li>
+<li>加强质量管理，及时发现问题，减少返工，缩短工期</li>
+</ul>
+<p> </p>
+<h2 id="监督项目进度的步骤"><a class="header" href="#监督项目进度的步骤">监督项目进度的步骤</a></h2>
+<ol>
+<li>细化WBS，基于WBS和工时估算制定活动网络图，制定项目工作计划；</li>
+<li>建立对项目工作的监督和测量机制；</li>
+<li>确定项目里程碑，并建立有效的评审机制；</li>
+<li>对项目中发现的问题，及时擦去纠正和预防措施，并进行有效的变更管理；</li>
+<li>使用有效的项目管理工具，提升项目管理的工作效率；</li>
+<li>通过改进方法和或技术提高生产效率；</li>
+</ol>
+<h1 id="六成本管理"><a class="header" href="#六成本管理">六，成本管理</a></h1>
+<h2 id="活动图谱-3"><a class="header" href="#活动图谱-3">活动图谱</a></h2>
+<p><img src=".assets/1585272689452-57860571-f744-4a9e-956e-45963444b8be.png" alt="" /></p>
+<h2 id="成本管理相关的工具技术"><a class="header" href="#成本管理相关的工具技术">成本管理相关的工具技术</a></h2>
+<ul>
+<li>成本估算
+<ul>
+<li>专家判断</li>
+<li>类比估算</li>
+<li>参数估算</li>
+<li>自下而上估算</li>
+<li>三点估算</li>
+<li>储备分析</li>
+<li>质量成本</li>
+<li>项目管理软件</li>
+<li>卖方投标分析</li>
+<li>群体决策技术</li>
+</ul>
+</li>
+<li>成本预算
+<ul>
+<li>成本汇总</li>
+<li>储备分析</li>
+<li>专家判断</li>
+<li>历史关系</li>
+<li>资源限制平衡</li>
+</ul>
+</li>
+<li>成本控制
+<ul>
+<li>挣值管理</li>
+<li>预测</li>
+<li>完工尚需绩效指数（TCPI）</li>
+<li>绩效审查</li>
+<li>项目管理软件</li>
+<li>储备分析</li>
+</ul>
+</li>
+</ul>
+<p> </p>
+<h2 id="成本估算的步骤"><a class="header" href="#成本估算的步骤">成本估算的步骤</a></h2>
+<ol>
+<li>识别分析成本的构成科目，输出
+<ol>
+<li><strong>资源需求</strong></li>
+<li><strong>会计科目表</strong></li>
+<li><strong>项目资源矩阵</strong></li>
+</ol>
+</li>
+<li>根据已识别的成本构成科目，估算每一科目的成本大小</li>
+<li>分析成本估算结果，找出可以相互替代的成本，协调个成本之间的比例关系</li>
+</ol>
+<p> </p>
+<h2 id="成本预算的原则"><a class="header" href="#成本预算的原则">成本预算的原则</a></h2>
+<ul>
+<li>项目成本预算要以项目需求为基础。</li>
+<li>项目成本预算要与项目目标相联系，必须同时考虑项目质量目标和进度目标。</li>
+<li>项目成本预算要切实可行。</li>
+<li>项目成本预算应当留有弹性</li>
+</ul>
+<h2 id="成本预算的步骤"><a class="header" href="#成本预算的步骤">成本预算的步骤</a></h2>
+<ol>
+<li>将项目总成本分摊到项目工作分解结构的务个工作包．分解按照自顶向下，根据占用资源数量多少而设置不同的分解权重</li>
+<li>将各个工作包成本再分配到该工作包所包含的各项适动上</li>
+<li>确定各项成本预算支出的时间计划及项目成本预算计划</li>
+</ol>
+<h2 id="成本控制的内容"><a class="header" href="#成本控制的内容">成本控制的内容</a></h2>
+<ol>
+<li>对造成成本基准变更的因素施加影响·</li>
+<li>确保所有变更请求都得到及时处理。</li>
+<li>当变更实际发生时，管理这些变更·</li>
+<li>确保成本支出不超过批准的资金限额，既不超出按时段、按WBS组件、按活动分配的限额，也不超出项目总限额</li>
+<li>监督成本绩效，找出并分析与成本基准间的偏差。</li>
+<li>对照资金支出，监督工作绩效。</li>
+<li>防止在成本或资源使用报告中出现未经批准的变更。</li>
+<li>向有关干系人报告所有经批准的变更及其相关成本。</li>
+<li>设法把预期的成本超支控制在可接受的范围内。</li>
+</ol>
+<h1 id="七质量管理"><a class="header" href="#七质量管理">七，质量管理</a></h1>
+<h2 id="活动图谱-4"><a class="header" href="#活动图谱-4">活动图谱</a></h2>
+<p><img src=".assets/1585274338232-4603654f-cff2-436d-9cb6-8c293a168e6b.png" alt="" /></p>
+<h2 id="质量体系建设问题"><a class="header" href="#质量体系建设问题">质量体系建设问题</a></h2>
+<ol>
+<li>体系建设应全员参加；</li>
+<li>体系应结合企业自身的质量要求和特点，不能照搬其他公司的文件或经验；</li>
+<li>体系建设完后应及时运行，不断完善，而不是束之高阁；</li>
+<li>在运行过程中，发现问题并进行改进，采用PDCA原则；</li>
+<li>质量部门应全员参加质量管理和体系建设及运行；</li>
+<li>项目应遵循组织质量体系，在组织的质量体系框架下进行质量管理</li>
+</ol>
+<h2 id="质量管理过程"><a class="header" href="#质量管理过程">质量管理过程</a></h2>
+<ol>
+<li>确立质量标准体系；</li>
+<li>对项目实施进行质量控制；</li>
+<li>将实际与标准对照；</li>
+<li>纠偏纠错</li>
+</ol>
+<ul>
+<li> </li>
+</ul>
+<h2 id="质量保证的内容"><a class="header" href="#质量保证的内容">质量保证的内容</a></h2>
+<ol>
+<li>制定质量标准</li>
+<li>制定质量控制流程</li>
+<li>提出质量保证所采用方法和技术</li>
+<li>建立质量保证体系</li>
+</ol>
+<p> </p>
+<h2 id="质量保证的作用"><a class="header" href="#质量保证的作用">质量保证的作用</a></h2>
+<ol>
+<li>是保证质量的一个重要环节；</li>
+<li>为持续的质量改进提供基础和方法；</li>
+<li>为项目干系人提供对质量的信心；</li>
+<li>是项目质量管理的一个重要内容；</li>
+<li>与质量控制共同构成对质量的跟踪和保证</li>
+</ol>
+<h2 id="质量保证体系的内容"><a class="header" href="#质量保证体系的内容">质量保证体系的内容</a></h2>
+<ol>
+<li>是否制定明确的质量计划</li>
+<li>是否建立健全专职的质量管理机构</li>
+<li>是否实现管理业务标准化，管理流程程序化</li>
+<li>是否配备必要的资源条件</li>
+<li>是否建立了一套灵敏的质量信息反馈系统</li>
+</ol>
+<h2 id="质量保证"><a class="header" href="#质量保证">质量保证</a></h2>
+<p><strong>过程符合要求</strong>，过程改进</p>
+<ol>
+<li>按项目计划开展质量活动，使项目过程和产品符合质量要求，即按计划做质量；</li>
+<li>提高项目干系人对项目将要满足质量要求的信心；</li>
+<li>按过程改进计划进行过程改进，使项目过程稳定并减少非增值环节；</li>
+<li>根据过去的质量测量控制结果对质量标准进行重新评价，确保所采用的质量标准上合理的可操作的</li>
+</ol>
+<p> </p>
+<h2 id="质量控制"><a class="header" href="#质量控制">质量控制</a></h2>
+<p><strong>结果符合要求</strong>，纠偏控制</p>
+<ol>
+<li>按质量标准检查质量，发现质量偏差和质量缺陷，并对不可接受的质量偏差提出纠偏建议，对质量缺陷提出缺陷补救建议；</li>
+<li>对已完成的可交付成果进行质量合格性检查：合格则输出核实的可交付成果，若不合格则提出变更请求；</li>
+<li>对批准的变更请求实施情况进行检查：若实施到位则输出确认的变更，反之则输出新的变更请求</li>
+</ol>
+<p> </p>
+<h2 id="质量保证人员应该完成的工作"><a class="header" href="#质量保证人员应该完成的工作">质量保证人员应该完成的工作</a></h2>
+<ol>
+<li>计划阶段制定质量管理计划和相应得质量标准</li>
+<li>按计划实施质量检查，是否按标准过程实施项目工作。注意项目过程中的质量检查，每次进行检查之前准备各检查清单，并将质量管理相关情况予以记录</li>
+<li>依据检查的情况和记录，分析问题，发现问題，与当事人协商进行解决。问题解决后要进行验证：如果无法与当事人达成一致，应报告项目经理或更高层领导，直至问题解决；</li>
+<li>定期给项目干系人发质量报告</li>
+<li>为项目组成员提供质量管理要求方面的培训或指导</li>
+</ol>
+<h2 id="过程改进方法"><a class="header" href="#过程改进方法">过程改进方法</a></h2>
+<ol>
+<li>分析目前质量体系（质量管理）的现状；</li>
+<li>找出问题及原因；</li>
+<li>制定改进计划，确定措施；</li>
+<li>确定改进职责，将工作分配到相关部门及人员；</li>
+<li>执行改进计划；</li>
+<li>对执行的过程及结果进行检查和评估；</li>
+<li>进行总结和修改，形成正式质量体系，再不断改进</li>
+</ol>
+<h2 id="质量控制活动的内容"><a class="header" href="#质量控制活动的内容">质量控制活动的内容</a></h2>
+<ol>
+<li>保证由内部或外部机构进行检测管理的一致性；</li>
+<li>发现与质量标准的差异；</li>
+<li>消除产品或服务过程中性能不被满足的原因；</li>
+<li>审查质量标准以决定可以达到的目标及成本、效率问题，并且需要确定是否可以修订项目的质量标准或项目的具体目标</li>
+</ol>
+<h2 id="质量成本分类"><a class="header" href="#质量成本分类">质量成本分类</a></h2>
+<p><img src=".assets/1585274435129-5384dedc-782d-45b1-a2c8-1b33b875fb2d.png" alt="" /></p>
+<h2 id="质量7工具"><a class="header" href="#质量7工具">质量7工具</a></h2>
+<ul>
+<li>老7工具：因果图、流程图、帕累托图、核查表、直方图、控制图、散点图；</li>
+<li>新7工具：矩阵图、树形图、相互关系图、亲和图、过程决策方法图、活动网络图、优先矩阵</li>
+</ul>
+<p><img src=".assets/resize,w_1492#height=599&amp;id=xTHhL&amp;originHeight=599&amp;originWidth=1492&amp;originalType=binary&amp;ratio=1&amp;status=done&amp;style=none&amp;width=1492.png" alt="" /> </p>
+<h2 id="提升项目质量的步骤"><a class="header" href="#提升项目质量的步骤">提升项目质量的步骤</a></h2>
+<ol>
+<li>建立项目质量目标；</li>
+<li>建立工作中的质量保证和质量控制规范；</li>
+<li>建立对质量（过程和产品）参数的度量体系；</li>
+<li>在项目中对过程和产品进行测量/检查，将实际情况与目标和规范进行对比以发现质量问题，并对质量问题的处理进行监督和控制；</li>
+<li>对质量问题的出现次数和影响程度依次进行分析，找出原因并提出改进措施；</li>
+<li>在上述基础上，不断循环，坚持不懈地提升项目质量</li>
+</ol>
+<p> </p>
+<h2 id="全面质量管理tqm"><a class="header" href="#全面质量管理tqm">全面质量管理TQM</a></h2>
+<ul>
+<li>四个要素
+<ul>
+<li>结构</li>
+<li>技术</li>
+<li>人员</li>
+<li>变革推动者</li>
+</ul>
+</li>
+<li>四个核心特征
+<ul>
+<li>全员参与的质量管理</li>
+<li>全过程的质量管理</li>
+<li>全面方法的质量管理</li>
+<li>全面结果的质量管理</li>
+</ul>
+</li>
+</ul>
+<p> </p>
+<h1 id="八人力资源管理"><a class="header" href="#八人力资源管理">八，人力资源管理</a></h1>
+<h2 id="活动图谱-5"><a class="header" href="#活动图谱-5">活动图谱</a></h2>
+<p><img src=".assets/1585278947983-353870fa-581f-4914-a5ca-c3b10b576522.png" alt="" /></p>
+<h2 id="人力资源管理计划的内容"><a class="header" href="#人力资源管理计划的内容">人力资源管理计划的内容</a></h2>
+<ol>
+<li><strong>角色与职责</strong></li>
+<li><strong>项目的组织结构图</strong></li>
+<li><strong>人员配备管理计划</strong>：可以是不正式的、不详细的
+<ol>
+<li>人员招募</li>
+<li>资源日历</li>
+<li>人员遣散计划</li>
+<li>培训需要</li>
+<li>认可与奖励</li>
+<li>合规性</li>
+<li>安全</li>
+</ol>
+</li>
+</ol>
+<p> </p>
+<h2 id="成功团队的特点"><a class="header" href="#成功团队的特点">成功团队的特点</a></h2>
+<ol>
+<li>团队的目标明确，成员清楚自己的工作对目标的贡献。</li>
+<li>团队的组织结构清晰，岗位明确。</li>
+<li>有成文或习惯的工作流程和方法，而且流程简明有效。</li>
+<li>项目经理对团队成员有明确的考核和评价标准，工作结果公正公开、赏罚分明</li>
+<li>共同制订并遵守的组织纪律。</li>
+<li>协同工作，也就是一个成员工作需要依赖于另一个成员的结果，善于总结和学习</li>
+</ol>
+<h2 id="人员配备管理计划的内容"><a class="header" href="#人员配备管理计划的内容">人员配备管理计划的内容</a></h2>
+<ol>
+<li>人员招募</li>
+<li>资源日历</li>
+<li>人员遣散计划</li>
+<li>培训需求</li>
+<li>表彰和奖励</li>
+<li>遵守的规定</li>
+<li>安全性</li>
+</ol>
+<p> </p>
+<h2 id="团队建设5个阶段"><a class="header" href="#团队建设5个阶段">团队建设5个阶段</a></h2>
+<p><strong>注意：不管目前是什么阶段，增加一个人或减少一个人，都要从形成阶段重新开始</strong></p>
+<ol>
+<li><strong>形成阶段</strong>：个体转变为团队成员，开始形成共同目标</li>
+<li><strong>震荡阶段</strong>：遇到困难，个体之间相互争执、相互指责</li>
+<li><strong>规范阶段</strong>：一段时间磨合，成员开始协同工作，相互信任</li>
+<li><strong>发挥阶段</strong>：集体荣誉感非常强</li>
+<li><strong>解散阶段</strong>：项目结束，团队解散</li>
+</ol>
+<h2 id="人力资源相关的工具技术"><a class="header" href="#人力资源相关的工具技术">人力资源相关的工具技术</a></h2>
+<ul>
+<li>团队建设的工具
+<ul>
+<li>人际关系技能</li>
+<li>培训</li>
+<li>团队建设活动</li>
+<li>基本规则</li>
+<li>集中办公</li>
+<li>认可与奖励</li>
+<li>人事测评工具</li>
+</ul>
+</li>
+<li>管理团队的工具
+<ul>
+<li>观察和交谈</li>
+<li>项目绩效评估</li>
+<li>问题清单</li>
+<li>人际关系技能</li>
+</ul>
+</li>
+</ul>
+<p> </p>
+<h2 id="冲突解决的方法"><a class="header" href="#冲突解决的方法">冲突解决的方法</a></h2>
+<ul>
+<li>撤退/回避：从实际或潜在冲突中退出，暂时的冲突解决方法</li>
+<li>缓和/包容：强调一致，淡化分歧</li>
+<li>妥协/调解：寻找让各方在一定程度上满意的方案</li>
+<li>强迫/命令：以牺牲其他方为代价，推行某一方的观点</li>
+<li>合作/解决问题：综合考虑不同意见，采用合作态度和开放式对话达成共识。最理想的结果</li>
+</ul>
+<p> </p>
+<h2 id="冲突的特点"><a class="header" href="#冲突的特点">冲突的特点</a></h2>
+<ul>
+<li><strong>冲突是自然地，而且要找到一个解决方法</strong></li>
+<li><strong>冲突是一个团队问题，不是某人的个人问题</strong></li>
+<li>应公开的处理冲突</li>
+<li>冲突的解决应聚焦问题，而不是人身攻击</li>
+<li>冲突的解决应聚焦现在，而不是过去</li>
+</ul>
+<h2 id="沟通管理图谱"><a class="header" href="#沟通管理图谱">沟通管理图谱</a></h2>
+<p><img src=".assets/1585286313304-8a5b6591-69bb-40a2-acfd-b3ddc7733d00.png" alt="" /></p>
+<h2 id="沟通管理计划的内容"><a class="header" href="#沟通管理计划的内容">沟通管理计划的内容</a></h2>
+<ol>
+<li>通用术语表</li>
+<li><strong>干系人的沟通需求</strong></li>
+<li>**需要沟通的信息，**语言、格式、内容、详细程度等</li>
+<li>发布信息的原因</li>
+<li>发布信息和做出回应的时限和频率</li>
+<li>负责沟通相关信息的人员</li>
+<li>负责授权保密信息发布的人员</li>
+<li><strong>将要接收信息的个人或小组</strong></li>
+<li><strong>传递信息的技术方法</strong></li>
+<li>为沟通分配的资源，时间和预算等</li>
+<li><strong>问题升级程序</strong>，用于规定下层员工上报问题的时限和路径</li>
+<li><strong>随项目进展，对沟通管理计划进行更新和优化的方法</strong></li>
+<li>项目信息流向图、工作流程、报告清单、会议计划等</li>
+<li>沟通制约因素，例如法律法规、技术要求，组织政策等</li>
+<li>关于项目状态会议、团队会议、网络会议和电子邮件等的指南和模板</li>
+<li>对项目使用的网站和管理软件的使用说明</li>
+</ol>
+<p> </p>
+<h2 id="干系人活动图谱"><a class="header" href="#干系人活动图谱">干系人活动图谱</a></h2>
+<p><img src=".assets/1585286414747-72587d0b-3f44-4fc0-8477-d7f6e2d028ae.png" alt="" /></p>
+<h2 id="干系人登记手册的内容"><a class="header" href="#干系人登记手册的内容">干系人登记手册的内容</a></h2>
+<ul>
+<li>基本信息：干系人的姓名、职位、地点、项目角色、联系方式</li>
+<li>评估信息：主要需求、主要期望、对项目的潜在影响、与生命周期的哪个阶段最密切相关</li>
+<li>干系人分类：关键干系人/非关键干系人、内部/外部、支持者/中立者/反对者</li>
+</ul>
+<h2 id="干系人管理计划的内容"><a class="header" href="#干系人管理计划的内容">干系人管理计划的内容</a></h2>
+<ol>
+<li>关键干系人的所需参与程度、当前参与程度</li>
+<li>干系人变更的范围和影响</li>
+<li>干系人之间的关系和潜在关系</li>
+<li>项目现阶段的干系人沟通需求</li>
+<li>需要分发给干系人的信息</li>
+<li>分发相关信息的理由和影响</li>
+<li>向干系人发信息的频率和时限</li>
+<li>随项目进展，更新和优化干系人管理计划</li>
+</ol>
+<h2 id="管理干系人的过程活动"><a class="header" href="#管理干系人的过程活动">管理干系人的过程活动</a></h2>
+<ol>
+<li>调动干系人适时参与项目，用于获得和确认他们对项目成功的<strong>持续承诺</strong></li>
+<li>协商和沟通<strong>管理干系人的期望</strong>、确保项目目标实现</li>
+<li>处理尚未成为问题的<strong>干系人关注点</strong>，预测干系人未来可能提出的问题</li>
+<li>识别和讨论关注点，<strong>评估项目风险</strong></li>
+<li>澄清和解决已识别出的问题</li>
+</ol>
+<h2 id="权力利益方格"><a class="header" href="#权力利益方格">权力利益方格</a></h2>
+<p><img src=".assets/1585286469913-4bde70c2-6c48-4728-a29c-c26e89b55f37.png" alt="" /></p>
+<h1 id="十合同管理"><a class="header" href="#十合同管理">十，合同管理</a></h1>
+<h2 id="无效合同"><a class="header" href="#无效合同">无效合同</a></h2>
+<ol>
+<li>一方以欺诈、胁遗的手段订立合同。</li>
+<li>恶意串通，损害国家、集体或者第三人利益。</li>
+<li>以合法形式掩盖非法目的。</li>
+<li>损害社会公共利益。</li>
+<li>违反法律、行政法规的强制性规定</li>
+</ol>
+<p> </p>
+<h2 id="项目费用工程款的支付方式的内容"><a class="header" href="#项目费用工程款的支付方式的内容">项目费用工程款的支付方式的内容</a></h2>
+<ol>
+<li>支付贷款的条件</li>
+<li>结算支付的方式</li>
+<li>拒付货款的条件。发包方有权部分或全部拒付货款</li>
+</ol>
+<h2 id="合同法规定的4中违约责任"><a class="header" href="#合同法规定的4中违约责任">合同法规定的4中违约责任</a></h2>
+<ol>
+<li>继续履行</li>
+<li>采取补救措施</li>
+<li>赔偿损失</li>
+<li>支付约定违约金或定金</li>
+</ol>
+<h2 id="合同管理过程"><a class="header" href="#合同管理过程">合同管理过程</a></h2>
+<ol>
+<li>合同签订管理</li>
+<li>合同履行管理</li>
+<li>合同变更管理</li>
+<li>合同档案管理：<strong>整个合同管理的基础</strong></li>
+<li>合同违约索赔管理</li>
+</ol>
+<p> </p>
+<h2 id="合同签订的注意事项"><a class="header" href="#合同签订的注意事项">合同签订的注意事项</a></h2>
+<ol>
+<li>当事人的法律资格：民事权力能力</li>
+<li>质量验收标准：验收是否合格</li>
+<li>验收时间：什么时候验收</li>
+<li>技术支持服务：明确技术支持，后续服务</li>
+<li>损害赔偿：</li>
+<li>保密约定：当事人在订立合同过程中知悉的商业秘密，无论合同是否成立，不得泄露或者不正当地使用</li>
+<li>知识产权约定：合同生效后，当事人就质量、价款或者报酬、履行地点等内容没有约定或者约定不明确的，可以协议补充：不能达成补充协议的，按照合同有关条款或者交易习惯确定；</li>
+<li>合同附件;法律公证</li>
+</ol>
+<p> </p>
+<h2 id="变更合同价款的方法"><a class="header" href="#变更合同价款的方法">变更合同价款的方法</a></h2>
+<ol>
+<li>首先确定合同变更量清单，然后确定变更价款。</li>
+<li>合同中已有适用于项目变更的价格，按合同已有的价格变更合同价款。</li>
+<li>合同中只有类似于项目变更的价格，可以参照类似价格变更合同价款。</li>
+<li>合同中没有适用或类似项目变更的价格，由承包人提出适当的变更价格，经监理工程师和业主确认后执行</li>
+</ol>
+<p> </p>
+<h2 id="索赔流程"><a class="header" href="#索赔流程">索赔流程</a></h2>
+<ul>
+<li>提出索赔要求</li>
+<li>报送索赔资料</li>
+<li>监理工程师答复</li>
+<li>监理工程师逾期答复后果</li>
+<li>持续索赔</li>
+<li>仲裁与诉讼（28天）</li>
+</ul>
+<h2 id="技术合同的内容"><a class="header" href="#技术合同的内容">技术合同的内容</a></h2>
+<ol>
+<li>项目名称</li>
+<li>标的内容和范围</li>
+<li>项目的质量要求</li>
+<li>项目的计划、进度地点、地域和方式</li>
+<li>项目建设过程中的各种期限</li>
+<li>技术情报和资料的保密</li>
+<li>风险责任承担</li>
+<li>技术成果的归属</li>
+<li>验收的标准和方法</li>
+<li>价款、报酬（或使用费）及其支付方式</li>
+<li>违约金或者损失賠偿的计算方法</li>
+<li>解决争议的方法</li>
+<li>名词术语解释</li>
+</ol>
+<p> </p>
+<h1 id="十一配置管理"><a class="header" href="#十一配置管理">十一，配置管理</a></h1>
+<h2 id="配置管理6个活动"><a class="header" href="#配置管理6个活动">配置管理6个活动</a></h2>
+<ol>
+<li>制订配置管理计划</li>
+<li>配置标识</li>
+<li>配置控制</li>
+<li>配置状态报告</li>
+<li>配置审计</li>
+<li>发布管理和交付</li>
+</ol>
+<h2 id="配置管理计划内容"><a class="header" href="#配置管理计划内容">配置管理计划内容</a></h2>
+<ol>
+<li>配置管理活动，主要包括配置标识、配置控制、配置状态报告、配置审计、发布管理和交付</li>
+<li>实施这些活动的规范和流程</li>
+<li>实施这些活动的进度安排</li>
+<li>负责实施活动的人员或组织，和它们与其他组织的关系</li>
+</ol>
+<h2 id="配置识别的内容"><a class="header" href="#配置识别的内容">配置识别的内容</a></h2>
+<ol>
+<li>识别需要受控的配置项；</li>
+<li>为每个配置项指定唯一性的标识号；</li>
+<li>定义每个配置项的重要特征；</li>
+<li>确定每个配置项的所有者及其责任；</li>
+<li>确定配置项进入配置管理的时间和条件；</li>
+<li>建立和控制基线；</li>
+<li>维护文档和组件的修订与产品版本之间的关系</li>
+</ol>
+<p> </p>
+<h2 id="建立基线的好处"><a class="header" href="#建立基线的好处">建立基线的好处</a></h2>
+<ol>
+<li>基线为开发工作提供了一个定点和快照。</li>
+<li>新项目可以在基线提供的定点上建立。新项目作为一个单独分支，将与随后对原始项目（在主要分支上）所进行的变更进行隔离。</li>
+<li>当认为更新不稳定或不可信时，基线为团队提供一种取消变更的方法。</li>
+<li>可以利用基线重新建立基于某个特定发布版本的配置，以重现己报告的错误</li>
+</ol>
+<h2 id="配置库分类"><a class="header" href="#配置库分类">配置库分类</a></h2>
+<ul>
+<li>开发库</li>
+<li>受控库</li>
+<li>产品库</li>
+</ul>
+<p> </p>
+<h2 id="建库的两种模式"><a class="header" href="#建库的两种模式">建库的两种模式</a></h2>
+<ul>
+<li>按<strong>配置项类型</strong>建库：适用于通用软件开发</li>
+<li>按<strong>开发任务</strong>建库：适用于专业软件开发</li>
+</ul>
+<p> </p>
+<h2 id="配置库的主要作用"><a class="header" href="#配置库的主要作用">配置库的主要作用</a></h2>
+<ol>
+<li>记录与配置相关的所有信息，其中存放受控的软件配置项是很重要的内容。</li>
+<li>利用库中的信息可评价变更的后果，这对变更控制有着重要的意义。</li>
+<li>从库中可提取各种配置管理过程的管理信息，可利用库中的信息查询回答许多配置管理的问题</li>
+</ol>
+<h2 id="配置审计作用"><a class="header" href="#配置审计作用">配置审计作用</a></h2>
+<ol>
+<li>防止向用户提交不适合的产品，如交付了用户手册的不正确版本</li>
+<li>发现不完善的实现，如开发出不符合初始规格说明或未按变更请求实施变更</li>
+<li>找出各配置项间不匹配或不相容的现象</li>
+<li>确认配置项已在所要求的质量控制审核之后纳入基线并入库保存</li>
+<li>确认记录和文档报纸可追溯性</li>
+</ol>
+<h1 id="十二变更管理"><a class="header" href="#十二变更管理">十二，变更管理</a></h1>
+<h2 id="变更的流程"><a class="header" href="#变更的流程">变更的流程</a></h2>
+<ol>
+<li><strong>提出与接受变更申请</strong></li>
+<li><strong>对变更的初审</strong></li>
+<li><strong>变更方案论证</strong></li>
+<li><strong>项目管理委员会审查</strong></li>
+<li><strong>发出变更通知并组织实施</strong></li>
+<li><strong>变更实施的监控</strong></li>
+<li><strong>变更效果的评估</strong></li>
+<li><strong>判断发生变更后的项目是否已纳入正常轨道</strong></li>
+</ol>
+<h2 id="项目经理在变更中的作用"><a class="header" href="#项目经理在变更中的作用">项目经理在变更中的作用</a></h2>
+<ul>
+<li>响应变更提出者的需求，评估变更对项目的影响及应对方案，将需求由技术要求转化为资源需求，供授权人决策</li>
+<li>据评审结果实施即调整基准。确保项目基准反映项目实施情况</li>
+</ul>
+<p> </p>
+<h2 id="变更可能存在的问题"><a class="header" href="#变更可能存在的问题">变更可能存在的问题</a></h2>
+<ol>
+<li>没有设置变更影响分析环节</li>
+<li>没有建立变更控制委员会来审核变更</li>
+<li>所有变更都必须走变更流程，而不是影响不大的就直接修改</li>
+<li>由变更控制委员会审核变更请求，而不是项目经理</li>
+<li>对变更没有进行记录</li>
+<li>缺少对变更实施过程的有效监控</li>
+<li>变更结束后要通知相关受影响人员，而不仅仅只项目经理确认</li>
+<li>项目变更后投有通知相关干系人存在问题。</li>
+<li>没有做好配置管理和版本管理</li>
+<li>变更没有产生相关的变更文档</li>
+</ol>
+<h1 id="十三风险管理"><a class="header" href="#十三风险管理">十三，风险管理</a></h1>
+<h2 id="活动图谱-6"><a class="header" href="#活动图谱-6">活动图谱</a></h2>
+<p><img src=".assets/1585286687581-352004f8-b233-4580-a12f-787ee455066c.png" alt="" /></p>
+<h2 id="可能遇到的风险"><a class="header" href="#可能遇到的风险">可能遇到的风险</a></h2>
+<ol>
+<li>需求风险</li>
+<li>技术风险</li>
+<li>政策风险，法律法规风险；</li>
+<li>市场风险</li>
+<li>运行风险</li>
+<li>团队风险；关键人员风险</li>
+<li>预算风险；</li>
+<li>范围，成本，质量等其它风险</li>
+</ol>
+<h2 id="风险管理计划内容"><a class="header" href="#风险管理计划内容">风险管理计划内容</a></h2>
+<ol>
+<li>方法论</li>
+<li>角色与职责</li>
+<li>预算</li>
+<li>时间安排</li>
+<li>风险类别</li>
+<li>风险概率和影响的定义</li>
+<li>概率和影响矩阵</li>
+<li>修改的项目干系人承受度</li>
+<li>报告格式</li>
+<li>跟踪</li>
+</ol>
+<h2 id="风险应对措施"><a class="header" href="#风险应对措施">风险应对措施</a></h2>
+<ul>
+<li>消极风险和威胁： 规避、转移、减轻、接受</li>
+<li>积极风险和威胁：开拓、提高、分享、接受</li>
+</ul>
+<h2 id="权变措施应急计划弹回计划"><a class="header" href="#权变措施应急计划弹回计划">权变措施/应急计划/弹回计划</a></h2>
+<ul>
+<li>权变措施：未事先计划，控制风险推荐的纠正措施，非工具与技术，未识别的风险发生时，或计划应对均失效时使用，可能用管理储备；</li>
+<li>应急计划：事先计划的，规划风险应对工具中使用，风险有充分预警信号，预定条件发生时，用应急储备；</li>
+<li>弹回计划：事先计划的，规划风险应对工具中使用，主要应对计划失效时的后备计划，用应急储备</li>
+</ul>
+<h2 id="风险登记册的内容"><a class="header" href="#风险登记册的内容">风险登记册的内容</a></h2>
+<ol>
+<li>已识别风险清单</li>
+<li>潜在应对措施清单</li>
+<li>风险根本原因</li>
+<li>风险类别更新</li>
+<li>更新的风险分类</li>
+</ol>
+<p> </p>
+<h1 id="十四收尾管理"><a class="header" href="#十四收尾管理">十四，收尾管理</a></h1>
+<h2 id="项目收尾的内容"><a class="header" href="#项目收尾的内容">项目收尾的内容</a></h2>
+<ul>
+<li><strong>项目验收</strong>
+<ul>
+<li>验收测试</li>
+<li>系统试运行</li>
+<li>系统的文档验收
+<ul>
+<li>系统集成项目介绍</li>
+<li>系统集成项目最终报告</li>
+<li>信息系统说明手册</li>
+<li>信息系统维护手册</li>
+<li>软硬件产品说明书、质量保证书</li>
+</ul>
+</li>
+<li>项目终验</li>
+</ul>
+</li>
+<li><strong>项目总结</strong>
+<ul>
+<li>内容
+<ul>
+<li>项目绩效</li>
+<li>技术绩效</li>
+<li>成本绩效</li>
+<li>进度计划绩效</li>
+<li>项目的沟通</li>
+<li>识别问题和解决问题</li>
+<li>意见和建议</li>
+</ul>
+</li>
+<li>意义
+<ul>
+<li>了解项目全过程的工作情况和相关团队与成员的绩效状况</li>
+<li>了解出现的问题病进行改进措施总结</li>
+<li>了解项目全过程中出现的经验教训，进行总结</li>
+<li>对总结侯文娟进行讨论，纳入公司知识库，成为企业的过程资产</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><strong>系统维护</strong>
+<ul>
+<li>软件bug修改</li>
+<li>软件升级</li>
+<li>后续技术支持</li>
+<li>系统日常维护</li>
+<li>硬件产品更新</li>
+<li>新需求</li>
+</ul>
+</li>
+<li><strong>项目后评价</strong>
+<ul>
+<li>目标评价</li>
+<li>过程评价</li>
+<li>效益评价</li>
+<li>可持续性评价</li>
+</ul>
+</li>
+</ul>
+<h1 id="十五采购管理图谱"><a class="header" href="#十五采购管理图谱">十五，采购管理图谱</a></h1>
+<p><img src=".assets/1585286983130-9bacf896-c423-40be-a49f-f038b73eef36.png" alt="" /></p>
+
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+                            <a rel="prev" href="../案例分析/计算专题.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                <i class="fa fa-angle-left"></i>
+                            </a>
+                            <a rel="next" href="../论文/十大领域论文.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                                <i class="fa fa-angle-right"></i>
+                            </a>
+                        <div style="clear: both"></div>
+                    </nav>
+                </div>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+                    <a rel="prev" href="../案例分析/计算专题.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                        <i class="fa fa-angle-left"></i>
+                    </a>
+                    <a rel="next" href="../论文/十大领域论文.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                        <i class="fa fa-angle-right"></i>
+                    </a>
+            </nav>
+
+        </div>
+
+        <script type="text/javascript">
+            window.playground_copyable = true;
+        </script>
+        <script src="../elasticlunr.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../mark.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../searcher.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../clipboard.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../highlight.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../book.js" type="text/javascript" charset="utf-8"></script>
+
+        <!-- Custom JS scripts -->
+    </body>
+</html>

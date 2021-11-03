@@ -1,0 +1,218 @@
+<!DOCTYPE HTML>
+<html lang="en" class="sidebar-visible no-js light">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>技术标准 - Project Manager Examine Notes</title>
+        <!-- Custom HTML head -->
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff" />
+
+        <link rel="icon" href="../favicon.svg">
+        <link rel="shortcut icon" href="../favicon.png">
+        <link rel="stylesheet" href="../css/variables.css">
+        <link rel="stylesheet" href="../css/general.css">
+        <link rel="stylesheet" href="../css/chrome.css">
+        <link rel="stylesheet" href="../css/print.css" media="print">
+        <!-- Fonts -->
+        <link rel="stylesheet" href="../FontAwesome/css/font-awesome.css">
+        <link rel="stylesheet" href="../fonts/fonts.css">
+        <!-- Highlight.js Stylesheets -->
+        <link rel="stylesheet" href="../highlight.css">
+        <link rel="stylesheet" href="../tomorrow-night.css">
+        <link rel="stylesheet" href="../ayu-highlight.css">
+
+        <!-- Custom theme stylesheets -->
+    </head>
+    <body>
+        <!-- Provide site root to javascript -->
+        <script type="text/javascript">
+            var path_to_root = "../";
+            var default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "navy" : "light";
+        </script>
+
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script type="text/javascript">
+            try {
+                var theme = localStorage.getItem('mdbook-theme');
+                var sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script type="text/javascript">
+            var theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
+            if (theme === null || theme === undefined) { theme = default_theme; }
+            var html = document.querySelector('html');
+            html.classList.remove('no-js')
+            html.classList.remove('light')
+            html.classList.add(theme);
+            html.classList.add('js');
+        </script>
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script type="text/javascript">
+            var html = document.querySelector('html');
+            var sidebar = 'hidden';
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            }
+            html.classList.remove('sidebar-visible');
+            html.classList.add("sidebar-" + sidebar);
+        </script>
+
+        <nav id="sidebar" class="sidebar" aria-label="Table of contents">
+            <div class="sidebar-scrollbox">
+                <ol class="chapter"><li class="chapter-item expanded "><a href="../../index.html"><strong aria-hidden="true">1.</strong> README</a></li><li class="chapter-item expanded "><div><strong aria-hidden="true">2.</strong> 教材基础</div></li><li><ol class="section"><li class="chapter-item expanded "><a href="../教材基础/1信息化.html"><strong aria-hidden="true">2.1.</strong> 信息化</a></li><li class="chapter-item expanded "><a href="../教材基础/2项目管理基础.html"><strong aria-hidden="true">2.2.</strong> 项目管理基础</a></li><li class="chapter-item expanded "><a href="../教材基础/3立项管理.html"><strong aria-hidden="true">2.3.</strong> 立项管理</a></li><li class="chapter-item expanded "><a href="../教材基础/4整体管理.html"><strong aria-hidden="true">2.4.</strong> 整体管理</a></li><li class="chapter-item expanded "><a href="../教材基础/5范围管理.html"><strong aria-hidden="true">2.5.</strong> 范围管理</a></li><li class="chapter-item expanded "><a href="../教材基础/6进度管理.html"><strong aria-hidden="true">2.6.</strong> 进度管理</a></li><li class="chapter-item expanded "><a href="../教材基础/7成本管理.html"><strong aria-hidden="true">2.7.</strong> 成本管理</a></li><li class="chapter-item expanded "><a href="../教材基础/8质量管理.html"><strong aria-hidden="true">2.8.</strong> 质量管理</a></li><li class="chapter-item expanded "><a href="../教材基础/9人力资源管理.html"><strong aria-hidden="true">2.9.</strong> 人力资源管理</a></li><li class="chapter-item expanded "><a href="../教材基础/10沟通和干系人管理.html"><strong aria-hidden="true">2.10.</strong> 沟通和干系人管理</a></li><li class="chapter-item expanded "><a href="../教材基础/11风险管理.html"><strong aria-hidden="true">2.11.</strong> 风险管理</a></li><li class="chapter-item expanded "><a href="../教材基础/12采购管理.html"><strong aria-hidden="true">2.12.</strong> 采购管理</a></li><li class="chapter-item expanded "><a href="../教材基础/13合同管理.html"><strong aria-hidden="true">2.13.</strong> 合同管理</a></li><li class="chapter-item expanded "><a href="../教材基础/14文档和配置管理.html"><strong aria-hidden="true">2.14.</strong> 文档和配置管理</a></li><li class="chapter-item expanded "><a href="../教材基础/15组织级项目管理.html"><strong aria-hidden="true">2.15.</strong> 组织级项目管理</a></li><li class="chapter-item expanded "><a href="../教材基础/16流程管理.html"><strong aria-hidden="true">2.16.</strong> 流程管理</a></li><li class="chapter-item expanded "><a href="../教材基础/17项目集.html"><strong aria-hidden="true">2.17.</strong> 项目集</a></li><li class="chapter-item expanded "><a href="../教材基础/18信息安全管理.html"><strong aria-hidden="true">2.18.</strong> 信息安全管理</a></li><li class="chapter-item expanded "><a href="../教材基础/19测试管理.html"><strong aria-hidden="true">2.19.</strong> 测试管理</a></li><li class="chapter-item expanded "><a href="../教材基础/20法律法规.html"><strong aria-hidden="true">2.20.</strong> 法律法规</a></li><li class="chapter-item expanded "><a href="../教材基础/21技术标准.html" class="active"><strong aria-hidden="true">2.21.</strong> 技术标准</a></li></ol></li><li class="chapter-item expanded "><div><strong aria-hidden="true">3.</strong> 案例分析</div></li><li><ol class="section"><li class="chapter-item expanded "><a href="../案例分析/案例分析简介.html"><strong aria-hidden="true">3.1.</strong> 案例分析简介</a></li><li class="chapter-item expanded "><a href="../案例分析/常见问题和措施汇总.html"><strong aria-hidden="true">3.2.</strong> 常见问题和措施汇总</a></li><li class="chapter-item expanded "><a href="../案例分析/计算专题.html"><strong aria-hidden="true">3.3.</strong> 计算专题</a></li><li class="chapter-item expanded "><a href="../案例分析/理论题考点汇总.html"><strong aria-hidden="true">3.4.</strong> 理论题考点汇总</a></li></ol></li><li class="chapter-item expanded "><div><strong aria-hidden="true">4.</strong> 论文</div></li><li><ol class="section"><li class="chapter-item expanded "><a href="../论文/十大领域论文.html"><strong aria-hidden="true">4.1.</strong> 十大领域论文</a></li></ol></li><li class="chapter-item expanded "><div><strong aria-hidden="true">5.</strong> 错题记录</div></li><li><ol class="section"><li class="chapter-item expanded "><a href="../错题记录/历年上午真题.html"><strong aria-hidden="true">5.1.</strong> 历年上午真题</a></li><li class="chapter-item expanded "><a href="../错题记录/案例分析真题.html"><strong aria-hidden="true">5.2.</strong> 案例分析真题</a></li></ol></li></ol>
+            </div>
+            <div id="sidebar-resize-handle" class="sidebar-resize-handle"></div>
+        </nav>
+
+        <div id="page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                <div id="menu-bar-hover-placeholder"></div>
+                <div id="menu-bar" class="menu-bar sticky bordered">
+                    <div class="left-buttons">
+                        <button id="sidebar-toggle" class="icon-button" type="button" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
+                            <i class="fa fa-bars"></i>
+                        </button>
+                        <button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
+                            <i class="fa fa-paint-brush"></i>
+                        </button>
+                        <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                            <li role="none"><button role="menuitem" class="theme" id="light">Light (default)</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="rust">Rust</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
+                        </ul>
+                        <button id="search-toggle" class="icon-button" type="button" title="Search. (Shortkey: s)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="S" aria-controls="searchbar">
+                            <i class="fa fa-search"></i>
+                        </button>
+                    </div>
+
+                    <h1 class="menu-title">Project Manager Examine Notes</h1>
+
+                    <div class="right-buttons">
+                        <a href="../print.html" title="Print this book" aria-label="Print this book">
+                            <i id="print-button" class="fa fa-print"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div id="search-wrapper" class="hidden">
+                    <form id="searchbar-outer" class="searchbar-outer">
+                        <input type="search" id="searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+                    </form>
+                    <div id="searchresults-outer" class="searchresults-outer hidden">
+                        <div id="searchresults-header" class="searchresults-header"></div>
+                        <ul id="searchresults">
+                        </ul>
+                    </div>
+                </div>
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script type="text/javascript">
+                    document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="content" class="content">
+                    <main>
+                        <p>分值：2分</p>
+<h1 id="gbt11457-2006国家标准中的术语"><a class="header" href="#gbt11457-2006国家标准中的术语">GB/T11457-2006国家标准中的术语</a></h1>
+<p>红色部分为重点</p>
+<ul>
+<li><strong>审计</strong>：为评估是否符合软件需求、规格说明、基线、标准、过程、指令、代码以及合同和特殊要求而进行的一种独立的检查；</li>
+<li><strong>代码审计</strong>：由某人、某小组或借助某种工具对源代码进行的独立的审查，以验证其是否符合软件设计文件和程序设计标准。</li>
+<li><strong>配置审计</strong>：证明所要求的全部配置项均已产生出来，当前的配置与规定的需求相符。</li>
+<li><strong>认证</strong>：一个系统、部件或计算机程序符合其规定的需求，对操作使用是可接受的一种书面保证。</li>
+<li><strong>走查</strong>：一种静态分析技术或评审过程，在此过程中，设计者或程序员引导开发组的成员通读已书写的设计或编码，其他成员负责提出问题并对有关技术、风格、可能的错误、是否违背开发标准等方面进行评论</li>
+<li><strong>鉴定</strong>：一个正式的过程，通过这个过程确定系统或部件是否符合它的规格说明，是否可在目标环境中适合于操作使用。</li>
+<li><strong>基线</strong>：对于配置管理，有以下三种基线： 
+<ul>
+<li>功能基线（最初通过的功能配置）</li>
+<li>分配基线（最初通过的分配的配置）</li>
+<li>产品基线（最初通过的或有条件地通过的产品配置）</li>
+</ul>
+</li>
+<li><strong>配置控制委员会</strong>：对提出的工程上的更动负责进行估价、审批，对核准进行的更动确保其实现的权力机构。</li>
+<li><strong>配置状态报告</strong>：记录和报告为有效地管理某一配置所需的信息。</li>
+<li><strong>设计评审</strong>：对现有的或提出的设计所做的正式评估和审查，其目的是找出可能会影响产品、过程或服务工作的适用性和环境方面的设计缺陷并采取补救措施，以及（或者）找出在性能、安全性和经济方面的可能的改进</li>
+<li><strong>桌面检查</strong>：对程序执行情况进行人工模拟，用逐步检查源代码中有无逻辑或语法错误的办法来检测故障。</li>
+<li><strong>评价</strong>：决定某产品、项目、活动或服务是否符合它的规定的准则的过程。</li>
+<li><strong>故障、缺陷</strong>：功能部件不能执行所要求的功能。</li>
+<li><strong>功能配置审计</strong>：验证一个配置项的实际工作性能是否符合它的需求规格说明的一项审查，以便为软件的设计和编码建立一个基线</li>
+</ul>
+<h1 id="软件生命周期过程"><a class="header" href="#软件生命周期过程">软件生命周期过程</a></h1>
+<ul>
+<li>主要过程</li>
+</ul>
+<p><img src=".assets/1585288519104-bd5fc5a9-d2b6-4112-bbb9-5cc8b60d7b6e.png" alt="未命名图片.png" /></p>
+<ul>
+<li>支持过程</li>
+</ul>
+<p><img src=".assets/1585288547750-795b5d23-8f07-442a-8ace-fae21729dfdb.png" alt="未命名图片.png" /></p>
+<ul>
+<li>组织过程</li>
+</ul>
+<p><img src=".assets/1585288580578-ac0b3ae8-5dd8-49a6-a452-62fa49995872.png" alt="未命名图片.png" /></p>
+<h1 id="软件产品质量"><a class="header" href="#软件产品质量">软件产品质量</a></h1>
+<p><img src=".assets/1585288591425-528e0d9a-cd58-4d06-993a-4d9d9cb90a5d.png" alt="image.png" /></p>
+<h2 id="6个质量特性和21个子特性"><a class="header" href="#6个质量特性和21个子特性">6个质量特性和21个子特性</a></h2>
+<p><img src=".assets/1585288626591-55160694-817d-467b-8e18-4d5d688d8760.png" alt="未命名图片.png" /></p>
+
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+                            <a rel="prev" href="../教材基础/20法律法规.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                <i class="fa fa-angle-left"></i>
+                            </a>
+                            <a rel="next" href="../案例分析/案例分析简介.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                                <i class="fa fa-angle-right"></i>
+                            </a>
+                        <div style="clear: both"></div>
+                    </nav>
+                </div>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+                    <a rel="prev" href="../教材基础/20法律法规.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                        <i class="fa fa-angle-left"></i>
+                    </a>
+                    <a rel="next" href="../案例分析/案例分析简介.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                        <i class="fa fa-angle-right"></i>
+                    </a>
+            </nav>
+
+        </div>
+
+        <script type="text/javascript">
+            window.playground_copyable = true;
+        </script>
+        <script src="../elasticlunr.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../mark.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../searcher.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../clipboard.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../highlight.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../book.js" type="text/javascript" charset="utf-8"></script>
+
+        <!-- Custom JS scripts -->
+    </body>
+</html>

@@ -1,0 +1,314 @@
+<!DOCTYPE HTML>
+<html lang="en" class="sidebar-visible no-js light">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>成本管理 - Project Manager Examine Notes</title>
+        <!-- Custom HTML head -->
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff" />
+
+        <link rel="icon" href="../favicon.svg">
+        <link rel="shortcut icon" href="../favicon.png">
+        <link rel="stylesheet" href="../css/variables.css">
+        <link rel="stylesheet" href="../css/general.css">
+        <link rel="stylesheet" href="../css/chrome.css">
+        <link rel="stylesheet" href="../css/print.css" media="print">
+        <!-- Fonts -->
+        <link rel="stylesheet" href="../FontAwesome/css/font-awesome.css">
+        <link rel="stylesheet" href="../fonts/fonts.css">
+        <!-- Highlight.js Stylesheets -->
+        <link rel="stylesheet" href="../highlight.css">
+        <link rel="stylesheet" href="../tomorrow-night.css">
+        <link rel="stylesheet" href="../ayu-highlight.css">
+
+        <!-- Custom theme stylesheets -->
+    </head>
+    <body>
+        <!-- Provide site root to javascript -->
+        <script type="text/javascript">
+            var path_to_root = "../";
+            var default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "navy" : "light";
+        </script>
+
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script type="text/javascript">
+            try {
+                var theme = localStorage.getItem('mdbook-theme');
+                var sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script type="text/javascript">
+            var theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
+            if (theme === null || theme === undefined) { theme = default_theme; }
+            var html = document.querySelector('html');
+            html.classList.remove('no-js')
+            html.classList.remove('light')
+            html.classList.add(theme);
+            html.classList.add('js');
+        </script>
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script type="text/javascript">
+            var html = document.querySelector('html');
+            var sidebar = 'hidden';
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            }
+            html.classList.remove('sidebar-visible');
+            html.classList.add("sidebar-" + sidebar);
+        </script>
+
+        <nav id="sidebar" class="sidebar" aria-label="Table of contents">
+            <div class="sidebar-scrollbox">
+                <ol class="chapter"><li class="chapter-item expanded "><a href="../../index.html"><strong aria-hidden="true">1.</strong> README</a></li><li class="chapter-item expanded "><div><strong aria-hidden="true">2.</strong> 教材基础</div></li><li><ol class="section"><li class="chapter-item expanded "><a href="../教材基础/1信息化.html"><strong aria-hidden="true">2.1.</strong> 信息化</a></li><li class="chapter-item expanded "><a href="../教材基础/2项目管理基础.html"><strong aria-hidden="true">2.2.</strong> 项目管理基础</a></li><li class="chapter-item expanded "><a href="../教材基础/3立项管理.html"><strong aria-hidden="true">2.3.</strong> 立项管理</a></li><li class="chapter-item expanded "><a href="../教材基础/4整体管理.html"><strong aria-hidden="true">2.4.</strong> 整体管理</a></li><li class="chapter-item expanded "><a href="../教材基础/5范围管理.html"><strong aria-hidden="true">2.5.</strong> 范围管理</a></li><li class="chapter-item expanded "><a href="../教材基础/6进度管理.html"><strong aria-hidden="true">2.6.</strong> 进度管理</a></li><li class="chapter-item expanded "><a href="../教材基础/7成本管理.html" class="active"><strong aria-hidden="true">2.7.</strong> 成本管理</a></li><li class="chapter-item expanded "><a href="../教材基础/8质量管理.html"><strong aria-hidden="true">2.8.</strong> 质量管理</a></li><li class="chapter-item expanded "><a href="../教材基础/9人力资源管理.html"><strong aria-hidden="true">2.9.</strong> 人力资源管理</a></li><li class="chapter-item expanded "><a href="../教材基础/10沟通和干系人管理.html"><strong aria-hidden="true">2.10.</strong> 沟通和干系人管理</a></li><li class="chapter-item expanded "><a href="../教材基础/11风险管理.html"><strong aria-hidden="true">2.11.</strong> 风险管理</a></li><li class="chapter-item expanded "><a href="../教材基础/12采购管理.html"><strong aria-hidden="true">2.12.</strong> 采购管理</a></li><li class="chapter-item expanded "><a href="../教材基础/13合同管理.html"><strong aria-hidden="true">2.13.</strong> 合同管理</a></li><li class="chapter-item expanded "><a href="../教材基础/14文档和配置管理.html"><strong aria-hidden="true">2.14.</strong> 文档和配置管理</a></li><li class="chapter-item expanded "><a href="../教材基础/15组织级项目管理.html"><strong aria-hidden="true">2.15.</strong> 组织级项目管理</a></li><li class="chapter-item expanded "><a href="../教材基础/16流程管理.html"><strong aria-hidden="true">2.16.</strong> 流程管理</a></li><li class="chapter-item expanded "><a href="../教材基础/17项目集.html"><strong aria-hidden="true">2.17.</strong> 项目集</a></li><li class="chapter-item expanded "><a href="../教材基础/18信息安全管理.html"><strong aria-hidden="true">2.18.</strong> 信息安全管理</a></li><li class="chapter-item expanded "><a href="../教材基础/19测试管理.html"><strong aria-hidden="true">2.19.</strong> 测试管理</a></li><li class="chapter-item expanded "><a href="../教材基础/20法律法规.html"><strong aria-hidden="true">2.20.</strong> 法律法规</a></li><li class="chapter-item expanded "><a href="../教材基础/21技术标准.html"><strong aria-hidden="true">2.21.</strong> 技术标准</a></li></ol></li><li class="chapter-item expanded "><div><strong aria-hidden="true">3.</strong> 案例分析</div></li><li><ol class="section"><li class="chapter-item expanded "><a href="../案例分析/案例分析简介.html"><strong aria-hidden="true">3.1.</strong> 案例分析简介</a></li><li class="chapter-item expanded "><a href="../案例分析/常见问题和措施汇总.html"><strong aria-hidden="true">3.2.</strong> 常见问题和措施汇总</a></li><li class="chapter-item expanded "><a href="../案例分析/计算专题.html"><strong aria-hidden="true">3.3.</strong> 计算专题</a></li><li class="chapter-item expanded "><a href="../案例分析/理论题考点汇总.html"><strong aria-hidden="true">3.4.</strong> 理论题考点汇总</a></li></ol></li><li class="chapter-item expanded "><div><strong aria-hidden="true">4.</strong> 论文</div></li><li><ol class="section"><li class="chapter-item expanded "><a href="../论文/十大领域论文.html"><strong aria-hidden="true">4.1.</strong> 十大领域论文</a></li></ol></li><li class="chapter-item expanded "><div><strong aria-hidden="true">5.</strong> 错题记录</div></li><li><ol class="section"><li class="chapter-item expanded "><a href="../错题记录/历年上午真题.html"><strong aria-hidden="true">5.1.</strong> 历年上午真题</a></li><li class="chapter-item expanded "><a href="../错题记录/案例分析真题.html"><strong aria-hidden="true">5.2.</strong> 案例分析真题</a></li></ol></li></ol>
+            </div>
+            <div id="sidebar-resize-handle" class="sidebar-resize-handle"></div>
+        </nav>
+
+        <div id="page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                <div id="menu-bar-hover-placeholder"></div>
+                <div id="menu-bar" class="menu-bar sticky bordered">
+                    <div class="left-buttons">
+                        <button id="sidebar-toggle" class="icon-button" type="button" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
+                            <i class="fa fa-bars"></i>
+                        </button>
+                        <button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
+                            <i class="fa fa-paint-brush"></i>
+                        </button>
+                        <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                            <li role="none"><button role="menuitem" class="theme" id="light">Light (default)</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="rust">Rust</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
+                        </ul>
+                        <button id="search-toggle" class="icon-button" type="button" title="Search. (Shortkey: s)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="S" aria-controls="searchbar">
+                            <i class="fa fa-search"></i>
+                        </button>
+                    </div>
+
+                    <h1 class="menu-title">Project Manager Examine Notes</h1>
+
+                    <div class="right-buttons">
+                        <a href="../print.html" title="Print this book" aria-label="Print this book">
+                            <i id="print-button" class="fa fa-print"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div id="search-wrapper" class="hidden">
+                    <form id="searchbar-outer" class="searchbar-outer">
+                        <input type="search" id="searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+                    </form>
+                    <div id="searchresults-outer" class="searchresults-outer hidden">
+                        <div id="searchresults-header" class="searchresults-header"></div>
+                        <ul id="searchresults">
+                        </ul>
+                    </div>
+                </div>
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script type="text/javascript">
+                    document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="content" class="content">
+                    <main>
+                        <p>分值：3分</p>
+<h1 id="综合图谱"><a class="header" href="#综合图谱">综合图谱</a></h1>
+<p><img src=".assets/1585272689452-57860571-f744-4a9e-956e-45963444b8be.png" alt="Untitled picture.png" /></p>
+<h1 id=""><a class="header" href="#"> </a></h1>
+<h1 id="成本的类型"><a class="header" href="#成本的类型">成本的类型</a></h1>
+<ul>
+<li><strong>可变成本</strong>：变动成本，随生产量、工作量或时间而变化</li>
+<li><strong>固定成本</strong>：不变化的非重复成本</li>
+<li><strong>直接成本</strong>：直接归属项目工作的成本，项目经理可控制
+<ul>
+<li>差旅费，工资、设备使用费</li>
+</ul>
+</li>
+<li><strong>间接成本</strong>：来自一般管理费用或几个项目共同担负的项目成本
+<ul>
+<li>税金、额外福利等</li>
+</ul>
+</li>
+<li><strong>机会成本</strong>：泛指一切在做出选择之后其中一个最大的损失</li>
+<li><strong>沉没成本</strong>：由于过去的决策已经发生的成本，不能由现在或将来的决策改变</li>
+</ul>
+<h1 id="成本管理计划的内容"><a class="header" href="#成本管理计划的内容">成本管理计划的内容</a></h1>
+<ol>
+<li>计量单位</li>
+<li>精确度</li>
+<li>准确度</li>
+<li>组织程序链接</li>
+<li>控制临界值</li>
+<li>绩效测量规则</li>
+<li>报告格式</li>
+<li>过程描述</li>
+<li>其他细节</li>
+</ol>
+<p> </p>
+<h1 id="成本估算的步骤"><a class="header" href="#成本估算的步骤">成本估算的步骤</a></h1>
+<ol>
+<li>识别分析成本的构成科目，输出
+<ol>
+<li><strong>资源需求</strong></li>
+<li><strong>会计科目表</strong></li>
+<li><strong>项目资源矩阵</strong></li>
+</ol>
+</li>
+<li>根据已识别的成本构成科目，估算每一科目的成本大小</li>
+<li>分析成本估算结果，找出可以相互替代的成本，协调各成本之间的比例关系</li>
+</ol>
+<p> </p>
+<h1 id="制定成本预算"><a class="header" href="#制定成本预算">制定成本预算</a></h1>
+<h2 id="原则"><a class="header" href="#原则">原则</a></h2>
+<ul>
+<li>项目成本预算要以项目需求为基础。</li>
+<li>项目成本预算要与项目目标相联系，必须同时考虑项目质量目标和进度目标。</li>
+<li>项目成本预算要切实可行。</li>
+<li>项目成本预算应当留有弹性</li>
+</ul>
+<h2 id="步骤"><a class="header" href="#步骤">步骤</a></h2>
+<ol>
+<li>将项目总成本分摊到项目工作分解结构的各个工作包．分解按照自顶向下，根据占用资源数量多少而设置不同的分解权重</li>
+<li>将各个工作包成本再分配到该工作包所包含的各项适动上</li>
+<li>确定各项成本预算支出的时间计划及项目成本预算计划</li>
+</ol>
+<h2 id="成本预算的组成"><a class="header" href="#成本预算的组成">成本预算的组成</a></h2>
+<ul>
+<li>管理储备（<strong>挣值BAC预算的话，不包括此部分</strong>）</li>
+<li>成本基准
+<ul>
+<li>控制账户
+<ul>
+<li>应急储备</li>
+<li>工作包成本估算
+<ul>
+<li>活动应急储备</li>
+<li>活动成本储备</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<p><img src=".assets/1585272753633-9b882f0d-9f30-48a4-83f1-a5ec8416cc9a.png" alt="image.png" /></p>
+<h2 id="成本基准"><a class="header" href="#成本基准">成本基准</a></h2>
+<p>经过<strong>批准的，按时间段分配的项目预算</strong>，只有通过正式的变更程序才能修改</p>
+<ul>
+<li><strong>应急储备</strong>：包含在成本基准里，使用前不需要得到高层管理者的审批</li>
+<li><strong>管理储备</strong>：不包含在成本基准里，但<strong>属于项目总预算和资金需求的一部分</strong>，使用前需要得到高层管理者的审批</li>
+</ul>
+<p><img src=".assets/1585272708849-96e27100-fd8e-4758-9f04-36d0a830f5ff.png" alt="image.png" /></p>
+<h1 id="成本控制工作包为单位"><a class="header" href="#成本控制工作包为单位">成本控制（工作包为单位）</a></h1>
+<p>成本控制是项目管理的重要活动，不只是个人的活动</p>
+<ol>
+<li>对造成成本基准变更的因素施加影响·</li>
+<li>确保所有变更请求都得到及时处理。</li>
+<li>当变更实际发生时，管理这些变更·</li>
+<li>确保成本支出不超过批准的资金限额，既不超出按时段、按WBS组件、按活动分配的限额，也不超出项目总限额</li>
+<li>监督成本绩效，找出并分析与成本基准间的偏差。</li>
+<li>对照资金支出，监督工作绩效。</li>
+<li>防止在成本或资源使用报告中出现未经批准的变更。</li>
+<li>向有关干系人报告所有经批准的变更及其相关成本。</li>
+<li>设法把预期的成本超支控制在可接受的范围内。</li>
+</ol>
+<p> </p>
+<h1 id="成本分析技术"><a class="header" href="#成本分析技术">成本分析技术</a></h1>
+<ul>
+<li>技术分析
+<ul>
+<li>回收期，投资回报率，内部报酬率，现金流贴现，净现值</li>
+</ul>
+</li>
+<li>专家判断：基于历史信息提供有价值的见解</li>
+<li>会议</li>
+<li>类比估算：<strong>粗略的估算方法，成本低，耗时短，准确性低</strong></li>
+<li>参数估算：基于参数模型和基础数据的可靠性</li>
+<li>自下而上估算：准确性取决于工作包的规模和复杂程度</li>
+<li>三点估算</li>
+<li>储备分析</li>
+<li>质量成本COQ</li>
+<li>项目管理软件</li>
+<li>卖方投标分析</li>
+<li>群体决策技术
+<ul>
+<li>头脑风暴，德尔菲技术，名义小组</li>
+</ul>
+</li>
+</ul>
+<p> </p>
+<h1 id="成本管理技术"><a class="header" href="#成本管理技术">成本管理技术</a></h1>
+<ul>
+<li>成本汇总，自下而上汇总，最终得到总成本</li>
+<li>储备分析</li>
+<li>历史关系</li>
+<li>资金限制平衡</li>
+<li>挣值管理：把范围、进度、资源绩效综合考虑（参考挣值分析计算）</li>
+<li>完工预测</li>
+<li>完工尚需绩效指数TCPI</li>
+<li>绩效审查</li>
+<li>项目管理软件</li>
+</ul>
+
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+                            <a rel="prev" href="../教材基础/6进度管理.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                <i class="fa fa-angle-left"></i>
+                            </a>
+                            <a rel="next" href="../教材基础/8质量管理.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                                <i class="fa fa-angle-right"></i>
+                            </a>
+                        <div style="clear: both"></div>
+                    </nav>
+                </div>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+                    <a rel="prev" href="../教材基础/6进度管理.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                        <i class="fa fa-angle-left"></i>
+                    </a>
+                    <a rel="next" href="../教材基础/8质量管理.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                        <i class="fa fa-angle-right"></i>
+                    </a>
+            </nav>
+
+        </div>
+
+        <script type="text/javascript">
+            window.playground_copyable = true;
+        </script>
+        <script src="../elasticlunr.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../mark.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../searcher.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../clipboard.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../highlight.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../book.js" type="text/javascript" charset="utf-8"></script>
+
+        <!-- Custom JS scripts -->
+    </body>
+</html>

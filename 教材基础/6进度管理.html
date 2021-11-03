@@ -1,0 +1,312 @@
+<!DOCTYPE HTML>
+<html lang="en" class="sidebar-visible no-js light">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>进度管理 - Project Manager Examine Notes</title>
+        <!-- Custom HTML head -->
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff" />
+
+        <link rel="icon" href="../favicon.svg">
+        <link rel="shortcut icon" href="../favicon.png">
+        <link rel="stylesheet" href="../css/variables.css">
+        <link rel="stylesheet" href="../css/general.css">
+        <link rel="stylesheet" href="../css/chrome.css">
+        <link rel="stylesheet" href="../css/print.css" media="print">
+        <!-- Fonts -->
+        <link rel="stylesheet" href="../FontAwesome/css/font-awesome.css">
+        <link rel="stylesheet" href="../fonts/fonts.css">
+        <!-- Highlight.js Stylesheets -->
+        <link rel="stylesheet" href="../highlight.css">
+        <link rel="stylesheet" href="../tomorrow-night.css">
+        <link rel="stylesheet" href="../ayu-highlight.css">
+
+        <!-- Custom theme stylesheets -->
+    </head>
+    <body>
+        <!-- Provide site root to javascript -->
+        <script type="text/javascript">
+            var path_to_root = "../";
+            var default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "navy" : "light";
+        </script>
+
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script type="text/javascript">
+            try {
+                var theme = localStorage.getItem('mdbook-theme');
+                var sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script type="text/javascript">
+            var theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
+            if (theme === null || theme === undefined) { theme = default_theme; }
+            var html = document.querySelector('html');
+            html.classList.remove('no-js')
+            html.classList.remove('light')
+            html.classList.add(theme);
+            html.classList.add('js');
+        </script>
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script type="text/javascript">
+            var html = document.querySelector('html');
+            var sidebar = 'hidden';
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            }
+            html.classList.remove('sidebar-visible');
+            html.classList.add("sidebar-" + sidebar);
+        </script>
+
+        <nav id="sidebar" class="sidebar" aria-label="Table of contents">
+            <div class="sidebar-scrollbox">
+                <ol class="chapter"><li class="chapter-item expanded "><a href="../../index.html"><strong aria-hidden="true">1.</strong> README</a></li><li class="chapter-item expanded "><div><strong aria-hidden="true">2.</strong> 教材基础</div></li><li><ol class="section"><li class="chapter-item expanded "><a href="../教材基础/1信息化.html"><strong aria-hidden="true">2.1.</strong> 信息化</a></li><li class="chapter-item expanded "><a href="../教材基础/2项目管理基础.html"><strong aria-hidden="true">2.2.</strong> 项目管理基础</a></li><li class="chapter-item expanded "><a href="../教材基础/3立项管理.html"><strong aria-hidden="true">2.3.</strong> 立项管理</a></li><li class="chapter-item expanded "><a href="../教材基础/4整体管理.html"><strong aria-hidden="true">2.4.</strong> 整体管理</a></li><li class="chapter-item expanded "><a href="../教材基础/5范围管理.html"><strong aria-hidden="true">2.5.</strong> 范围管理</a></li><li class="chapter-item expanded "><a href="../教材基础/6进度管理.html" class="active"><strong aria-hidden="true">2.6.</strong> 进度管理</a></li><li class="chapter-item expanded "><a href="../教材基础/7成本管理.html"><strong aria-hidden="true">2.7.</strong> 成本管理</a></li><li class="chapter-item expanded "><a href="../教材基础/8质量管理.html"><strong aria-hidden="true">2.8.</strong> 质量管理</a></li><li class="chapter-item expanded "><a href="../教材基础/9人力资源管理.html"><strong aria-hidden="true">2.9.</strong> 人力资源管理</a></li><li class="chapter-item expanded "><a href="../教材基础/10沟通和干系人管理.html"><strong aria-hidden="true">2.10.</strong> 沟通和干系人管理</a></li><li class="chapter-item expanded "><a href="../教材基础/11风险管理.html"><strong aria-hidden="true">2.11.</strong> 风险管理</a></li><li class="chapter-item expanded "><a href="../教材基础/12采购管理.html"><strong aria-hidden="true">2.12.</strong> 采购管理</a></li><li class="chapter-item expanded "><a href="../教材基础/13合同管理.html"><strong aria-hidden="true">2.13.</strong> 合同管理</a></li><li class="chapter-item expanded "><a href="../教材基础/14文档和配置管理.html"><strong aria-hidden="true">2.14.</strong> 文档和配置管理</a></li><li class="chapter-item expanded "><a href="../教材基础/15组织级项目管理.html"><strong aria-hidden="true">2.15.</strong> 组织级项目管理</a></li><li class="chapter-item expanded "><a href="../教材基础/16流程管理.html"><strong aria-hidden="true">2.16.</strong> 流程管理</a></li><li class="chapter-item expanded "><a href="../教材基础/17项目集.html"><strong aria-hidden="true">2.17.</strong> 项目集</a></li><li class="chapter-item expanded "><a href="../教材基础/18信息安全管理.html"><strong aria-hidden="true">2.18.</strong> 信息安全管理</a></li><li class="chapter-item expanded "><a href="../教材基础/19测试管理.html"><strong aria-hidden="true">2.19.</strong> 测试管理</a></li><li class="chapter-item expanded "><a href="../教材基础/20法律法规.html"><strong aria-hidden="true">2.20.</strong> 法律法规</a></li><li class="chapter-item expanded "><a href="../教材基础/21技术标准.html"><strong aria-hidden="true">2.21.</strong> 技术标准</a></li></ol></li><li class="chapter-item expanded "><div><strong aria-hidden="true">3.</strong> 案例分析</div></li><li><ol class="section"><li class="chapter-item expanded "><a href="../案例分析/案例分析简介.html"><strong aria-hidden="true">3.1.</strong> 案例分析简介</a></li><li class="chapter-item expanded "><a href="../案例分析/常见问题和措施汇总.html"><strong aria-hidden="true">3.2.</strong> 常见问题和措施汇总</a></li><li class="chapter-item expanded "><a href="../案例分析/计算专题.html"><strong aria-hidden="true">3.3.</strong> 计算专题</a></li><li class="chapter-item expanded "><a href="../案例分析/理论题考点汇总.html"><strong aria-hidden="true">3.4.</strong> 理论题考点汇总</a></li></ol></li><li class="chapter-item expanded "><div><strong aria-hidden="true">4.</strong> 论文</div></li><li><ol class="section"><li class="chapter-item expanded "><a href="../论文/十大领域论文.html"><strong aria-hidden="true">4.1.</strong> 十大领域论文</a></li></ol></li><li class="chapter-item expanded "><div><strong aria-hidden="true">5.</strong> 错题记录</div></li><li><ol class="section"><li class="chapter-item expanded "><a href="../错题记录/历年上午真题.html"><strong aria-hidden="true">5.1.</strong> 历年上午真题</a></li><li class="chapter-item expanded "><a href="../错题记录/案例分析真题.html"><strong aria-hidden="true">5.2.</strong> 案例分析真题</a></li></ol></li></ol>
+            </div>
+            <div id="sidebar-resize-handle" class="sidebar-resize-handle"></div>
+        </nav>
+
+        <div id="page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                <div id="menu-bar-hover-placeholder"></div>
+                <div id="menu-bar" class="menu-bar sticky bordered">
+                    <div class="left-buttons">
+                        <button id="sidebar-toggle" class="icon-button" type="button" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
+                            <i class="fa fa-bars"></i>
+                        </button>
+                        <button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
+                            <i class="fa fa-paint-brush"></i>
+                        </button>
+                        <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                            <li role="none"><button role="menuitem" class="theme" id="light">Light (default)</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="rust">Rust</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
+                        </ul>
+                        <button id="search-toggle" class="icon-button" type="button" title="Search. (Shortkey: s)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="S" aria-controls="searchbar">
+                            <i class="fa fa-search"></i>
+                        </button>
+                    </div>
+
+                    <h1 class="menu-title">Project Manager Examine Notes</h1>
+
+                    <div class="right-buttons">
+                        <a href="../print.html" title="Print this book" aria-label="Print this book">
+                            <i id="print-button" class="fa fa-print"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div id="search-wrapper" class="hidden">
+                    <form id="searchbar-outer" class="searchbar-outer">
+                        <input type="search" id="searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+                    </form>
+                    <div id="searchresults-outer" class="searchresults-outer hidden">
+                        <div id="searchresults-header" class="searchresults-header"></div>
+                        <ul id="searchresults">
+                        </ul>
+                    </div>
+                </div>
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script type="text/javascript">
+                    document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="content" class="content">
+                    <main>
+                        <p>分值：3分</p>
+<h1 id="综合图谱"><a class="header" href="#综合图谱">综合图谱</a></h1>
+<p><img src=".assets/1585272244593-396a2f25-d3e7-4137-8a7f-3422de389d9d.png" alt="Untitled picture.png" /></p>
+<h1 id="资源日历"><a class="header" href="#资源日历">资源日历</a></h1>
+<ul>
+<li>表明每种具体资源的<strong>可用工作日和工作班次</strong>的日历</li>
+</ul>
+<h1 id="排列活动顺序的工具"><a class="header" href="#排列活动顺序的工具">排列活动顺序的工具</a></h1>
+<ul>
+<li>横道图（也叫<strong>甘特图</strong>）</li>
+<li>里程碑图</li>
+<li>项目进度网络图</li>
+<li>时标逻辑图（也叫<strong>时标网络图</strong>）
+<ul>
+<li>实线表示活动，实线的水平投影表示活动的持续时间</li>
+<li>虚线表示虚活动，不占时间，所以垂直画</li>
+<li>波浪线表示活动和紧后活动之间的自由浮动时间</li>
+</ul>
+</li>
+</ul>
+<p><img src=".assets/1585272302353-2bf7e4d4-db85-461b-8d50-b8a65dfdf0eb.png" alt="image.png" /></p>
+<h2 id="确定依赖关系"><a class="header" href="#确定依赖关系">确定依赖关系</a></h2>
+<ul>
+<li><strong>强制性依赖关系</strong>：硬逻辑关系</li>
+<li>**选择性依赖关系：**首选逻辑关系，软逻辑关系</li>
+<li>**外部依赖关系：**项目活动与非项目活动之间的依赖关系</li>
+<li>**内部依赖关系：**项目活动之间的紧前关系</li>
+</ul>
+<h1 id="活动持续时间估计的方法"><a class="header" href="#活动持续时间估计的方法">活动持续时间估计的方法</a></h1>
+<ul>
+<li><strong>LOC</strong>：所有可执行的源代码行数</li>
+<li>Delphi法</li>
+</ul>
+<p><img src=".assets/1585272380157-63937437-5bb8-43d6-ae2c-0b873466cdca.png" alt="image.png" /></p>
+<ul>
+<li><strong>类比估算法</strong>：适合评估一些与历史项目相似的项目，通过新项目与历史项目的比较得到规模估计
+<ul>
+<li>等价代码行 = （重新设计百分比+重新编码百分比+重新测试百分比）/ 3 x 已有代码行</li>
+</ul>
+</li>
+<li><strong>参数估算法</strong>：基于历史数据和项目参数，使用某种算法来计算成本和工期</li>
+<li><strong>储备分析</strong>：
+<ul>
+<li>应急储备：也叫缓冲时间，与“<strong>已知-未知</strong>”风险相关，可以通过<strong>定量分析</strong>来确定，比如<strong>蒙特卡洛模拟法（随机模拟法）</strong></li>
+<li>管理储备：“<strong>未知-未知</strong>”风险，<strong>不包含在进度基准中，<strong>用来应对项目范围中</strong>不可预见的工作</strong>。管理储备可能需要变更进度基准</li>
+</ul>
+</li>
+<li><strong>三点估算（<strong><strong>PERT</strong></strong>）</strong>
+<ul>
+<li>乐观时间To</li>
+<li>最可能时间Tm</li>
+<li>悲观时间Tp</li>
+<li>公式：
+<ul>
+<li>活动持续时间 =（最乐观时间+4 * 最可能时间+最悲观时间）/ 6</li>
+<li>持续时间标准差=（乐观时间-悲观时间）/ 6</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h1 id="制定进度计划的方法"><a class="header" href="#制定进度计划的方法">制定进度计划的方法</a></h1>
+<h2 id="前导图pdm单代号网络图"><a class="header" href="#前导图pdm单代号网络图">前导图PDM（单代号网络图）</a></h2>
+<ul>
+<li>节点表示活动，箭线表示活动之间的关系</li>
+</ul>
+<p><img src=".assets/1585272472346-046139a0-9133-4f38-aac8-fcd657157a30.png" alt="image.png" /></p>
+<ul>
+<li>节点的时间包含：
+<ul>
+<li>最早开始时间（ES）</li>
+<li>最早完成时间（EF）：EF=ES+工期估算</li>
+<li>最迟开始时间（LS）</li>
+<li>最迟完成时间（LF）：LF=LS+工期估算</li>
+<li>公式：
+<ul>
+<li>总浮动时间 =  LS-ES = LF-EF</li>
+<li>自由浮动时间= min（后一节点的ES）- EF</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<p><img src=".assets/1585272503337-169892b4-acb5-4b6b-baf5-c1633bf1b9ec.png" alt="image.png" /></p>
+<h2 id="箭线图双代号网络图"><a class="header" href="#箭线图双代号网络图">箭线图（双代号网络图）</a></h2>
+<ul>
+<li>箭线表示活动，活动之间用节点连接</li>
+<li>有虚活动（不占时间和资源）</li>
+</ul>
+<p><img src=".assets/1585272524436-307cd9ed-cbe6-4247-b0b2-4be641fa8b67.png" alt="image.png" /></p>
+<h2 id="关键路径法cpm"><a class="header" href="#关键路径法cpm">关键路径法CPM</a></h2>
+<ul>
+<li>关键路径是工期最长的路径</li>
+<li>在网络图中寻找关键路径，<strong>关键路径可能有多条，也在不断变化中</strong></li>
+</ul>
+<p><img src=".assets/1585272542242-b45413c0-d0fe-4ed5-ade6-b073405bf562.png" alt="image.png" /></p>
+<h2 id="关键链法ccm"><a class="header" href="#关键链法ccm">关键链法CCM</a></h2>
+<ul>
+<li>引入了缓冲和缓冲管理概念
+<ul>
+<li><strong>项目缓冲</strong>：放在关键链末端的缓冲</li>
+<li><strong>接驳缓冲</strong>：放置在非关键链和关键链的结合点</li>
+</ul>
+</li>
+<li>CCM重点管理<strong>剩余的缓冲持续时间和剩余的活动连持续时间之间的配置关系</strong>，不关注关键路径的总浮动时间</li>
+</ul>
+<p><img src=".assets/1585272573142-ba9819d8-d6e8-4139-b478-f819ea24d1a2.png" alt="image.png" /></p>
+<h1 id="进度控制"><a class="header" href="#进度控制">进度控制</a></h1>
+<h2 id="需要关注的内容"><a class="header" href="#需要关注的内容">需要关注的内容</a></h2>
+<ul>
+<li>判断项目进度的当前状态</li>
+<li>对引起进度变更的因素加以影响，使其向有利的方向发展</li>
+<li>判断项目进度是否已经发生变更</li>
+<li>当变更发生时，按照变更控制流程进行处理</li>
+</ul>
+<h2 id="分析进度偏差"><a class="header" href="#分析进度偏差">分析进度偏差</a></h2>
+<ol>
+<li>分析产生进度偏差的工作是否为关键活动</li>
+<li>分析进度偏差是否大于总时差</li>
+<li>分析进度偏差是否大于自由时差</li>
+<li>项目进度计划的调整</li>
+</ol>
+<h2 id="进度压缩的方法"><a class="header" href="#进度压缩的方法">进度压缩的方法</a></h2>
+<ul>
+<li><strong>赶工</strong>，投入更多而资源或增加工作时间，<strong>以缩短关键活动的工期</strong></li>
+<li><strong>快速跟进</strong>，并行施工，<strong>以缩短关键路径的长度</strong></li>
+<li>使用高素质的资源或经验丰富的人员</li>
+<li>减小活动范围或降低活动要求</li>
+<li>改进方法或技术，以<strong>提高生产效率</strong></li>
+<li>加强质量管理，及时发现问题，减少返工，缩短工期</li>
+</ul>
+<h2 id="资源平衡和优化"><a class="header" href="#资源平衡和优化">资源平衡和优化</a></h2>
+<ol>
+<li><strong>资源平衡往往导致关键路径改变，通常是延长</strong></li>
+<li><strong>资源平滑</strong>不会改变关键路径，完工日期不会延迟，<strong>活动只在其自由浮动时间和总浮动时间内延迟，资源平滑可能无法实现所有资源的优化</strong></li>
+</ol>
+
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+                            <a rel="prev" href="../教材基础/5范围管理.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                <i class="fa fa-angle-left"></i>
+                            </a>
+                            <a rel="next" href="../教材基础/7成本管理.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                                <i class="fa fa-angle-right"></i>
+                            </a>
+                        <div style="clear: both"></div>
+                    </nav>
+                </div>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+                    <a rel="prev" href="../教材基础/5范围管理.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                        <i class="fa fa-angle-left"></i>
+                    </a>
+                    <a rel="next" href="../教材基础/7成本管理.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                        <i class="fa fa-angle-right"></i>
+                    </a>
+            </nav>
+
+        </div>
+
+        <script type="text/javascript">
+            window.playground_copyable = true;
+        </script>
+        <script src="../elasticlunr.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../mark.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../searcher.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../clipboard.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../highlight.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../book.js" type="text/javascript" charset="utf-8"></script>
+
+        <!-- Custom JS scripts -->
+    </body>
+</html>

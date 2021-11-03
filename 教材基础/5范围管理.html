@@ -1,0 +1,335 @@
+<!DOCTYPE HTML>
+<html lang="en" class="sidebar-visible no-js light">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>范围管理 - Project Manager Examine Notes</title>
+        <!-- Custom HTML head -->
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff" />
+
+        <link rel="icon" href="../favicon.svg">
+        <link rel="shortcut icon" href="../favicon.png">
+        <link rel="stylesheet" href="../css/variables.css">
+        <link rel="stylesheet" href="../css/general.css">
+        <link rel="stylesheet" href="../css/chrome.css">
+        <link rel="stylesheet" href="../css/print.css" media="print">
+        <!-- Fonts -->
+        <link rel="stylesheet" href="../FontAwesome/css/font-awesome.css">
+        <link rel="stylesheet" href="../fonts/fonts.css">
+        <!-- Highlight.js Stylesheets -->
+        <link rel="stylesheet" href="../highlight.css">
+        <link rel="stylesheet" href="../tomorrow-night.css">
+        <link rel="stylesheet" href="../ayu-highlight.css">
+
+        <!-- Custom theme stylesheets -->
+    </head>
+    <body>
+        <!-- Provide site root to javascript -->
+        <script type="text/javascript">
+            var path_to_root = "../";
+            var default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "navy" : "light";
+        </script>
+
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script type="text/javascript">
+            try {
+                var theme = localStorage.getItem('mdbook-theme');
+                var sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script type="text/javascript">
+            var theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
+            if (theme === null || theme === undefined) { theme = default_theme; }
+            var html = document.querySelector('html');
+            html.classList.remove('no-js')
+            html.classList.remove('light')
+            html.classList.add(theme);
+            html.classList.add('js');
+        </script>
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script type="text/javascript">
+            var html = document.querySelector('html');
+            var sidebar = 'hidden';
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            }
+            html.classList.remove('sidebar-visible');
+            html.classList.add("sidebar-" + sidebar);
+        </script>
+
+        <nav id="sidebar" class="sidebar" aria-label="Table of contents">
+            <div class="sidebar-scrollbox">
+                <ol class="chapter"><li class="chapter-item expanded "><a href="../../index.html"><strong aria-hidden="true">1.</strong> README</a></li><li class="chapter-item expanded "><div><strong aria-hidden="true">2.</strong> 教材基础</div></li><li><ol class="section"><li class="chapter-item expanded "><a href="../教材基础/1信息化.html"><strong aria-hidden="true">2.1.</strong> 信息化</a></li><li class="chapter-item expanded "><a href="../教材基础/2项目管理基础.html"><strong aria-hidden="true">2.2.</strong> 项目管理基础</a></li><li class="chapter-item expanded "><a href="../教材基础/3立项管理.html"><strong aria-hidden="true">2.3.</strong> 立项管理</a></li><li class="chapter-item expanded "><a href="../教材基础/4整体管理.html"><strong aria-hidden="true">2.4.</strong> 整体管理</a></li><li class="chapter-item expanded "><a href="../教材基础/5范围管理.html" class="active"><strong aria-hidden="true">2.5.</strong> 范围管理</a></li><li class="chapter-item expanded "><a href="../教材基础/6进度管理.html"><strong aria-hidden="true">2.6.</strong> 进度管理</a></li><li class="chapter-item expanded "><a href="../教材基础/7成本管理.html"><strong aria-hidden="true">2.7.</strong> 成本管理</a></li><li class="chapter-item expanded "><a href="../教材基础/8质量管理.html"><strong aria-hidden="true">2.8.</strong> 质量管理</a></li><li class="chapter-item expanded "><a href="../教材基础/9人力资源管理.html"><strong aria-hidden="true">2.9.</strong> 人力资源管理</a></li><li class="chapter-item expanded "><a href="../教材基础/10沟通和干系人管理.html"><strong aria-hidden="true">2.10.</strong> 沟通和干系人管理</a></li><li class="chapter-item expanded "><a href="../教材基础/11风险管理.html"><strong aria-hidden="true">2.11.</strong> 风险管理</a></li><li class="chapter-item expanded "><a href="../教材基础/12采购管理.html"><strong aria-hidden="true">2.12.</strong> 采购管理</a></li><li class="chapter-item expanded "><a href="../教材基础/13合同管理.html"><strong aria-hidden="true">2.13.</strong> 合同管理</a></li><li class="chapter-item expanded "><a href="../教材基础/14文档和配置管理.html"><strong aria-hidden="true">2.14.</strong> 文档和配置管理</a></li><li class="chapter-item expanded "><a href="../教材基础/15组织级项目管理.html"><strong aria-hidden="true">2.15.</strong> 组织级项目管理</a></li><li class="chapter-item expanded "><a href="../教材基础/16流程管理.html"><strong aria-hidden="true">2.16.</strong> 流程管理</a></li><li class="chapter-item expanded "><a href="../教材基础/17项目集.html"><strong aria-hidden="true">2.17.</strong> 项目集</a></li><li class="chapter-item expanded "><a href="../教材基础/18信息安全管理.html"><strong aria-hidden="true">2.18.</strong> 信息安全管理</a></li><li class="chapter-item expanded "><a href="../教材基础/19测试管理.html"><strong aria-hidden="true">2.19.</strong> 测试管理</a></li><li class="chapter-item expanded "><a href="../教材基础/20法律法规.html"><strong aria-hidden="true">2.20.</strong> 法律法规</a></li><li class="chapter-item expanded "><a href="../教材基础/21技术标准.html"><strong aria-hidden="true">2.21.</strong> 技术标准</a></li></ol></li><li class="chapter-item expanded "><div><strong aria-hidden="true">3.</strong> 案例分析</div></li><li><ol class="section"><li class="chapter-item expanded "><a href="../案例分析/案例分析简介.html"><strong aria-hidden="true">3.1.</strong> 案例分析简介</a></li><li class="chapter-item expanded "><a href="../案例分析/常见问题和措施汇总.html"><strong aria-hidden="true">3.2.</strong> 常见问题和措施汇总</a></li><li class="chapter-item expanded "><a href="../案例分析/计算专题.html"><strong aria-hidden="true">3.3.</strong> 计算专题</a></li><li class="chapter-item expanded "><a href="../案例分析/理论题考点汇总.html"><strong aria-hidden="true">3.4.</strong> 理论题考点汇总</a></li></ol></li><li class="chapter-item expanded "><div><strong aria-hidden="true">4.</strong> 论文</div></li><li><ol class="section"><li class="chapter-item expanded "><a href="../论文/十大领域论文.html"><strong aria-hidden="true">4.1.</strong> 十大领域论文</a></li></ol></li><li class="chapter-item expanded "><div><strong aria-hidden="true">5.</strong> 错题记录</div></li><li><ol class="section"><li class="chapter-item expanded "><a href="../错题记录/历年上午真题.html"><strong aria-hidden="true">5.1.</strong> 历年上午真题</a></li><li class="chapter-item expanded "><a href="../错题记录/案例分析真题.html"><strong aria-hidden="true">5.2.</strong> 案例分析真题</a></li></ol></li></ol>
+            </div>
+            <div id="sidebar-resize-handle" class="sidebar-resize-handle"></div>
+        </nav>
+
+        <div id="page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                <div id="menu-bar-hover-placeholder"></div>
+                <div id="menu-bar" class="menu-bar sticky bordered">
+                    <div class="left-buttons">
+                        <button id="sidebar-toggle" class="icon-button" type="button" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
+                            <i class="fa fa-bars"></i>
+                        </button>
+                        <button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
+                            <i class="fa fa-paint-brush"></i>
+                        </button>
+                        <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                            <li role="none"><button role="menuitem" class="theme" id="light">Light (default)</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="rust">Rust</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
+                        </ul>
+                        <button id="search-toggle" class="icon-button" type="button" title="Search. (Shortkey: s)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="S" aria-controls="searchbar">
+                            <i class="fa fa-search"></i>
+                        </button>
+                    </div>
+
+                    <h1 class="menu-title">Project Manager Examine Notes</h1>
+
+                    <div class="right-buttons">
+                        <a href="../print.html" title="Print this book" aria-label="Print this book">
+                            <i id="print-button" class="fa fa-print"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div id="search-wrapper" class="hidden">
+                    <form id="searchbar-outer" class="searchbar-outer">
+                        <input type="search" id="searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+                    </form>
+                    <div id="searchresults-outer" class="searchresults-outer hidden">
+                        <div id="searchresults-header" class="searchresults-header"></div>
+                        <ul id="searchresults">
+                        </ul>
+                    </div>
+                </div>
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script type="text/javascript">
+                    document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="content" class="content">
+                    <main>
+                        <p>分值：3分</p>
+<h1 id="综合图谱"><a class="header" href="#综合图谱">综合图谱</a></h1>
+<p><img src=".assets/1585205011986-9437ea65-f87c-4188-ad23-65176167613b.png" alt="Untitled picture.png" /></p>
+<h1 id="产品范围和项目范围"><a class="header" href="#产品范围和项目范围">产品范围和项目范围</a></h1>
+<ul>
+<li>项目范围
+<ul>
+<li>经过批准的<strong>项目范围说明书</strong></li>
+<li><strong>WBS</strong></li>
+<li><strong>WBS词典</strong></li>
+<li>根据<strong>范围基准</strong>来衡量项目范围是否完成</li>
+</ul>
+</li>
+<li>产品范围
+<ul>
+<li>是项目范围说明书的重要组成部分</li>
+<li>根据<strong>产品是否满足产品描述</strong>来判断产品范围是否完成</li>
+</ul>
+</li>
+</ul>
+<p> </p>
+<h1 id="范围管理计划内容"><a class="header" href="#范围管理计划内容">范围管理计划内容</a></h1>
+<ol>
+<li>如何制定项目范围说明书</li>
+<li>如何根据范围说明书创建WBS</li>
+<li>如何维护和批准WBS</li>
+<li>如何确认和正式验收已完成的项目可交付成果</li>
+<li>如何处理项目范围说明书的变更，与实施整体变更控制过程相连</li>
+</ol>
+<p> </p>
+<h1 id="项目范围说明书的内容"><a class="header" href="#项目范围说明书的内容">项目范围说明书的内容</a></h1>
+<ol>
+<li>产品范围描述</li>
+<li>验收标准</li>
+<li>可交付成果</li>
+<li>项目的除外责任</li>
+<li>制约因素</li>
+<li>假设条件</li>
+</ol>
+<p> </p>
+<h1 id="需求管理计划"><a class="header" href="#需求管理计划">需求管理计划</a></h1>
+<ul>
+<li>描述在项目生命周期内<strong>如何分析、记录和管理需求</strong></li>
+<li>内容
+<ul>
+<li>如何规划、跟踪和汇报各种需求活动</li>
+<li>需求管理需要使用的资源</li>
+<li>培训计划</li>
+<li>项目干系人参与需求管理的策略</li>
+<li>判断项目范围与需求不一致的准则和纠正流程</li>
+<li>需求跟踪结构</li>
+<li>配置管理活动</li>
+</ul>
+</li>
+<li>需求的特征
+<ul>
+<li>可跟踪性</li>
+<li>可验证性：<strong>最基本特性</strong></li>
+</ul>
+</li>
+</ul>
+<p> </p>
+<h1 id="收集需求"><a class="header" href="#收集需求">收集需求</a></h1>
+<h2 id="收集需求的技术和工具"><a class="header" href="#收集需求的技术和工具">收集需求的技术和工具</a></h2>
+<p><img src=".assets/1585205043089-9a8fce80-162b-4037-a0e0-6f44b3561bbe.png" alt="image.png" /></p>
+<h2 id="收集需求的输出"><a class="header" href="#收集需求的输出">收集需求的输出</a></h2>
+<ul>
+<li>需求文件
+<ul>
+<li>业务需求</li>
+<li>干系人需求</li>
+<li>解决方案需求</li>
+<li>项目需求</li>
+<li>过度需求</li>
+<li>与需求有关的假设条件、依赖关系和制约因素</li>
+</ul>
+</li>
+<li>需求跟踪矩阵</li>
+</ul>
+<p> </p>
+<h2 id="需求跟踪"><a class="header" href="#需求跟踪">需求跟踪</a></h2>
+<h3 id="正向反向跟踪"><a class="header" href="#正向反向跟踪">正向反向跟踪</a></h3>
+<p><img src=".assets/1585205088406-a860829a-26c0-47bd-968b-e9b3b8842744.png" alt="image.png" /></p>
+<ul>
+<li><strong>正向跟踪</strong>：检查需求文件中的每个需求是否在工作产品中找到对应点</li>
+<li><strong>反向跟踪</strong>：检查设计文档、产品构件、测试问道等工作成果是否都在需求文档中有出处</li>
+</ul>
+<h3 id="需求跟踪矩阵"><a class="header" href="#需求跟踪矩阵">需求跟踪矩阵</a></h3>
+<p>表示<strong>需求和其他产品元素之间的联系链</strong>，将产品需求从其来源链接到能满足需求的可交付成果上<img src=".assets/1597937251944-ba9d4ef0-ec6f-44fe-8ee6-dedcb3089def.png" alt="" /></p>
+<h1 id="创建wbs"><a class="header" href="#创建wbs">创建WBS</a></h1>
+<h2 id="基本层次划分"><a class="header" href="#基本层次划分">基本层次划分</a></h2>
+<ul>
+<li><strong>里程碑</strong>：里程碑标志着某个可交付成果或者阶段的正式完成。重要的检查点是里程碑，重要的里程碑是基线。</li>
+<li><strong>控制账户</strong>：一种管理控制点。一个控制账户可以有多个工作包，但一个工作包只属于一个控制账户</li>
+<li><strong>规划包</strong>：控制账户之下、工作包之上的WBS要素。随着情况的逐渐清晰，规划包最终被分解成工作包和相应的具体活动</li>
+<li><strong>工作包</strong>：建议大小：最少8小时，最多80小时</li>
+<li><strong>WBS词典</strong>：描述WBS各组成部分的文件</li>
+</ul>
+<h2 id="项目工作分解成wbs的步骤"><a class="header" href="#项目工作分解成wbs的步骤">项目工作分解成WBS的步骤</a></h2>
+<ol>
+<li>识别和分析可交付成果及相关工作</li>
+<li>确定WBS的结构和编排方式</li>
+<li>自上而下逐层细化分解</li>
+<li>为WBS组件制定和分配标识编码</li>
+<li>核实可交付成果分解的程度是恰当的</li>
+</ol>
+<h2 id="创建wbs的划分原则"><a class="header" href="#创建wbs的划分原则">创建WBS的划分原则</a></h2>
+<ol>
+<li>功能或技术原则，考虑将不同人员的工作分开</li>
+<li>组织结构</li>
+<li>系统或子系统。总的系统划分为几个子系统，再对每个子系统进行分解</li>
+<li>项目生命周期的各阶段作为分解的第二层</li>
+<li>产品和可交付成果放在第三层，<strong>主要可交付成果作为第二层</strong></li>
+<li>整合项目团队以外组织来实施的各种组件，作为<strong>外包工作的</strong>一部分。卖方需编制相应的合同WBS</li>
+</ol>
+<h2 id="wbs的表示形式"><a class="header" href="#wbs的表示形式">WBS的表示形式</a></h2>
+<p>举例<img src=".assets/1585205166745-feeb8c87-87a1-4d5c-a383-d941ec83b7e3.png" alt="image.png" /></p>
+<h2 id="wbs分析需要注意的8个方面"><a class="header" href="#wbs分析需要注意的8个方面">WBS分析需要注意的8个方面</a></h2>
+<ol>
+<li>WBS必须<strong>面向可交付成果</strong></li>
+<li>必须符合项目范围</li>
+<li>WBS的底层应该支持计划和控制</li>
+<li>WBS中的元素<strong>有且只有一个人负责</strong></li>
+<li>WBS应控制在<strong>4-6层</strong></li>
+<li>WBS应包括项目管理工作，和分包出去的工作</li>
+<li>WBS编制需要<strong>所有（主要）项目干系人和项目团队成员参与</strong></li>
+<li>WBS可以随项目进展逐步修改更新</li>
+</ol>
+<p> </p>
+<h1 id="确认范围"><a class="header" href="#确认范围">确认范围</a></h1>
+<p>确认范围是<strong>针对项目可交付成果，由客户或发起人在阶段末确认验收的过程</strong>。</p>
+<h2 id="一般步骤"><a class="header" href="#一般步骤">一般步骤</a></h2>
+<ol>
+<li>确定需要进行范围确认的时间</li>
+<li>识别范围确认需要哪些投入</li>
+<li>确认范围正式被接受的标准和要素</li>
+<li>确定范围确认会议的组织步骤</li>
+<li>组织范围确认会议</li>
+</ol>
+<h2 id="范围确认与质量控制和项目收尾的区别"><a class="header" href="#范围确认与质量控制和项目收尾的区别">范围确认与质量控制和项目收尾的区别</a></h2>
+<table><thead><tr><th>范围确认</th><th>质量控制</th><th>项目收尾</th></tr></thead><tbody>
+<tr><td>强调获得客户或发起人的接受</td><td>强调可交付成果的正确性</td><td>强调结束项目的流程性工作和验收产品</td></tr>
+<tr><td>在阶段末进行</td><td>在确认范围前进行，也可同时进行</td><td> </td></tr>
+<tr><td>外部干系人检查验收</td><td>内部质量部门检查</td><td> </td></tr>
+</tbody></table>
+<p> </p>
+<h1 id="控制范围"><a class="header" href="#控制范围">控制范围</a></h1>
+<p>监督项目和产品的范围状态、<strong>管理范围基准变更</strong></p>
+<h2 id="范围蔓延和范围镀金"><a class="header" href="#范围蔓延和范围镀金">范围蔓延和范围镀金</a></h2>
+<ul>
+<li>蔓延：未经控制的范围扩大，客户不断提出新要求</li>
+<li>镀金：项目实施人员尝试新技术，或自己做主为项目加上的格外功能</li>
+</ul>
+<h2 id="范围变更控制的主要工作"><a class="header" href="#范围变更控制的主要工作">范围变更控制的主要工作</a></h2>
+<ol>
+<li>影响导致范围变更的因素，尽量使这些因素向有利的方向发展</li>
+<li>判断范围变更是否已经发生</li>
+<li>范围变更发生时管理实际的变更，确保所有被请求的变更按照项目变更控制流程处理</li>
+</ol>
+
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+                            <a rel="prev" href="../教材基础/4整体管理.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                <i class="fa fa-angle-left"></i>
+                            </a>
+                            <a rel="next" href="../教材基础/6进度管理.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                                <i class="fa fa-angle-right"></i>
+                            </a>
+                        <div style="clear: both"></div>
+                    </nav>
+                </div>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+                    <a rel="prev" href="../教材基础/4整体管理.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                        <i class="fa fa-angle-left"></i>
+                    </a>
+                    <a rel="next" href="../教材基础/6进度管理.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                        <i class="fa fa-angle-right"></i>
+                    </a>
+            </nav>
+
+        </div>
+
+        <script type="text/javascript">
+            window.playground_copyable = true;
+        </script>
+        <script src="../elasticlunr.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../mark.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../searcher.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../clipboard.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../highlight.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../book.js" type="text/javascript" charset="utf-8"></script>
+
+        <!-- Custom JS scripts -->
+    </body>
+</html>

@@ -1,0 +1,380 @@
+<!DOCTYPE HTML>
+<html lang="en" class="sidebar-visible no-js light">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>组织级项目管理 - Project Manager Examine Notes</title>
+        <!-- Custom HTML head -->
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff" />
+
+        <link rel="icon" href="../favicon.svg">
+        <link rel="shortcut icon" href="../favicon.png">
+        <link rel="stylesheet" href="../css/variables.css">
+        <link rel="stylesheet" href="../css/general.css">
+        <link rel="stylesheet" href="../css/chrome.css">
+        <link rel="stylesheet" href="../css/print.css" media="print">
+        <!-- Fonts -->
+        <link rel="stylesheet" href="../FontAwesome/css/font-awesome.css">
+        <link rel="stylesheet" href="../fonts/fonts.css">
+        <!-- Highlight.js Stylesheets -->
+        <link rel="stylesheet" href="../highlight.css">
+        <link rel="stylesheet" href="../tomorrow-night.css">
+        <link rel="stylesheet" href="../ayu-highlight.css">
+
+        <!-- Custom theme stylesheets -->
+    </head>
+    <body>
+        <!-- Provide site root to javascript -->
+        <script type="text/javascript">
+            var path_to_root = "../";
+            var default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "navy" : "light";
+        </script>
+
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script type="text/javascript">
+            try {
+                var theme = localStorage.getItem('mdbook-theme');
+                var sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script type="text/javascript">
+            var theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
+            if (theme === null || theme === undefined) { theme = default_theme; }
+            var html = document.querySelector('html');
+            html.classList.remove('no-js')
+            html.classList.remove('light')
+            html.classList.add(theme);
+            html.classList.add('js');
+        </script>
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script type="text/javascript">
+            var html = document.querySelector('html');
+            var sidebar = 'hidden';
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            }
+            html.classList.remove('sidebar-visible');
+            html.classList.add("sidebar-" + sidebar);
+        </script>
+
+        <nav id="sidebar" class="sidebar" aria-label="Table of contents">
+            <div class="sidebar-scrollbox">
+                <ol class="chapter"><li class="chapter-item expanded "><a href="../../index.html"><strong aria-hidden="true">1.</strong> README</a></li><li class="chapter-item expanded "><div><strong aria-hidden="true">2.</strong> 教材基础</div></li><li><ol class="section"><li class="chapter-item expanded "><a href="../教材基础/1信息化.html"><strong aria-hidden="true">2.1.</strong> 信息化</a></li><li class="chapter-item expanded "><a href="../教材基础/2项目管理基础.html"><strong aria-hidden="true">2.2.</strong> 项目管理基础</a></li><li class="chapter-item expanded "><a href="../教材基础/3立项管理.html"><strong aria-hidden="true">2.3.</strong> 立项管理</a></li><li class="chapter-item expanded "><a href="../教材基础/4整体管理.html"><strong aria-hidden="true">2.4.</strong> 整体管理</a></li><li class="chapter-item expanded "><a href="../教材基础/5范围管理.html"><strong aria-hidden="true">2.5.</strong> 范围管理</a></li><li class="chapter-item expanded "><a href="../教材基础/6进度管理.html"><strong aria-hidden="true">2.6.</strong> 进度管理</a></li><li class="chapter-item expanded "><a href="../教材基础/7成本管理.html"><strong aria-hidden="true">2.7.</strong> 成本管理</a></li><li class="chapter-item expanded "><a href="../教材基础/8质量管理.html"><strong aria-hidden="true">2.8.</strong> 质量管理</a></li><li class="chapter-item expanded "><a href="../教材基础/9人力资源管理.html"><strong aria-hidden="true">2.9.</strong> 人力资源管理</a></li><li class="chapter-item expanded "><a href="../教材基础/10沟通和干系人管理.html"><strong aria-hidden="true">2.10.</strong> 沟通和干系人管理</a></li><li class="chapter-item expanded "><a href="../教材基础/11风险管理.html"><strong aria-hidden="true">2.11.</strong> 风险管理</a></li><li class="chapter-item expanded "><a href="../教材基础/12采购管理.html"><strong aria-hidden="true">2.12.</strong> 采购管理</a></li><li class="chapter-item expanded "><a href="../教材基础/13合同管理.html"><strong aria-hidden="true">2.13.</strong> 合同管理</a></li><li class="chapter-item expanded "><a href="../教材基础/14文档和配置管理.html"><strong aria-hidden="true">2.14.</strong> 文档和配置管理</a></li><li class="chapter-item expanded "><a href="../教材基础/15组织级项目管理.html" class="active"><strong aria-hidden="true">2.15.</strong> 组织级项目管理</a></li><li class="chapter-item expanded "><a href="../教材基础/16流程管理.html"><strong aria-hidden="true">2.16.</strong> 流程管理</a></li><li class="chapter-item expanded "><a href="../教材基础/17项目集.html"><strong aria-hidden="true">2.17.</strong> 项目集</a></li><li class="chapter-item expanded "><a href="../教材基础/18信息安全管理.html"><strong aria-hidden="true">2.18.</strong> 信息安全管理</a></li><li class="chapter-item expanded "><a href="../教材基础/19测试管理.html"><strong aria-hidden="true">2.19.</strong> 测试管理</a></li><li class="chapter-item expanded "><a href="../教材基础/20法律法规.html"><strong aria-hidden="true">2.20.</strong> 法律法规</a></li><li class="chapter-item expanded "><a href="../教材基础/21技术标准.html"><strong aria-hidden="true">2.21.</strong> 技术标准</a></li></ol></li><li class="chapter-item expanded "><div><strong aria-hidden="true">3.</strong> 案例分析</div></li><li><ol class="section"><li class="chapter-item expanded "><a href="../案例分析/案例分析简介.html"><strong aria-hidden="true">3.1.</strong> 案例分析简介</a></li><li class="chapter-item expanded "><a href="../案例分析/常见问题和措施汇总.html"><strong aria-hidden="true">3.2.</strong> 常见问题和措施汇总</a></li><li class="chapter-item expanded "><a href="../案例分析/计算专题.html"><strong aria-hidden="true">3.3.</strong> 计算专题</a></li><li class="chapter-item expanded "><a href="../案例分析/理论题考点汇总.html"><strong aria-hidden="true">3.4.</strong> 理论题考点汇总</a></li></ol></li><li class="chapter-item expanded "><div><strong aria-hidden="true">4.</strong> 论文</div></li><li><ol class="section"><li class="chapter-item expanded "><a href="../论文/十大领域论文.html"><strong aria-hidden="true">4.1.</strong> 十大领域论文</a></li></ol></li><li class="chapter-item expanded "><div><strong aria-hidden="true">5.</strong> 错题记录</div></li><li><ol class="section"><li class="chapter-item expanded "><a href="../错题记录/历年上午真题.html"><strong aria-hidden="true">5.1.</strong> 历年上午真题</a></li><li class="chapter-item expanded "><a href="../错题记录/案例分析真题.html"><strong aria-hidden="true">5.2.</strong> 案例分析真题</a></li></ol></li></ol>
+            </div>
+            <div id="sidebar-resize-handle" class="sidebar-resize-handle"></div>
+        </nav>
+
+        <div id="page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                <div id="menu-bar-hover-placeholder"></div>
+                <div id="menu-bar" class="menu-bar sticky bordered">
+                    <div class="left-buttons">
+                        <button id="sidebar-toggle" class="icon-button" type="button" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
+                            <i class="fa fa-bars"></i>
+                        </button>
+                        <button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
+                            <i class="fa fa-paint-brush"></i>
+                        </button>
+                        <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                            <li role="none"><button role="menuitem" class="theme" id="light">Light (default)</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="rust">Rust</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
+                        </ul>
+                        <button id="search-toggle" class="icon-button" type="button" title="Search. (Shortkey: s)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="S" aria-controls="searchbar">
+                            <i class="fa fa-search"></i>
+                        </button>
+                    </div>
+
+                    <h1 class="menu-title">Project Manager Examine Notes</h1>
+
+                    <div class="right-buttons">
+                        <a href="../print.html" title="Print this book" aria-label="Print this book">
+                            <i id="print-button" class="fa fa-print"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div id="search-wrapper" class="hidden">
+                    <form id="searchbar-outer" class="searchbar-outer">
+                        <input type="search" id="searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+                    </form>
+                    <div id="searchresults-outer" class="searchresults-outer hidden">
+                        <div id="searchresults-header" class="searchresults-header"></div>
+                        <ul id="searchresults">
+                        </ul>
+                    </div>
+                </div>
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script type="text/javascript">
+                    document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="content" class="content">
+                    <main>
+                        <h1 id="知识管理"><a class="header" href="#知识管理">知识管理</a></h1>
+<h2 id="四个方面工作"><a class="header" href="#四个方面工作">四个方面工作</a></h2>
+<ol>
+<li>自上而下的监测、推动与知识有关的活动</li>
+<li>创造和维护知识基础设施</li>
+<li>更新组织和转化知识资产</li>
+<li>使用知识以提高其价值</li>
+</ol>
+<h2 id="知识管理工具分类"><a class="header" href="#知识管理工具分类">知识管理工具分类</a></h2>
+<ul>
+<li>知识生成工具</li>
+<li>知识编码工具</li>
+<li>知识转移工具</li>
+</ul>
+<p> </p>
+<h2 id="项目知识管理制度平台的建设"><a class="header" href="#项目知识管理制度平台的建设">项目知识管理制度平台的建设</a></h2>
+<ol>
+<li>创造更多的团队成员之间的交流机会。可以从以下三个方面着手加强团队成员的交流机会
+<ol>
+<li>组织物理环境的改造</li>
+<li>组织结构的扁平化</li>
+<li>设立网络虚拟社区</li>
+</ol>
+</li>
+<li>建立显性知识索引。显性知识的载体
+<ol>
+<li>显性知识文本</li>
+<li>显性知识的特有人</li>
+<li>显性知识所在的过程</li>
+</ol>
+</li>
+<li>组织高层的参与和支持</li>
+<li>与绩效评估体系的结合</li>
+</ol>
+<h2 id="隐性知识"><a class="header" href="#隐性知识">隐性知识</a></h2>
+<h3 id="共享方法"><a class="header" href="#共享方法">共享方法</a></h3>
+<ul>
+<li>编码化</li>
+<li>面对面交流</li>
+<li>人员轮换和网络</li>
+</ul>
+<h3 id="共享途径"><a class="header" href="#共享途径">共享途径</a></h3>
+<ol>
+<li>创建学习型组织，充分发挥知识团队的作用。</li>
+<li>构建项目组织内部的信任机制。</li>
+<li>项目组织隐性知识的编码化。</li>
+<li>设立知识主管，加强隐性知识学习与共享。</li>
+<li>项目组织内部建立限制知识垄断的机制。</li>
+<li>通过利益驱动，促进隐性知识共享。</li>
+<li>创建以人为本的组织文化</li>
+</ol>
+<h2 id="学习型组织"><a class="header" href="#学习型组织">学习型组织</a></h2>
+<h3 id="5要素"><a class="header" href="#5要素">5要素</a></h3>
+<ol>
+<li>建立共同愿景</li>
+<li>团队学习</li>
+<li>改变心智模式</li>
+<li>自我超越</li>
+<li>系统思考</li>
+</ol>
+<h3 id="8个特征好"><a class="header" href="#8个特征好">8个特征（好）</a></h3>
+<ol>
+<li>组织成员拥有一个共同的愿景。</li>
+<li>组织有多个创造性个体组成。</li>
+<li>善于不断学习。</li>
+<li>扁平式结构。</li>
+<li>自主管理。</li>
+<li>组织的边界将被重新界定。</li>
+<li>家庭与事业的平衡。</li>
+<li>领导者的新角色</li>
+</ol>
+<h1 id=""><a class="header" href="#"> </a></h1>
+<h2 id="著作权人对作品享有的权力"><a class="header" href="#著作权人对作品享有的权力">著作权人对作品享有的权力：</a></h2>
+<ul>
+<li><strong>发表权：作者终身和死后50年，可继承</strong></li>
+<li><strong>署名权</strong>：无年限要求</li>
+<li>**修改权：**无年限要求</li>
+<li>**保护作品完整权：**无年限要求</li>
+<li><strong>使用权：作者终身和死后50年</strong></li>
+</ul>
+<h2 id="-1"><a class="header" href="#-1"> </a></h2>
+<h2 id="软件著作权仅针对程序和文档"><a class="header" href="#软件著作权仅针对程序和文档">软件著作权：仅针对程序和文档</a></h2>
+<h3 id="归单位所有著作权的条件"><a class="header" href="#归单位所有著作权的条件">归单位所有著作权的条件</a></h3>
+<ul>
+<li>针对本职工作中明确规定的开发目标所开发的软件。</li>
+<li>开发出的软件属于从事本职工作活动的结果。</li>
+<li>使用了单位或组织的资金、专用设备、未公开的信息等物质、技术条件，并由单位或组织承担责任的软件</li>
+</ul>
+<h3 id="委托产权的归属"><a class="header" href="#委托产权的归属">委托产权的归属</a></h3>
+<ul>
+<li>接受他人委托而进行开发的软件
+<ul>
+<li>其<strong>著作权的归属应由委托人与受托人签订书面合同</strong>约定</li>
+<li>如果<strong>没有签订合同</strong>，或合同中未规定的，则其<strong>著作权由受托人享有</strong>。</li>
+</ul>
+</li>
+<li>国家机关下达任务开发的软件
+<ul>
+<li>著作权的归属由项目任务书或合同规定</li>
+<li>若未明确规定，其著作权应归任务接受方所有</li>
+</ul>
+</li>
+</ul>
+<h3 id="软件著作权包括"><a class="header" href="#软件著作权包括">软件著作权包括</a></h3>
+<ol>
+<li>发表权</li>
+<li>署名权</li>
+<li>修改权</li>
+<li>复制权</li>
+<li>发行权</li>
+<li>出租权</li>
+<li>信息网络传播权</li>
+<li>翻译权</li>
+<li>使用许可权、获得报酬权、转让权</li>
+</ol>
+<h2 id="其他知识产权的年限"><a class="header" href="#其他知识产权的年限">其他知识产权的年限</a></h2>
+<ul>
+<li>注册商标权：有效期限<strong>10年</strong></li>
+<li>发明专利权：保护期限<strong>20年</strong></li>
+<li>实用新型和外观设计专利权：保护期限<strong>10年</strong></li>
+</ul>
+<h1 id="战略管理"><a class="header" href="#战略管理">战略管理</a></h1>
+<h2 id="战略实施"><a class="header" href="#战略实施">战略实施</a></h2>
+<p>战略实施是一个自上而下的动态管理过程。所谓“自上而下”主要是指，战略目标在组织高层达成一致后，再向中下层转达，并在各项工作中得以分解、落实。所谓“动态”主要是指战略实施的过程中，常常需要在“<strong>分析-决策-执行-反馈-再分析-再决策-再执行</strong>”的不断循环中达成战略目标。主要步骤：</p>
+<ol>
+<li><strong>战略启动</strong></li>
+<li><strong>战略计划实施</strong></li>
+<li><strong>组织战略运行</strong></li>
+<li><strong>组织战略的控制与评估</strong></li>
+</ol>
+<h2 id="组织战略因素"><a class="header" href="#组织战略因素">组织战略因素</a></h2>
+<ol>
+<li>战略目标：组织战略行动要达到的预期结果</li>
+<li>战略方针：特定阶段知道组织全局的方针</li>
+<li>战略实施能力：战略实施的物质基础，<strong>可以是组织自身拥有的，也可以是组织外部的</strong></li>
+<li>战略措施：在组织架构、权利分配、监督机制、授权环境、财务管理和流程管理等方面的<strong>安排</strong>，以及其他所采取的各种全局性的切实可行的<strong>方法和步骤</strong></li>
+</ol>
+<ul>
+<li> </li>
+</ul>
+<h2 id="组织战略类型和层次"><a class="header" href="#组织战略类型和层次">组织战略类型和层次</a></h2>
+<h3 id="1-战略类型"><a class="header" href="#1-战略类型">1 战略类型</a></h3>
+<table><thead><tr><th>类型</th><th>特点</th></tr></thead><tbody>
+<tr><td>**防御者战略 **</td><td>作为相对成熟行业中的成熟组织，</td></tr>
+<tr><td>组织内部产品线较窄， 同时组织高层也不愿意积极探索熟知领域以外的机会。</td><td></td></tr>
+<tr><td>**探索者战略 **</td><td>组织发现和发掘新产品、</td></tr>
+<tr><td>新技术和新市场可能为组织提供的发展机会</td><td></td></tr>
+<tr><td>**分析者战略 **</td><td>保证组织在规避风险的同时，</td></tr>
+<tr><td>又能够提供创新产品和服务</td><td></td></tr>
+<tr><td>**反应者战略 **</td><td>对外部环境缺乏控制， 不敏感的组织类型，</td></tr>
+<tr><td>它既缺乏适应外部竞争的能力， 又缺乏有效的内部控制机能</td><td></td></tr>
+</tbody></table>
+<h3 id="2-组织类型"><a class="header" href="#2-组织类型">2 组织类型</a></h3>
+<table><thead><tr><th>类型</th><th>特点</th></tr></thead><tbody>
+<tr><td><strong>指挥型</strong></td><td>组织高层考虑如何制定一个最佳战略，</td></tr>
+<tr><td>然后按照该战略进行实施， 相关战略执行人员要向组织高层提交战略实施的详细报告， 组织高层根据报告情况， 再对战略进行必要的调整，</td><td></td></tr>
+<tr><td>并对具体的管理和执行人员实施</td><td></td></tr>
+<tr><td>**变革型 **</td><td>组织是以如何实施组织战略这一主题展开的。</td></tr>
+<tr><td>在战略实施中， 组织高层决策者或在其他方面的帮助下需要对组织进行一系列的变革</td><td></td></tr>
+<tr><td>**合作型 **</td><td>组织的最高层要与其他高层管理人员分担相关的战略责任，</td></tr>
+<tr><td>以发挥集体的智慧。</td><td></td></tr>
+<tr><td>**文化型 **</td><td>运用组织文化手段，</td></tr>
+<tr><td>不断向全体成员传播战略思想， 以便在组织内部建立起共同的价值观和行为准则， 使所有成员在共同的文化基础上参与战略的实施活动</td><td></td></tr>
+<tr><td>**增长型 **</td><td>组织高层从如何激励一般管理人员制定实施战略的积极性及主动性来着眼战略的制定和实施</td></tr>
+</tbody></table>
+<h3 id="3-战略管理的层次两种分类"><a class="header" href="#3-战略管理的层次两种分类">3 战略管理的层次（两种分类）</a></h3>
+<table><thead><tr><th>类型</th><th>特点</th></tr></thead><tbody>
+<tr><td><strong>目标层</strong></td><td>介绍和说明组织的战略目标，</td></tr>
+<tr><td>以及确定目标的主要依据， 以及对战略目标的高层分解等内容， 一般包括组织的基本战略目标、 基本战略目标的阶段性体现、 战略目标体系及其分解、</td><td></td></tr>
+<tr><td>目标的分解原则和方法、 目标之间的依赖关系， 及对各层次目标的相关解释和说明等（针对组织系统自身）</td><td></td></tr>
+<tr><td><strong>方针层</strong></td><td>说明了在组织目标达成过程中，</td></tr>
+<tr><td>组织应该坚持的主要原则和方针等， 是对组织战略行动的具体指导。 如对组织战略的指导性方针， 限制性的原则等对战略具体化、 细则化后的政策、 制度、</td><td></td></tr>
+<tr><td>体制、 组织结构设计等方面的内容。（针对组织系统环境或系统中的一般问题而建议采取的一些基本原则、 方法和途径）</td><td></td></tr>
+<tr><td><strong>行为层</strong></td><td>在具体的执行层面，</td></tr>
+<tr><td>为了落实组织的战略目标和方针所采取的行动， 具体包括各种主要工程、 对策措施、 相关程序和流程等。（针对组织战略层面的具体问题，</td><td></td></tr>
+<tr><td>并以重点工程、主要任务， 以及计划、 规划等形式出现在行为层）</td><td></td></tr>
+<tr><td>类型</td><td>特点</td></tr>
+<tr><td>**组织层 **</td><td>保证全部事业单元必须符合作为一个整体的组织的利益，</td></tr>
+<tr><td>在可接受和控制的风险水平下，使成本、 收益和资产结构获得均衡发展</td><td></td></tr>
+<tr><td>**事业层 **</td><td>如何在组织总体战略框架内，</td></tr>
+<tr><td>在该事业单元应该如何竞争,每一个事业单元按照自身能力和竞争的需要开发自己的战略， 同时还必须与整体的组织能力和竞争保持一致</td><td></td></tr>
+<tr><td><strong>职能层</strong></td><td>配合组织整体未来的发展，</td></tr>
+<tr><td>以及各事业层战略发展的现实需要， 而制定的有关技术研发、生产制造、 市场营销、 人力资源、 财务管理等方面的发展战略， 组织运行结构等方面的战略</td><td></td></tr>
+</tbody></table>
+<h1 id="组织级项目管理"><a class="header" href="#组织级项目管理">组织级项目管理</a></h1>
+<h2 id="组织级项目管理框架"><a class="header" href="#组织级项目管理框架">组织级项目管理框架</a></h2>
+<ol>
+<li>最佳实践</li>
+<li>组织能力</li>
+<li>成果</li>
+</ol>
+<h2 id="组织项目管理成熟度模型opm3"><a class="header" href="#组织项目管理成熟度模型opm3">组织项目管理成熟度模型OPM3</a></h2>
+<ul>
+<li>第一维：成熟度四个梯级
+<ul>
+<li>标准化的</li>
+<li>可测量的</li>
+<li>可控制的</li>
+<li>持续改进的</li>
+</ul>
+</li>
+<li>第二维：十大领域和五个过程</li>
+<li>第三维：组织项目级管理的三个版图层次</li>
+</ul>
+
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+                            <a rel="prev" href="../教材基础/14文档和配置管理.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                <i class="fa fa-angle-left"></i>
+                            </a>
+                            <a rel="next" href="../教材基础/16流程管理.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                                <i class="fa fa-angle-right"></i>
+                            </a>
+                        <div style="clear: both"></div>
+                    </nav>
+                </div>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+                    <a rel="prev" href="../教材基础/14文档和配置管理.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                        <i class="fa fa-angle-left"></i>
+                    </a>
+                    <a rel="next" href="../教材基础/16流程管理.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                        <i class="fa fa-angle-right"></i>
+                    </a>
+            </nav>
+
+        </div>
+
+        <script type="text/javascript">
+            window.playground_copyable = true;
+        </script>
+        <script src="../elasticlunr.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../mark.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../searcher.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../clipboard.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../highlight.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../book.js" type="text/javascript" charset="utf-8"></script>
+
+        <!-- Custom JS scripts -->
+    </body>
+</html>

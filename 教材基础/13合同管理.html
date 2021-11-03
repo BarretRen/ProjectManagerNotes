@@ -1,0 +1,314 @@
+<!DOCTYPE HTML>
+<html lang="en" class="sidebar-visible no-js light">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>合同管理 - Project Manager Examine Notes</title>
+        <!-- Custom HTML head -->
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff" />
+
+        <link rel="icon" href="../favicon.svg">
+        <link rel="shortcut icon" href="../favicon.png">
+        <link rel="stylesheet" href="../css/variables.css">
+        <link rel="stylesheet" href="../css/general.css">
+        <link rel="stylesheet" href="../css/chrome.css">
+        <link rel="stylesheet" href="../css/print.css" media="print">
+        <!-- Fonts -->
+        <link rel="stylesheet" href="../FontAwesome/css/font-awesome.css">
+        <link rel="stylesheet" href="../fonts/fonts.css">
+        <!-- Highlight.js Stylesheets -->
+        <link rel="stylesheet" href="../highlight.css">
+        <link rel="stylesheet" href="../tomorrow-night.css">
+        <link rel="stylesheet" href="../ayu-highlight.css">
+
+        <!-- Custom theme stylesheets -->
+    </head>
+    <body>
+        <!-- Provide site root to javascript -->
+        <script type="text/javascript">
+            var path_to_root = "../";
+            var default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "navy" : "light";
+        </script>
+
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script type="text/javascript">
+            try {
+                var theme = localStorage.getItem('mdbook-theme');
+                var sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script type="text/javascript">
+            var theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
+            if (theme === null || theme === undefined) { theme = default_theme; }
+            var html = document.querySelector('html');
+            html.classList.remove('no-js')
+            html.classList.remove('light')
+            html.classList.add(theme);
+            html.classList.add('js');
+        </script>
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script type="text/javascript">
+            var html = document.querySelector('html');
+            var sidebar = 'hidden';
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            }
+            html.classList.remove('sidebar-visible');
+            html.classList.add("sidebar-" + sidebar);
+        </script>
+
+        <nav id="sidebar" class="sidebar" aria-label="Table of contents">
+            <div class="sidebar-scrollbox">
+                <ol class="chapter"><li class="chapter-item expanded "><a href="../../index.html"><strong aria-hidden="true">1.</strong> README</a></li><li class="chapter-item expanded "><div><strong aria-hidden="true">2.</strong> 教材基础</div></li><li><ol class="section"><li class="chapter-item expanded "><a href="../教材基础/1信息化.html"><strong aria-hidden="true">2.1.</strong> 信息化</a></li><li class="chapter-item expanded "><a href="../教材基础/2项目管理基础.html"><strong aria-hidden="true">2.2.</strong> 项目管理基础</a></li><li class="chapter-item expanded "><a href="../教材基础/3立项管理.html"><strong aria-hidden="true">2.3.</strong> 立项管理</a></li><li class="chapter-item expanded "><a href="../教材基础/4整体管理.html"><strong aria-hidden="true">2.4.</strong> 整体管理</a></li><li class="chapter-item expanded "><a href="../教材基础/5范围管理.html"><strong aria-hidden="true">2.5.</strong> 范围管理</a></li><li class="chapter-item expanded "><a href="../教材基础/6进度管理.html"><strong aria-hidden="true">2.6.</strong> 进度管理</a></li><li class="chapter-item expanded "><a href="../教材基础/7成本管理.html"><strong aria-hidden="true">2.7.</strong> 成本管理</a></li><li class="chapter-item expanded "><a href="../教材基础/8质量管理.html"><strong aria-hidden="true">2.8.</strong> 质量管理</a></li><li class="chapter-item expanded "><a href="../教材基础/9人力资源管理.html"><strong aria-hidden="true">2.9.</strong> 人力资源管理</a></li><li class="chapter-item expanded "><a href="../教材基础/10沟通和干系人管理.html"><strong aria-hidden="true">2.10.</strong> 沟通和干系人管理</a></li><li class="chapter-item expanded "><a href="../教材基础/11风险管理.html"><strong aria-hidden="true">2.11.</strong> 风险管理</a></li><li class="chapter-item expanded "><a href="../教材基础/12采购管理.html"><strong aria-hidden="true">2.12.</strong> 采购管理</a></li><li class="chapter-item expanded "><a href="../教材基础/13合同管理.html" class="active"><strong aria-hidden="true">2.13.</strong> 合同管理</a></li><li class="chapter-item expanded "><a href="../教材基础/14文档和配置管理.html"><strong aria-hidden="true">2.14.</strong> 文档和配置管理</a></li><li class="chapter-item expanded "><a href="../教材基础/15组织级项目管理.html"><strong aria-hidden="true">2.15.</strong> 组织级项目管理</a></li><li class="chapter-item expanded "><a href="../教材基础/16流程管理.html"><strong aria-hidden="true">2.16.</strong> 流程管理</a></li><li class="chapter-item expanded "><a href="../教材基础/17项目集.html"><strong aria-hidden="true">2.17.</strong> 项目集</a></li><li class="chapter-item expanded "><a href="../教材基础/18信息安全管理.html"><strong aria-hidden="true">2.18.</strong> 信息安全管理</a></li><li class="chapter-item expanded "><a href="../教材基础/19测试管理.html"><strong aria-hidden="true">2.19.</strong> 测试管理</a></li><li class="chapter-item expanded "><a href="../教材基础/20法律法规.html"><strong aria-hidden="true">2.20.</strong> 法律法规</a></li><li class="chapter-item expanded "><a href="../教材基础/21技术标准.html"><strong aria-hidden="true">2.21.</strong> 技术标准</a></li></ol></li><li class="chapter-item expanded "><div><strong aria-hidden="true">3.</strong> 案例分析</div></li><li><ol class="section"><li class="chapter-item expanded "><a href="../案例分析/案例分析简介.html"><strong aria-hidden="true">3.1.</strong> 案例分析简介</a></li><li class="chapter-item expanded "><a href="../案例分析/常见问题和措施汇总.html"><strong aria-hidden="true">3.2.</strong> 常见问题和措施汇总</a></li><li class="chapter-item expanded "><a href="../案例分析/计算专题.html"><strong aria-hidden="true">3.3.</strong> 计算专题</a></li><li class="chapter-item expanded "><a href="../案例分析/理论题考点汇总.html"><strong aria-hidden="true">3.4.</strong> 理论题考点汇总</a></li></ol></li><li class="chapter-item expanded "><div><strong aria-hidden="true">4.</strong> 论文</div></li><li><ol class="section"><li class="chapter-item expanded "><a href="../论文/十大领域论文.html"><strong aria-hidden="true">4.1.</strong> 十大领域论文</a></li></ol></li><li class="chapter-item expanded "><div><strong aria-hidden="true">5.</strong> 错题记录</div></li><li><ol class="section"><li class="chapter-item expanded "><a href="../错题记录/历年上午真题.html"><strong aria-hidden="true">5.1.</strong> 历年上午真题</a></li><li class="chapter-item expanded "><a href="../错题记录/案例分析真题.html"><strong aria-hidden="true">5.2.</strong> 案例分析真题</a></li></ol></li></ol>
+            </div>
+            <div id="sidebar-resize-handle" class="sidebar-resize-handle"></div>
+        </nav>
+
+        <div id="page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                <div id="menu-bar-hover-placeholder"></div>
+                <div id="menu-bar" class="menu-bar sticky bordered">
+                    <div class="left-buttons">
+                        <button id="sidebar-toggle" class="icon-button" type="button" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
+                            <i class="fa fa-bars"></i>
+                        </button>
+                        <button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
+                            <i class="fa fa-paint-brush"></i>
+                        </button>
+                        <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                            <li role="none"><button role="menuitem" class="theme" id="light">Light (default)</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="rust">Rust</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
+                        </ul>
+                        <button id="search-toggle" class="icon-button" type="button" title="Search. (Shortkey: s)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="S" aria-controls="searchbar">
+                            <i class="fa fa-search"></i>
+                        </button>
+                    </div>
+
+                    <h1 class="menu-title">Project Manager Examine Notes</h1>
+
+                    <div class="right-buttons">
+                        <a href="../print.html" title="Print this book" aria-label="Print this book">
+                            <i id="print-button" class="fa fa-print"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div id="search-wrapper" class="hidden">
+                    <form id="searchbar-outer" class="searchbar-outer">
+                        <input type="search" id="searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+                    </form>
+                    <div id="searchresults-outer" class="searchresults-outer hidden">
+                        <div id="searchresults-header" class="searchresults-header"></div>
+                        <ul id="searchresults">
+                        </ul>
+                    </div>
+                </div>
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script type="text/javascript">
+                    document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="content" class="content">
+                    <main>
+                        <p>分值：1分</p>
+<h1 id="合同的分类"><a class="header" href="#合同的分类">合同的分类</a></h1>
+<ul>
+<li>范围分类：
+<ul>
+<li>总承包合同：<strong>有利于发挥卖方的专业优势</strong></li>
+<li>单项承包合同：有利于吸引各多的卖方参与投标竞争，买方可以选择在单项上实力强的卖方</li>
+<li>分包合同：5个条件
+<ul>
+<li>经过买方认可</li>
+<li>分包的部分必须是<strong>项目非主体工作</strong></li>
+<li>只能分包部分项目，<strong>不能转包整个项目</strong></li>
+<li>分包方必须具备相应的资质条件</li>
+<li>分包方不能在此分包</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>付款方式：
+<ul>
+<li>总价合同：
+<ul>
+<li><strong>固定总价合同FFP</strong>：固定不再变了，卖方自己承担盈亏</li>
+<li><strong>总价+激励费用合同FPIF</strong></li>
+<li><strong>总价+经济价格调整合同FP-EPA</strong>：持续时间长的合同</li>
+</ul>
+</li>
+<li>成本补偿合同
+<ul>
+<li><strong>成本+固定费用合同CPFF</strong>：成本+买方一次性给一笔利润</li>
+<li><strong>成本+激励费用合同CPIF</strong>：成本+买方根据目标完成百分比支付利润</li>
+<li><strong>成本+奖励费用合同CPAF</strong>：成本+买方凭主观支付一笔利润</li>
+</ul>
+</li>
+<li>工料合同T&amp;M：<strong>计划价格*实际量</strong>，实报实销，激发积极性</li>
+</ul>
+</li>
+</ul>
+<h5 id="从风险类型上来讲"><a class="header" href="#从风险类型上来讲">从风险类型上来讲：</a></h5>
+<p>对买方：风险最小的是固定总价合同（FFP）；风险最大的是成本加固定费用合同（CPFF）。对卖方：风险最小的是成本加固定费用合同（CPFF）；风险最大的是固定总价合同（FFP）。</p>
+<h1 id="合同类型的选择"><a class="header" href="#合同类型的选择">合同类型的选择</a></h1>
+<ul>
+<li>总价合同
+<ul>
+<li>适合工作范围明确，项目的设计以具备详细的细节</li>
+<li>卖方承担成本风险</li>
+</ul>
+</li>
+<li>成本合同
+<ul>
+<li>工作范围不清楚</li>
+<li>买方承担成本风险</li>
+</ul>
+</li>
+<li>工料合同
+<ul>
+<li>适合工作性质清楚、范围不是很清楚，工作不复杂由需要快速签订合同</li>
+<li>金额小、工期短、不复杂</li>
+<li>双方分担风险</li>
+</ul>
+</li>
+<li>单项承包合同：购买标准产品，数量不大</li>
+</ul>
+<h1 id="合同的内容"><a class="header" href="#合同的内容">合同的内容</a></h1>
+<ol>
+<li>项目名称</li>
+<li>标的内容和范围</li>
+<li>项目的质量要求</li>
+<li>项目的计划、进度地点、地域和方式</li>
+<li>项目建设过程中的各种期限</li>
+<li>技术情报和资料的保密</li>
+<li>风险责任承担</li>
+<li>技术成果的归属</li>
+<li>验收的标准和方法</li>
+<li>价款、报酬（或使用费）及其支付方式</li>
+<li>违约金或者损失賠偿的计算方法</li>
+<li>解决争议的方法</li>
+<li>名词术语解释</li>
+</ol>
+<p> </p>
+<h1 id="合同管理过程"><a class="header" href="#合同管理过程">合同管理过程</a></h1>
+<ol>
+<li>合同签订管理</li>
+<li>合同履行管理</li>
+<li>合同变更管理</li>
+<li>合同档案管理：<strong>整个合同管理的基础</strong></li>
+<li>合同违约索赔管理</li>
+</ol>
+<h1 id="关于合同一致理解的建议"><a class="header" href="#关于合同一致理解的建议">关于合同一致理解的建议</a></h1>
+<ol>
+<li><strong>用国家或行业标准的合同格式。</strong></li>
+<li><strong>对合同标的的描述务必要达到准确、简练、清晰的标准要求，切忌含混不清。</strong></li>
+<li><strong>对于合同中需要变更、转让、解除等内容也应详细说明。</strong></li>
+<li><strong>如果合同有附件，对于附件的内容也应精心准备，并注意保持与主合同一致，不要相互之间产生矛盾</strong></li>
+<li>对于既有投标书，又有正式合同书、附件等包含多项内容的合同，要在条款中列明适用顺序。</li>
+<li>保证合同订立的合法性、有效性，当事人可以将签订的合同到公证机关进行公证</li>
+</ol>
+<h1 id="解决合同争议的方法"><a class="header" href="#解决合同争议的方法">解决合同争议的方法</a></h1>
+<ul>
+<li>谈判协商</li>
+<li>调解</li>
+<li>仲裁</li>
+<li>诉讼</li>
+</ul>
+<h1 id="合同索赔"><a class="header" href="#合同索赔">合同索赔</a></h1>
+<ul>
+<li>索赔的分类：
+<ul>
+<li>工期索赔</li>
+<li>费用索赔：经济补偿，非惩罚</li>
+</ul>
+</li>
+<li>索赔调解的先后顺序
+<ul>
+<li><strong>监理工程师</strong>调解</li>
+<li>由<strong>政府建设主管机构</strong>进行调解</li>
+<li><strong>经济合同仲裁委员会</strong>调解或仲裁</li>
+</ul>
+</li>
+<li>索赔的原则
+<ul>
+<li>索赔的有理性</li>
+<li>索赔依据的有效性</li>
+<li>索赔计算的正确性</li>
+</ul>
+</li>
+<li>索赔流程
+<ul>
+<li>提出索赔要求</li>
+<li>报送索赔资料</li>
+<li>监理工程师答复</li>
+<li>监理工程师逾期答复后果</li>
+<li>持续索赔</li>
+<li>仲裁与诉讼（28天）</li>
+</ul>
+</li>
+</ul>
+<p><img src=".assets/1585287188755-8fbe21f6-09fd-4a5a-9550-1d419ce5a1f9.png" alt="未命名图片.png" /></p>
+
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+                            <a rel="prev" href="../教材基础/12采购管理.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                <i class="fa fa-angle-left"></i>
+                            </a>
+                            <a rel="next" href="../教材基础/14文档和配置管理.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                                <i class="fa fa-angle-right"></i>
+                            </a>
+                        <div style="clear: both"></div>
+                    </nav>
+                </div>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+                    <a rel="prev" href="../教材基础/12采购管理.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                        <i class="fa fa-angle-left"></i>
+                    </a>
+                    <a rel="next" href="../教材基础/14文档和配置管理.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                        <i class="fa fa-angle-right"></i>
+                    </a>
+            </nav>
+
+        </div>
+
+        <script type="text/javascript">
+            window.playground_copyable = true;
+        </script>
+        <script src="../elasticlunr.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../mark.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../searcher.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../clipboard.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../highlight.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../book.js" type="text/javascript" charset="utf-8"></script>
+
+        <!-- Custom JS scripts -->
+    </body>
+</html>

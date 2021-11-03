@@ -1,0 +1,347 @@
+<!DOCTYPE HTML>
+<html lang="en" class="sidebar-visible no-js light">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>风险管理 - Project Manager Examine Notes</title>
+        <!-- Custom HTML head -->
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff" />
+
+        <link rel="icon" href="../favicon.svg">
+        <link rel="shortcut icon" href="../favicon.png">
+        <link rel="stylesheet" href="../css/variables.css">
+        <link rel="stylesheet" href="../css/general.css">
+        <link rel="stylesheet" href="../css/chrome.css">
+        <link rel="stylesheet" href="../css/print.css" media="print">
+        <!-- Fonts -->
+        <link rel="stylesheet" href="../FontAwesome/css/font-awesome.css">
+        <link rel="stylesheet" href="../fonts/fonts.css">
+        <!-- Highlight.js Stylesheets -->
+        <link rel="stylesheet" href="../highlight.css">
+        <link rel="stylesheet" href="../tomorrow-night.css">
+        <link rel="stylesheet" href="../ayu-highlight.css">
+
+        <!-- Custom theme stylesheets -->
+    </head>
+    <body>
+        <!-- Provide site root to javascript -->
+        <script type="text/javascript">
+            var path_to_root = "../";
+            var default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "navy" : "light";
+        </script>
+
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script type="text/javascript">
+            try {
+                var theme = localStorage.getItem('mdbook-theme');
+                var sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script type="text/javascript">
+            var theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
+            if (theme === null || theme === undefined) { theme = default_theme; }
+            var html = document.querySelector('html');
+            html.classList.remove('no-js')
+            html.classList.remove('light')
+            html.classList.add(theme);
+            html.classList.add('js');
+        </script>
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script type="text/javascript">
+            var html = document.querySelector('html');
+            var sidebar = 'hidden';
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            }
+            html.classList.remove('sidebar-visible');
+            html.classList.add("sidebar-" + sidebar);
+        </script>
+
+        <nav id="sidebar" class="sidebar" aria-label="Table of contents">
+            <div class="sidebar-scrollbox">
+                <ol class="chapter"><li class="chapter-item expanded "><a href="../../index.html"><strong aria-hidden="true">1.</strong> README</a></li><li class="chapter-item expanded "><div><strong aria-hidden="true">2.</strong> 教材基础</div></li><li><ol class="section"><li class="chapter-item expanded "><a href="../教材基础/1信息化.html"><strong aria-hidden="true">2.1.</strong> 信息化</a></li><li class="chapter-item expanded "><a href="../教材基础/2项目管理基础.html"><strong aria-hidden="true">2.2.</strong> 项目管理基础</a></li><li class="chapter-item expanded "><a href="../教材基础/3立项管理.html"><strong aria-hidden="true">2.3.</strong> 立项管理</a></li><li class="chapter-item expanded "><a href="../教材基础/4整体管理.html"><strong aria-hidden="true">2.4.</strong> 整体管理</a></li><li class="chapter-item expanded "><a href="../教材基础/5范围管理.html"><strong aria-hidden="true">2.5.</strong> 范围管理</a></li><li class="chapter-item expanded "><a href="../教材基础/6进度管理.html"><strong aria-hidden="true">2.6.</strong> 进度管理</a></li><li class="chapter-item expanded "><a href="../教材基础/7成本管理.html"><strong aria-hidden="true">2.7.</strong> 成本管理</a></li><li class="chapter-item expanded "><a href="../教材基础/8质量管理.html"><strong aria-hidden="true">2.8.</strong> 质量管理</a></li><li class="chapter-item expanded "><a href="../教材基础/9人力资源管理.html"><strong aria-hidden="true">2.9.</strong> 人力资源管理</a></li><li class="chapter-item expanded "><a href="../教材基础/10沟通和干系人管理.html"><strong aria-hidden="true">2.10.</strong> 沟通和干系人管理</a></li><li class="chapter-item expanded "><a href="../教材基础/11风险管理.html" class="active"><strong aria-hidden="true">2.11.</strong> 风险管理</a></li><li class="chapter-item expanded "><a href="../教材基础/12采购管理.html"><strong aria-hidden="true">2.12.</strong> 采购管理</a></li><li class="chapter-item expanded "><a href="../教材基础/13合同管理.html"><strong aria-hidden="true">2.13.</strong> 合同管理</a></li><li class="chapter-item expanded "><a href="../教材基础/14文档和配置管理.html"><strong aria-hidden="true">2.14.</strong> 文档和配置管理</a></li><li class="chapter-item expanded "><a href="../教材基础/15组织级项目管理.html"><strong aria-hidden="true">2.15.</strong> 组织级项目管理</a></li><li class="chapter-item expanded "><a href="../教材基础/16流程管理.html"><strong aria-hidden="true">2.16.</strong> 流程管理</a></li><li class="chapter-item expanded "><a href="../教材基础/17项目集.html"><strong aria-hidden="true">2.17.</strong> 项目集</a></li><li class="chapter-item expanded "><a href="../教材基础/18信息安全管理.html"><strong aria-hidden="true">2.18.</strong> 信息安全管理</a></li><li class="chapter-item expanded "><a href="../教材基础/19测试管理.html"><strong aria-hidden="true">2.19.</strong> 测试管理</a></li><li class="chapter-item expanded "><a href="../教材基础/20法律法规.html"><strong aria-hidden="true">2.20.</strong> 法律法规</a></li><li class="chapter-item expanded "><a href="../教材基础/21技术标准.html"><strong aria-hidden="true">2.21.</strong> 技术标准</a></li></ol></li><li class="chapter-item expanded "><div><strong aria-hidden="true">3.</strong> 案例分析</div></li><li><ol class="section"><li class="chapter-item expanded "><a href="../案例分析/案例分析简介.html"><strong aria-hidden="true">3.1.</strong> 案例分析简介</a></li><li class="chapter-item expanded "><a href="../案例分析/常见问题和措施汇总.html"><strong aria-hidden="true">3.2.</strong> 常见问题和措施汇总</a></li><li class="chapter-item expanded "><a href="../案例分析/计算专题.html"><strong aria-hidden="true">3.3.</strong> 计算专题</a></li><li class="chapter-item expanded "><a href="../案例分析/理论题考点汇总.html"><strong aria-hidden="true">3.4.</strong> 理论题考点汇总</a></li></ol></li><li class="chapter-item expanded "><div><strong aria-hidden="true">4.</strong> 论文</div></li><li><ol class="section"><li class="chapter-item expanded "><a href="../论文/十大领域论文.html"><strong aria-hidden="true">4.1.</strong> 十大领域论文</a></li></ol></li><li class="chapter-item expanded "><div><strong aria-hidden="true">5.</strong> 错题记录</div></li><li><ol class="section"><li class="chapter-item expanded "><a href="../错题记录/历年上午真题.html"><strong aria-hidden="true">5.1.</strong> 历年上午真题</a></li><li class="chapter-item expanded "><a href="../错题记录/案例分析真题.html"><strong aria-hidden="true">5.2.</strong> 案例分析真题</a></li></ol></li></ol>
+            </div>
+            <div id="sidebar-resize-handle" class="sidebar-resize-handle"></div>
+        </nav>
+
+        <div id="page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                <div id="menu-bar-hover-placeholder"></div>
+                <div id="menu-bar" class="menu-bar sticky bordered">
+                    <div class="left-buttons">
+                        <button id="sidebar-toggle" class="icon-button" type="button" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
+                            <i class="fa fa-bars"></i>
+                        </button>
+                        <button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
+                            <i class="fa fa-paint-brush"></i>
+                        </button>
+                        <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                            <li role="none"><button role="menuitem" class="theme" id="light">Light (default)</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="rust">Rust</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
+                        </ul>
+                        <button id="search-toggle" class="icon-button" type="button" title="Search. (Shortkey: s)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="S" aria-controls="searchbar">
+                            <i class="fa fa-search"></i>
+                        </button>
+                    </div>
+
+                    <h1 class="menu-title">Project Manager Examine Notes</h1>
+
+                    <div class="right-buttons">
+                        <a href="../print.html" title="Print this book" aria-label="Print this book">
+                            <i id="print-button" class="fa fa-print"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div id="search-wrapper" class="hidden">
+                    <form id="searchbar-outer" class="searchbar-outer">
+                        <input type="search" id="searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+                    </form>
+                    <div id="searchresults-outer" class="searchresults-outer hidden">
+                        <div id="searchresults-header" class="searchresults-header"></div>
+                        <ul id="searchresults">
+                        </ul>
+                    </div>
+                </div>
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script type="text/javascript">
+                    document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="content" class="content">
+                    <main>
+                        <p>分值：3分</p>
+<h1 id="综合图谱"><a class="header" href="#综合图谱">综合图谱</a></h1>
+<p><img src=".assets/1585286687581-352004f8-b233-4580-a12f-787ee455066c.png" alt="未命名图片.png" /></p>
+<h1 id="风险概述"><a class="header" href="#风险概述">风险概述</a></h1>
+<h2 id="基本特性"><a class="header" href="#基本特性">基本特性</a></h2>
+<ul>
+<li>随机性：发生和后果具有偶然性</li>
+<li>相对性：风险相对于项目活动的主体而言的</li>
+</ul>
+<h2 id="风险分类"><a class="header" href="#风险分类">风险分类</a></h2>
+<ul>
+<li>按后果分
+<ul>
+<li><strong>纯粹风险</strong></li>
+<li><strong>投机风险</strong></li>
+</ul>
+</li>
+<li>按来源分
+<ul>
+<li>自然风险</li>
+<li>人为风险</li>
+</ul>
+</li>
+<li>按可预测性分
+<ul>
+<li><strong>已知风险</strong>：发生和后果都可预测</li>
+<li><strong>可预测风险</strong>：可以预测发生，不能预测后果</li>
+<li><strong>不可预测风险</strong>：有可能发生，可能性不可预见</li>
+</ul>
+</li>
+</ul>
+<p> </p>
+<h1 id="风险管理过程"><a class="header" href="#风险管理过程">风险管理过程</a></h1>
+<ol>
+<li><strong>风险管理规划</strong>一决定如何进行规划和实施項目风险管理活动。</li>
+<li><strong>风险识别</strong>一判断哪些风险会影响項目，并以书形式记录其特点。</li>
+<li><strong>定性风险分析</strong>一对风险概率和影响进行评估和汇总，进而对风险进行排序，以便随后进一步分析或行动</li>
+<li><strong>定量风险分析</strong>一一就识别的风险对項目总体目标的影响进行定量分析。</li>
+<li><strong>风险应对规划</strong>一针对項目目标制订提高机会、降低威胁的方案和行动。</li>
+<li><strong>风险监控</strong>一在整个項目生命周期中，跟踪已识别的风险、监测残余风险、识别新风险和实施风险应对计划，并对其有效性</li>
+</ol>
+<h1 id="风险管理计划内容"><a class="header" href="#风险管理计划内容">风险管理计划内容</a></h1>
+<ol>
+<li>方法论</li>
+<li>角色与职责</li>
+<li>预算</li>
+<li>时间安排</li>
+<li>风险类别</li>
+<li>风险概率和影响的定义</li>
+<li>概率和影响矩阵</li>
+<li>修改的项目干系人承受度</li>
+<li>报告格式</li>
+<li>跟踪</li>
+</ol>
+<p>应该<strong>鼓励所有项目人员参与风险的识别</strong>，贯穿全过程；制定风险管理计划首先要考虑<strong>组织及项目人员的风险态度和风险承受度</strong></p>
+<h1 id="风险识别的工具技术"><a class="header" href="#风险识别的工具技术">风险识别的工具技术</a></h1>
+<ul>
+<li>文档审查</li>
+<li>信息收集技术
+<ul>
+<li><strong>头脑风暴</strong>：集思广益，<strong>不一定有结论，重在听取意见</strong></li>
+<li><strong>德尔菲技术</strong>：<strong>专家匿名</strong>方式进行<strong>若干轮</strong>的意见表达，<strong>一定得出结论</strong>。防止个人对结果造成不适当的过大影响</li>
+<li>访谈：主要方法之一</li>
+<li><strong>根本原因识别</strong>：对项目风险的根本原因进行调查，制定有效的风险应对假设</li>
+</ul>
+</li>
+<li>核对表分析</li>
+<li><strong>假设分析</strong>：根据一套假定、设想假设进行构思和制订，是检验<strong>假设有效性的一种技术</strong></li>
+<li>图解技术
+<ul>
+<li>因果图</li>
+<li>系统或过程流程图</li>
+<li>影响图</li>
+</ul>
+</li>
+<li>SWOT分析技术
+<ul>
+<li>优势strength</li>
+<li>劣势weakness</li>
+<li>机会opportunity</li>
+<li>威胁threat</li>
+</ul>
+</li>
+<li>专家判断</li>
+</ul>
+<h1 id="风险登记册"><a class="header" href="#风险登记册">风险登记册</a></h1>
+<h2 id="内容"><a class="header" href="#内容">内容</a></h2>
+<ol>
+<li>已识别风险清单</li>
+<li>潜在应对措施清单</li>
+<li>风险根本原因</li>
+<li>风险类别更新</li>
+<li>更新的风险分类</li>
+</ol>
+<h2 id="更新哪些部分"><a class="header" href="#更新哪些部分">更新哪些部分</a></h2>
+<ol>
+<li>项目风险的相对排序和优先级清单</li>
+<li>按照类别分类的风险</li>
+<li>需要在近期采取应对措施的风险清单</li>
+<li>需要进一步分析和应对的风险清单</li>
+<li>低优先级风险观察清单</li>
+<li>定性分析结果的趋势</li>
+</ol>
+<p> </p>
+<h1 id="定性风险分析的工具技术"><a class="header" href="#定性风险分析的工具技术">定性风险分析的工具技术</a></h1>
+<p>定性风险分析：<strong>对已识别的风险进行优先排序</strong></p>
+<ul>
+<li>风险概率与影响评估</li>
+<li>概率和影响矩阵
+<ul>
+<li>高风险：深灰色</li>
+<li>中风险：中灰色</li>
+<li>低风险：浅灰色</li>
+</ul>
+</li>
+</ul>
+<p><img src=".assets/1585286820692-394a7519-0ce8-4c6b-8a2f-adefd8340ef6.png" alt="未命名图片.png" /></p>
+<ul>
+<li>风险数据质量评估</li>
+<li>风险分类</li>
+<li>风险紧迫性评估</li>
+<li>专家判断</li>
+</ul>
+<h1 id="定量风险分析的工具技术"><a class="header" href="#定量风险分析的工具技术">定量风险分析的工具技术</a></h1>
+<ul>
+<li>数据收集和表示技术
+<ul>
+<li>访谈</li>
+<li>概率分布</li>
+</ul>
+</li>
+<li>定量风险分析和模型技术
+<ul>
+<li>敏感性分析</li>
+<li>预期货币价值分析</li>
+<li>决策树分析</li>
+</ul>
+</li>
+</ul>
+<p><img src=".assets/1585286856292-eb15c1d4-2015-4a95-80b4-42da61f29d92.png" alt="image.png" /></p>
+<ul>
+<li>模型和模拟（蒙特卡洛技术）</li>
+</ul>
+<p><img src=".assets/1585286876149-8cfb3c2d-406f-4c58-b27a-f3115d587c91.png" alt="未命名图片.png" /></p>
+<ul>
+<li>专家判断</li>
+</ul>
+<p> </p>
+<h1 id="规划风险应对的工具技术"><a class="header" href="#规划风险应对的工具技术">规划风险应对的工具技术</a></h1>
+<ul>
+<li>消极风险或威胁的应对策略</li>
+</ul>
+<p><img src=".assets/1585286897102-7c85607f-e78e-48de-b7c4-565df7f4ce45.png" alt="image.png" /></p>
+<ul>
+<li>积极风险或机会的应对策略</li>
+</ul>
+<p><img src=".assets/1585286919265-22eb2ec1-1a0a-4575-ac84-4e2ed4685396.png" alt="image.png" /></p>
+<ul>
+<li>应急应对策略</li>
+<li>专家判断</li>
+</ul>
+<p> </p>
+<h1 id="控制风险的工具技术"><a class="header" href="#控制风险的工具技术">控制风险的工具技术</a></h1>
+<ul>
+<li>风险再评估：不断评估，应对可能出现的新的风险</li>
+<li>风险审计：检查和记录风险应对措施的有效性，及风险管理过程的有效性</li>
+<li>偏差和趋势分析</li>
+<li>技术绩效测量</li>
+<li>储备分析</li>
+<li>会议</li>
+</ul>
+
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+                            <a rel="prev" href="../教材基础/10沟通和干系人管理.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                <i class="fa fa-angle-left"></i>
+                            </a>
+                            <a rel="next" href="../教材基础/12采购管理.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                                <i class="fa fa-angle-right"></i>
+                            </a>
+                        <div style="clear: both"></div>
+                    </nav>
+                </div>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+                    <a rel="prev" href="../教材基础/10沟通和干系人管理.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                        <i class="fa fa-angle-left"></i>
+                    </a>
+                    <a rel="next" href="../教材基础/12采购管理.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                        <i class="fa fa-angle-right"></i>
+                    </a>
+            </nav>
+
+        </div>
+
+        <script type="text/javascript">
+            window.playground_copyable = true;
+        </script>
+        <script src="../elasticlunr.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../mark.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../searcher.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../clipboard.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../highlight.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../book.js" type="text/javascript" charset="utf-8"></script>
+
+        <!-- Custom JS scripts -->
+    </body>
+</html>

@@ -1,0 +1,330 @@
+<!DOCTYPE HTML>
+<html lang="en" class="sidebar-visible no-js light">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>文档和配置管理 - Project Manager Examine Notes</title>
+        <!-- Custom HTML head -->
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff" />
+
+        <link rel="icon" href="../favicon.svg">
+        <link rel="shortcut icon" href="../favicon.png">
+        <link rel="stylesheet" href="../css/variables.css">
+        <link rel="stylesheet" href="../css/general.css">
+        <link rel="stylesheet" href="../css/chrome.css">
+        <link rel="stylesheet" href="../css/print.css" media="print">
+        <!-- Fonts -->
+        <link rel="stylesheet" href="../FontAwesome/css/font-awesome.css">
+        <link rel="stylesheet" href="../fonts/fonts.css">
+        <!-- Highlight.js Stylesheets -->
+        <link rel="stylesheet" href="../highlight.css">
+        <link rel="stylesheet" href="../tomorrow-night.css">
+        <link rel="stylesheet" href="../ayu-highlight.css">
+
+        <!-- Custom theme stylesheets -->
+    </head>
+    <body>
+        <!-- Provide site root to javascript -->
+        <script type="text/javascript">
+            var path_to_root = "../";
+            var default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "navy" : "light";
+        </script>
+
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script type="text/javascript">
+            try {
+                var theme = localStorage.getItem('mdbook-theme');
+                var sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script type="text/javascript">
+            var theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
+            if (theme === null || theme === undefined) { theme = default_theme; }
+            var html = document.querySelector('html');
+            html.classList.remove('no-js')
+            html.classList.remove('light')
+            html.classList.add(theme);
+            html.classList.add('js');
+        </script>
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script type="text/javascript">
+            var html = document.querySelector('html');
+            var sidebar = 'hidden';
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            }
+            html.classList.remove('sidebar-visible');
+            html.classList.add("sidebar-" + sidebar);
+        </script>
+
+        <nav id="sidebar" class="sidebar" aria-label="Table of contents">
+            <div class="sidebar-scrollbox">
+                <ol class="chapter"><li class="chapter-item expanded "><a href="../../index.html"><strong aria-hidden="true">1.</strong> README</a></li><li class="chapter-item expanded "><div><strong aria-hidden="true">2.</strong> 教材基础</div></li><li><ol class="section"><li class="chapter-item expanded "><a href="../教材基础/1信息化.html"><strong aria-hidden="true">2.1.</strong> 信息化</a></li><li class="chapter-item expanded "><a href="../教材基础/2项目管理基础.html"><strong aria-hidden="true">2.2.</strong> 项目管理基础</a></li><li class="chapter-item expanded "><a href="../教材基础/3立项管理.html"><strong aria-hidden="true">2.3.</strong> 立项管理</a></li><li class="chapter-item expanded "><a href="../教材基础/4整体管理.html"><strong aria-hidden="true">2.4.</strong> 整体管理</a></li><li class="chapter-item expanded "><a href="../教材基础/5范围管理.html"><strong aria-hidden="true">2.5.</strong> 范围管理</a></li><li class="chapter-item expanded "><a href="../教材基础/6进度管理.html"><strong aria-hidden="true">2.6.</strong> 进度管理</a></li><li class="chapter-item expanded "><a href="../教材基础/7成本管理.html"><strong aria-hidden="true">2.7.</strong> 成本管理</a></li><li class="chapter-item expanded "><a href="../教材基础/8质量管理.html"><strong aria-hidden="true">2.8.</strong> 质量管理</a></li><li class="chapter-item expanded "><a href="../教材基础/9人力资源管理.html"><strong aria-hidden="true">2.9.</strong> 人力资源管理</a></li><li class="chapter-item expanded "><a href="../教材基础/10沟通和干系人管理.html"><strong aria-hidden="true">2.10.</strong> 沟通和干系人管理</a></li><li class="chapter-item expanded "><a href="../教材基础/11风险管理.html"><strong aria-hidden="true">2.11.</strong> 风险管理</a></li><li class="chapter-item expanded "><a href="../教材基础/12采购管理.html"><strong aria-hidden="true">2.12.</strong> 采购管理</a></li><li class="chapter-item expanded "><a href="../教材基础/13合同管理.html"><strong aria-hidden="true">2.13.</strong> 合同管理</a></li><li class="chapter-item expanded "><a href="../教材基础/14文档和配置管理.html" class="active"><strong aria-hidden="true">2.14.</strong> 文档和配置管理</a></li><li class="chapter-item expanded "><a href="../教材基础/15组织级项目管理.html"><strong aria-hidden="true">2.15.</strong> 组织级项目管理</a></li><li class="chapter-item expanded "><a href="../教材基础/16流程管理.html"><strong aria-hidden="true">2.16.</strong> 流程管理</a></li><li class="chapter-item expanded "><a href="../教材基础/17项目集.html"><strong aria-hidden="true">2.17.</strong> 项目集</a></li><li class="chapter-item expanded "><a href="../教材基础/18信息安全管理.html"><strong aria-hidden="true">2.18.</strong> 信息安全管理</a></li><li class="chapter-item expanded "><a href="../教材基础/19测试管理.html"><strong aria-hidden="true">2.19.</strong> 测试管理</a></li><li class="chapter-item expanded "><a href="../教材基础/20法律法规.html"><strong aria-hidden="true">2.20.</strong> 法律法规</a></li><li class="chapter-item expanded "><a href="../教材基础/21技术标准.html"><strong aria-hidden="true">2.21.</strong> 技术标准</a></li></ol></li><li class="chapter-item expanded "><div><strong aria-hidden="true">3.</strong> 案例分析</div></li><li><ol class="section"><li class="chapter-item expanded "><a href="../案例分析/案例分析简介.html"><strong aria-hidden="true">3.1.</strong> 案例分析简介</a></li><li class="chapter-item expanded "><a href="../案例分析/常见问题和措施汇总.html"><strong aria-hidden="true">3.2.</strong> 常见问题和措施汇总</a></li><li class="chapter-item expanded "><a href="../案例分析/计算专题.html"><strong aria-hidden="true">3.3.</strong> 计算专题</a></li><li class="chapter-item expanded "><a href="../案例分析/理论题考点汇总.html"><strong aria-hidden="true">3.4.</strong> 理论题考点汇总</a></li></ol></li><li class="chapter-item expanded "><div><strong aria-hidden="true">4.</strong> 论文</div></li><li><ol class="section"><li class="chapter-item expanded "><a href="../论文/十大领域论文.html"><strong aria-hidden="true">4.1.</strong> 十大领域论文</a></li></ol></li><li class="chapter-item expanded "><div><strong aria-hidden="true">5.</strong> 错题记录</div></li><li><ol class="section"><li class="chapter-item expanded "><a href="../错题记录/历年上午真题.html"><strong aria-hidden="true">5.1.</strong> 历年上午真题</a></li><li class="chapter-item expanded "><a href="../错题记录/案例分析真题.html"><strong aria-hidden="true">5.2.</strong> 案例分析真题</a></li></ol></li></ol>
+            </div>
+            <div id="sidebar-resize-handle" class="sidebar-resize-handle"></div>
+        </nav>
+
+        <div id="page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                <div id="menu-bar-hover-placeholder"></div>
+                <div id="menu-bar" class="menu-bar sticky bordered">
+                    <div class="left-buttons">
+                        <button id="sidebar-toggle" class="icon-button" type="button" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
+                            <i class="fa fa-bars"></i>
+                        </button>
+                        <button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
+                            <i class="fa fa-paint-brush"></i>
+                        </button>
+                        <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                            <li role="none"><button role="menuitem" class="theme" id="light">Light (default)</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="rust">Rust</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
+                        </ul>
+                        <button id="search-toggle" class="icon-button" type="button" title="Search. (Shortkey: s)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="S" aria-controls="searchbar">
+                            <i class="fa fa-search"></i>
+                        </button>
+                    </div>
+
+                    <h1 class="menu-title">Project Manager Examine Notes</h1>
+
+                    <div class="right-buttons">
+                        <a href="../print.html" title="Print this book" aria-label="Print this book">
+                            <i id="print-button" class="fa fa-print"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div id="search-wrapper" class="hidden">
+                    <form id="searchbar-outer" class="searchbar-outer">
+                        <input type="search" id="searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+                    </form>
+                    <div id="searchresults-outer" class="searchresults-outer hidden">
+                        <div id="searchresults-header" class="searchresults-header"></div>
+                        <ul id="searchresults">
+                        </ul>
+                    </div>
+                </div>
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script type="text/javascript">
+                    document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="content" class="content">
+                    <main>
+                        <p>分值：1/2分</p>
+<h1 id="文档管理"><a class="header" href="#文档管理">文档管理</a></h1>
+<h2 id="软件文档的分类"><a class="header" href="#软件文档的分类">软件文档的分类</a></h2>
+<table><thead><tr><th>类型</th><th>作用</th><th>文档种类</th></tr></thead><tbody>
+<tr><td>开发文档</td><td><strong>描述开发过程本身</strong></td><td>可行性研究报告和项目任务书；需求规格说明；功能规格说明；设计规格说明，包括程序和数据规格说明；开发计划；软件集成和测试计划；质量保证计划；安全和测试信息</td></tr>
+<tr><td>产品文档</td><td><strong>描述开发过程的产物</strong></td><td><strong>培训手册；参考手册和用户指南</strong>；软件支持手册；产品手册和信息广告</td></tr>
+<tr><td>管理文档</td><td><strong>记录项目管理的信息</strong></td><td>开发过程的每个阶段的进度和进度变更的记录；软件变更情况的记录．<strong>开发团队的职责定义</strong></td></tr>
+</tbody></table>
+<h2 id="文档质量四个等级"><a class="header" href="#文档质量四个等级">文档质量四个等级</a></h2>
+<table><thead><tr><th>文档分级</th><th>适用范围</th></tr></thead><tbody>
+<tr><td>最低限度文档1级</td><td>适合<strong>开发工作量低于一个人月</strong>的开发者自用程序包含程序清单、开发记录、测试数据和程序简介</td></tr>
+<tr><td>内部文档2级</td><td>用于没有与其他用户共享资源的专用程序包含程序清单内足够的注释，帮助用户安装和使用</td></tr>
+<tr><td>工作文档3级</td><td>适合<strong>同一单位内若干人联合开发的程序</strong>，或可被其他单位使用的程序</td></tr>
+<tr><td>正式文档4级</td><td>适合<strong>正式发行共普遍使用的软件产品</strong></td></tr>
+</tbody></table>
+<h2 id="文档规范化管理的四个方面和体现"><a class="header" href="#文档规范化管理的四个方面和体现">文档规范化管理的四个方面和体现</a></h2>
+<ol>
+<li>文档书写规范</li>
+<li>图标编号规则</li>
+</ol>
+<p><img src=".assets/1585287277997-9d809b28-bcd2-435e-9e63-7aefc4bf7bea.png" alt="image.png" /></p>
+<ol start="3">
+<li>文档目录编写标准</li>
+<li>文档管理制度</li>
+</ol>
+<h1 id="配置管理"><a class="header" href="#配置管理">配置管理</a></h1>
+<h2 id="配置管理6个活动"><a class="header" href="#配置管理6个活动">配置管理6个活动</a></h2>
+<ol>
+<li>制订配置管理计划</li>
+<li>配置标识</li>
+<li>配置控制</li>
+<li>配置状态报告</li>
+<li>配置审计</li>
+<li>发布管理和交付</li>
+</ol>
+<h2 id="配置项"><a class="header" href="#配置项">配置项</a></h2>
+<h3 id="典型配置项"><a class="header" href="#典型配置项">典型配置项</a></h3>
+<ul>
+<li>项目计划书</li>
+<li>需求文档</li>
+<li>设计文档</li>
+<li>源代码</li>
+<li>可执行代码</li>
+<li>测试用例</li>
+<li>运行软件所需的各种数据</li>
+</ul>
+<p><strong>注意</strong>：测试报告、会议纪要、工作记录不是配置项，因为它们一旦形成不再改变</p>
+<h3 id="配置项分类"><a class="header" href="#配置项分类">配置项分类</a></h3>
+<p>配置项的总操作权限由**CMO（配置管理员）**管理</p>
+<ul>
+<li>基线配置项：设计文档和源程序，开发人员由读取权限</li>
+<li>非基线配置项：项目的各类计划和报告，PM、CCB等人员开放</li>
+</ul>
+<h3 id="配置项的状态"><a class="header" href="#配置项的状态">配置项的状态</a></h3>
+<ul>
+<li>草稿</li>
+<li>正式</li>
+<li>修改</li>
+</ul>
+<p><img src=".assets/1585287337985-7387154a-4c77-4031-8d0e-acc519916c64.png" alt="image.png" /></p>
+<h2 id="配置基线"><a class="header" href="#配置基线">配置基线</a></h2>
+<p>一个相对稳定的逻辑实体，对基线的变更必须遵循正式的变更控制程序。主要组成：</p>
+<ul>
+<li>唯一标识号的需求、设计、源代码文卷、可执行代码、构造文卷、用户文档</li>
+</ul>
+<p>基线分类：</p>
+<ul>
+<li>发行基线：交付给外部顾客的基线</li>
+<li>构造基线：内部开发使用的基线</li>
+</ul>
+<h2 id="配置库"><a class="header" href="#配置库">配置库</a></h2>
+<h3 id="配置库分类"><a class="header" href="#配置库分类">配置库分类</a></h3>
+<ul>
+<li><strong>开发库</strong>，也称为动态库、程序员库或工作库，用于保存开发人员当前正在开发的配置实体，动态库是开发人员的个人工作区，由开发人员自行控制。库中的信息可能有<strong>较为频繁的修改。（可以任意的修改）</strong></li>
+<li><strong>受控库</strong>，也称为主库，包含当前的基线加上对基线的变更。受控库中的配置项被置于完全的配置管理之下。在信息系统开发的某个阶段工作结束时，将当前的工作产品存入受控库。（<strong>可以修改，需要走变更流程</strong>）</li>
+<li><strong>产品库</strong>，也称为静态库、发行库、软件仓库，包含已发布使用的各种基线的存档，被置于完全的配置管理之下。在开发的信息系统产品完成系统测试之后，作<strong>为最终产品存入产品库内，等待交付用户或现场安装。〈一般不再修改，真要修改的话需要走变更）</strong></li>
+</ul>
+<p><img src=".assets/1585287394222-2c8ff977-f635-41d3-aaed-69306554a193.png" alt="image.png" /></p>
+<h3 id="建库模式"><a class="header" href="#建库模式">建库模式</a></h3>
+<ul>
+<li>按<strong>配置项类型</strong>建库：适用于通用软件开发</li>
+<li>按<strong>开发任务</strong>建库：适用于专业软件开发</li>
+</ul>
+<h2 id="配置管理员cmo职责"><a class="header" href="#配置管理员cmo职责">配置管理员CMO职责</a></h2>
+<ol>
+<li>编写配置管理计划：配置管理员制定，配置控制委员会审批</li>
+<li>建立和维护配置管理系统</li>
+<li>建立和维护配置库</li>
+<li>配置项识别：基本步骤如下
+<ol>
+<li>识别需要受控的配置项。</li>
+<li>为每个配置项指定唯一性的标识号。</li>
+<li>定义每个配置项的重要特征。</li>
+<li>确定每个配置项的所有者及其责任。</li>
+<li>确定配置项进入配置管理的时间和条件。</li>
+<li>建立和控制基线。</li>
+<li>维护文档和组件的修订与产品版本之间的关系</li>
+</ol>
+</li>
+<li>建立和管理基线</li>
+<li>版本管理和配置控制</li>
+<li>配置状态报告</li>
+<li>配置审计</li>
+<li>发布管理和交付
+<ol>
+<li>存储</li>
+<li>复制</li>
+<li>打包</li>
+<li>交付</li>
+<li>重建</li>
+</ol>
+</li>
+<li>对项目成员进行配置管理培训</li>
+</ol>
+<h2 id="配置管理计划内容"><a class="header" href="#配置管理计划内容">配置管理计划内容</a></h2>
+<ol>
+<li>配置管理活动，主要包括配置标识、配置控制、配置状态报告、配置审计、发布管理和交付</li>
+<li>实施这些活动的规范和流程</li>
+<li>实施这些活动的进度安排</li>
+<li>负责实施活动的人员或组织，和它们与其他组织的关系</li>
+</ol>
+<h2 id="配置状态报告内容"><a class="header" href="#配置状态报告内容">配置状态报告内容</a></h2>
+<ol>
+<li>每个受控配置项的标识和状态</li>
+<li>每个变更申请的状态和己批准的修改的实施状态。</li>
+<li>每个基线的当前和过去版本的状态以及各版本的比较</li>
+<li>其他配置管理过程活动的记录。</li>
+</ol>
+<h2 id="配置审计"><a class="header" href="#配置审计">配置审计</a></h2>
+<h3 id="分类"><a class="header" href="#分类">分类</a></h3>
+<ul>
+<li>功能配置审计
+<ul>
+<li>配置项的开发己圆满完成。</li>
+<li>配置项己达到</li>
+<li>配置标识中规定的性能和功能特征。</li>
+<li>配置项的操作和支持文档己完成并且是符合要求的</li>
+</ul>
+</li>
+<li>物理配置审计
+<ul>
+<li>要交付的配置项是否存在</li>
+<li>配置项中是否包含所有必需的项目</li>
+</ul>
+</li>
+</ul>
+<h3 id="配置审计作用"><a class="header" href="#配置审计作用">配置审计作用</a></h3>
+<ol>
+<li>防止向用户提交不适合的产品，如交付了用户手册的不正确版本</li>
+<li>发现不完善的实现，如开发出不符合初始规格说明或未按变更请求实施变更</li>
+<li>找出各配置项间不匹配或不相容的现象</li>
+<li>确认配置项已在所要求的质量控制审核之后纳入基线并入库保存</li>
+<li>确认记录和文档报纸可追溯性</li>
+</ol>
+
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+                            <a rel="prev" href="../教材基础/13合同管理.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                <i class="fa fa-angle-left"></i>
+                            </a>
+                            <a rel="next" href="../教材基础/15组织级项目管理.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                                <i class="fa fa-angle-right"></i>
+                            </a>
+                        <div style="clear: both"></div>
+                    </nav>
+                </div>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+                    <a rel="prev" href="../教材基础/13合同管理.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                        <i class="fa fa-angle-left"></i>
+                    </a>
+                    <a rel="next" href="../教材基础/15组织级项目管理.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                        <i class="fa fa-angle-right"></i>
+                    </a>
+            </nav>
+
+        </div>
+
+        <script type="text/javascript">
+            window.playground_copyable = true;
+        </script>
+        <script src="../elasticlunr.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../mark.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../searcher.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../clipboard.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../highlight.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../book.js" type="text/javascript" charset="utf-8"></script>
+
+        <!-- Custom JS scripts -->
+    </body>
+</html>

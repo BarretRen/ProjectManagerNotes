@@ -1,0 +1,808 @@
+<!DOCTYPE HTML>
+<html lang="en" class="sidebar-visible no-js light">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>信息化 - Project Manager Examine Notes</title>
+        <!-- Custom HTML head -->
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff" />
+
+        <link rel="icon" href="../favicon.svg">
+        <link rel="shortcut icon" href="../favicon.png">
+        <link rel="stylesheet" href="../css/variables.css">
+        <link rel="stylesheet" href="../css/general.css">
+        <link rel="stylesheet" href="../css/chrome.css">
+        <link rel="stylesheet" href="../css/print.css" media="print">
+        <!-- Fonts -->
+        <link rel="stylesheet" href="../FontAwesome/css/font-awesome.css">
+        <link rel="stylesheet" href="../fonts/fonts.css">
+        <!-- Highlight.js Stylesheets -->
+        <link rel="stylesheet" href="../highlight.css">
+        <link rel="stylesheet" href="../tomorrow-night.css">
+        <link rel="stylesheet" href="../ayu-highlight.css">
+
+        <!-- Custom theme stylesheets -->
+    </head>
+    <body>
+        <!-- Provide site root to javascript -->
+        <script type="text/javascript">
+            var path_to_root = "../";
+            var default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "navy" : "light";
+        </script>
+
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script type="text/javascript">
+            try {
+                var theme = localStorage.getItem('mdbook-theme');
+                var sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script type="text/javascript">
+            var theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
+            if (theme === null || theme === undefined) { theme = default_theme; }
+            var html = document.querySelector('html');
+            html.classList.remove('no-js')
+            html.classList.remove('light')
+            html.classList.add(theme);
+            html.classList.add('js');
+        </script>
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script type="text/javascript">
+            var html = document.querySelector('html');
+            var sidebar = 'hidden';
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            }
+            html.classList.remove('sidebar-visible');
+            html.classList.add("sidebar-" + sidebar);
+        </script>
+
+        <nav id="sidebar" class="sidebar" aria-label="Table of contents">
+            <div class="sidebar-scrollbox">
+                <ol class="chapter"><li class="chapter-item expanded "><a href="../../index.html"><strong aria-hidden="true">1.</strong> README</a></li><li class="chapter-item expanded "><div><strong aria-hidden="true">2.</strong> 教材基础</div></li><li><ol class="section"><li class="chapter-item expanded "><a href="../教材基础/1信息化.html" class="active"><strong aria-hidden="true">2.1.</strong> 信息化</a></li><li class="chapter-item expanded "><a href="../教材基础/2项目管理基础.html"><strong aria-hidden="true">2.2.</strong> 项目管理基础</a></li><li class="chapter-item expanded "><a href="../教材基础/3立项管理.html"><strong aria-hidden="true">2.3.</strong> 立项管理</a></li><li class="chapter-item expanded "><a href="../教材基础/4整体管理.html"><strong aria-hidden="true">2.4.</strong> 整体管理</a></li><li class="chapter-item expanded "><a href="../教材基础/5范围管理.html"><strong aria-hidden="true">2.5.</strong> 范围管理</a></li><li class="chapter-item expanded "><a href="../教材基础/6进度管理.html"><strong aria-hidden="true">2.6.</strong> 进度管理</a></li><li class="chapter-item expanded "><a href="../教材基础/7成本管理.html"><strong aria-hidden="true">2.7.</strong> 成本管理</a></li><li class="chapter-item expanded "><a href="../教材基础/8质量管理.html"><strong aria-hidden="true">2.8.</strong> 质量管理</a></li><li class="chapter-item expanded "><a href="../教材基础/9人力资源管理.html"><strong aria-hidden="true">2.9.</strong> 人力资源管理</a></li><li class="chapter-item expanded "><a href="../教材基础/10沟通和干系人管理.html"><strong aria-hidden="true">2.10.</strong> 沟通和干系人管理</a></li><li class="chapter-item expanded "><a href="../教材基础/11风险管理.html"><strong aria-hidden="true">2.11.</strong> 风险管理</a></li><li class="chapter-item expanded "><a href="../教材基础/12采购管理.html"><strong aria-hidden="true">2.12.</strong> 采购管理</a></li><li class="chapter-item expanded "><a href="../教材基础/13合同管理.html"><strong aria-hidden="true">2.13.</strong> 合同管理</a></li><li class="chapter-item expanded "><a href="../教材基础/14文档和配置管理.html"><strong aria-hidden="true">2.14.</strong> 文档和配置管理</a></li><li class="chapter-item expanded "><a href="../教材基础/15组织级项目管理.html"><strong aria-hidden="true">2.15.</strong> 组织级项目管理</a></li><li class="chapter-item expanded "><a href="../教材基础/16流程管理.html"><strong aria-hidden="true">2.16.</strong> 流程管理</a></li><li class="chapter-item expanded "><a href="../教材基础/17项目集.html"><strong aria-hidden="true">2.17.</strong> 项目集</a></li><li class="chapter-item expanded "><a href="../教材基础/18信息安全管理.html"><strong aria-hidden="true">2.18.</strong> 信息安全管理</a></li><li class="chapter-item expanded "><a href="../教材基础/19测试管理.html"><strong aria-hidden="true">2.19.</strong> 测试管理</a></li><li class="chapter-item expanded "><a href="../教材基础/20法律法规.html"><strong aria-hidden="true">2.20.</strong> 法律法规</a></li><li class="chapter-item expanded "><a href="../教材基础/21技术标准.html"><strong aria-hidden="true">2.21.</strong> 技术标准</a></li></ol></li><li class="chapter-item expanded "><div><strong aria-hidden="true">3.</strong> 案例分析</div></li><li><ol class="section"><li class="chapter-item expanded "><a href="../案例分析/案例分析简介.html"><strong aria-hidden="true">3.1.</strong> 案例分析简介</a></li><li class="chapter-item expanded "><a href="../案例分析/常见问题和措施汇总.html"><strong aria-hidden="true">3.2.</strong> 常见问题和措施汇总</a></li><li class="chapter-item expanded "><a href="../案例分析/计算专题.html"><strong aria-hidden="true">3.3.</strong> 计算专题</a></li><li class="chapter-item expanded "><a href="../案例分析/理论题考点汇总.html"><strong aria-hidden="true">3.4.</strong> 理论题考点汇总</a></li></ol></li><li class="chapter-item expanded "><div><strong aria-hidden="true">4.</strong> 论文</div></li><li><ol class="section"><li class="chapter-item expanded "><a href="../论文/十大领域论文.html"><strong aria-hidden="true">4.1.</strong> 十大领域论文</a></li></ol></li><li class="chapter-item expanded "><div><strong aria-hidden="true">5.</strong> 错题记录</div></li><li><ol class="section"><li class="chapter-item expanded "><a href="../错题记录/历年上午真题.html"><strong aria-hidden="true">5.1.</strong> 历年上午真题</a></li><li class="chapter-item expanded "><a href="../错题记录/案例分析真题.html"><strong aria-hidden="true">5.2.</strong> 案例分析真题</a></li></ol></li></ol>
+            </div>
+            <div id="sidebar-resize-handle" class="sidebar-resize-handle"></div>
+        </nav>
+
+        <div id="page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                <div id="menu-bar-hover-placeholder"></div>
+                <div id="menu-bar" class="menu-bar sticky bordered">
+                    <div class="left-buttons">
+                        <button id="sidebar-toggle" class="icon-button" type="button" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
+                            <i class="fa fa-bars"></i>
+                        </button>
+                        <button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
+                            <i class="fa fa-paint-brush"></i>
+                        </button>
+                        <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                            <li role="none"><button role="menuitem" class="theme" id="light">Light (default)</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="rust">Rust</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
+                        </ul>
+                        <button id="search-toggle" class="icon-button" type="button" title="Search. (Shortkey: s)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="S" aria-controls="searchbar">
+                            <i class="fa fa-search"></i>
+                        </button>
+                    </div>
+
+                    <h1 class="menu-title">Project Manager Examine Notes</h1>
+
+                    <div class="right-buttons">
+                        <a href="../print.html" title="Print this book" aria-label="Print this book">
+                            <i id="print-button" class="fa fa-print"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div id="search-wrapper" class="hidden">
+                    <form id="searchbar-outer" class="searchbar-outer">
+                        <input type="search" id="searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+                    </form>
+                    <div id="searchresults-outer" class="searchresults-outer hidden">
+                        <div id="searchresults-header" class="searchresults-header"></div>
+                        <ul id="searchresults">
+                        </ul>
+                    </div>
+                </div>
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script type="text/javascript">
+                    document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="content" class="content">
+                    <main>
+                        <p>分值：23分</p>
+<h1 id="本章节涉及到的各种分层"><a class="header" href="#本章节涉及到的各种分层">本章节涉及到的各种分层：</a></h1>
+<blockquote>
+<ul>
+<li>OSI模型7层：<strong>物理层，链路层，网络层，传输层，会话层，表示层，应用层</strong></li>
+<li>TCP协议4层：<strong>物理接口层，网络层，传输层，应用层</strong></li>
+<li>网络规划设计的3层：<strong>核心层，汇聚层，接入层</strong></li>
+<li>CMMI模型的5层：<strong>初始级，已管理级，已定义级，已量化级，已优化级</strong></li>
+<li>智慧城市的5层：<strong>物联感知层，通信网络层，计算存储层，数据和服务支撑层，智慧应用层</strong></li>
+<li>区块链的6层：<strong>数据层，网络层，共识层，激励层，合约层，应用层</strong></li>
+</ul>
+</blockquote>
+<h1 id="信息系统"><a class="header" href="#信息系统">信息系统</a></h1>
+<h2 id="信息的质量属性包括"><a class="header" href="#信息的质量属性包括">信息的质量属性包括</a></h2>
+<ul>
+<li>**精确性：**对事物状态描述的准确程度</li>
+<li>**完整性：**对事物状态描述的全面程度，完整信息包括所有重要事实</li>
+<li><strong>可靠性</strong>：对信息的来源、传递方法、传输过程都是可以信任的，符合预期</li>
+<li>**及时性：**获得信息的时刻与事件发生时刻的间隔长短</li>
+<li>**经济性：**信息获取传输带来的成本在可接受的范围内</li>
+<li>**可验证性：**信息的主要质量属性可以被证实或证伪</li>
+<li>**安全性：**信息可以被非授权访问的可能性</li>
+</ul>
+<h2 id="信息化的五个层次"><a class="header" href="#信息化的五个层次">信息化的五个层次</a></h2>
+<ol>
+<li>产品信息化</li>
+<li>企业信息化（生产制造系统、ERP、CRM、SCM）</li>
+<li>产业信息化</li>
+<li>国民经济信息化</li>
+<li>社会生活信息化（智慧城市，互联网金融）</li>
+</ol>
+<h2 id="erp的特点"><a class="header" href="#erp的特点">ERP的特点</a></h2>
+<ol>
+<li>专业性产品</li>
+<li>供应商项目实施</li>
+<li>分布式部署</li>
+<li>定位是管理变更</li>
+</ol>
+<h2 id="国家信息化体系"><a class="header" href="#国家信息化体系">国家信息化体系</a></h2>
+<p><img src=".assets/1584954931481-24dc0131-a9b0-4a84-a673-e430ece5172c.png" alt="image.png" /></p>
+<h2 id="信息系统的生命周期"><a class="header" href="#信息系统的生命周期">信息系统的生命周期</a></h2>
+<ul>
+<li>立项
+<ul>
+<li>系统规划：输出<strong>可行性研究报告</strong></li>
+</ul>
+</li>
+<li>开发
+<ul>
+<li>系统分析：提出<strong>新系统的逻辑模型</strong></li>
+<li>系统设计：设计<strong>新系统的物理模型，<strong>输出</strong>系统设计说明书</strong></li>
+<li>系统实施</li>
+<li>系统验收</li>
+</ul>
+</li>
+<li>运维和消亡</li>
+<li>从项目角度，<strong>项目的生命周期</strong>分为：
+<ul>
+<li>启动，计划，执行，收尾</li>
+</ul>
+</li>
+</ul>
+<h1 id="网络知识"><a class="header" href="#网络知识">网络知识</a></h1>
+<h2 id="osi网络模型与tcpip"><a class="header" href="#osi网络模型与tcpip">OSI网络模型与TCP/IP</a></h2>
+<p><img src=".assets/1584954977511-c7750397-fb8f-49d6-af8f-1bdfd8a301b1.png" alt="image.png" /></p>
+<h2 id="ieee802规范"><a class="header" href="#ieee802规范">IEEE802规范</a></h2>
+<p><img src=".assets/1584955025615-405f5b08-67f9-4bd0-bd96-f247c02a32c2.png" alt="image.png" /></p>
+<ul>
+<li><strong>IEEE802.3是重要的局域网协议</strong></li>
+<li><strong>IEEE802.11是无线局域网协议（WLAN)</strong></li>
+</ul>
+<p>**</p>
+<h2 id="网络存储技术"><a class="header" href="#网络存储技术">网络存储技术</a></h2>
+<ul>
+<li>DAS直接附加存储：本身是硬件的堆叠，存储操作依赖于服务器，没有存储操作系统</li>
+<li>NAS网络附加存储：
+<ul>
+<li>即插即用，仅提供文件系统功能</li>
+<li>主要是NFS(网络文件系统）和CIFS（通用Internet文件系统）</li>
+<li>支持TCP/IP协议，进行小文件级的共享存取</li>
+</ul>
+</li>
+<li>SAN存储区域网络：
+<ul>
+<li>高速光纤，极度可扩展型</li>
+<li>采用块block级别存储，没有文件共享存取</li>
+<li>再分类：
+<ul>
+<li>FCSAN：基于光纤通道，热插拔，高速带宽，设备数量大</li>
+<li>IPSAN：基于IP网络，可共享，成本低，技术简单</li>
+<li>IBSAN：设计紧密，能缓解各硬件设备之间的数据流量拥塞</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h2 id="实现高速以太网的宽带技术"><a class="header" href="#实现高速以太网的宽带技术">实现高速以太网的宽带技术</a></h2>
+<p>最常用的方式是FTTx+LAN光纤+局域网，分为5种</p>
+<ul>
+<li>FTTC光纤到路边</li>
+<li>FTTZ光纤到小区</li>
+<li>FTTB光纤到楼</li>
+<li>FTTF光纤到楼层</li>
+<li>FTTH光纤到户</li>
+</ul>
+<h2 id="网络工程三个阶段"><a class="header" href="#网络工程三个阶段">网络工程三个阶段</a></h2>
+<p>网络工程分为三个阶段</p>
+<ul>
+<li>网络规划
+<ul>
+<li><strong>网络需求分析</strong></li>
+<li><strong>可行性分析</strong></li>
+<li><strong>对现有网络的分析和描述</strong></li>
+</ul>
+</li>
+<li>网络设计：分层设计三个关键层
+<ul>
+<li><strong>汇聚层</strong>：核心层和接入层的分界面，负责<strong>网络访问策略控制、数据包处理、过滤、寻址，其他数据处理</strong></li>
+<li><strong>核心层</strong>：高速转发通信，提供优化可靠的骨干传输结构</li>
+<li><strong>接入层</strong>：允许终端用户连接当网络</li>
+</ul>
+</li>
+<li>网络实施</li>
+</ul>
+<h2 id="网络设计工作包括"><a class="header" href="#网络设计工作包括">网络设计工作包括</a></h2>
+<ul>
+<li>网络拓扑结构设计
+<ul>
+<li>局域网首选<strong>以太网技术</strong></li>
+<li>拓扑结构：考虑地理环境、传输介质与距离、可靠性
+<ul>
+<li>总线型、星形、环形，<strong>其中星形最常用</strong></li>
+</ul>
+</li>
+</ul>
+</li>
+<li>主干网络（核心层）设计：</li>
+<li>汇聚层和接入层设计：<strong>汇聚层存在与否，取决于网络规模大小</strong></li>
+<li>广域网连接与远程访问设计</li>
+<li>无线网络设计</li>
+<li>网络安全设计</li>
+<li>设备选型
+<ul>
+<li>核心交换机选型</li>
+<li>汇聚层和接入层交换机选型</li>
+<li>远程接入和访问设备选型</li>
+</ul>
+</li>
+</ul>
+<h1 id="软件开发与测试"><a class="header" href="#软件开发与测试">软件开发与测试</a></h1>
+<h2 id="常用的开发方法"><a class="header" href="#常用的开发方法">常用的开发方法</a></h2>
+<ul>
+<li>结构化方法（生命周期法，瀑布）：<strong>自顶向下、逐步求精、模块化设计</strong>
+<ul>
+<li>特点
+<ul>
+<li>开发目标清晰化</li>
+<li>开发工作阶段化</li>
+<li>开发文档规范化</li>
+<li>设计方法结构化</li>
+</ul>
+</li>
+<li>不足
+<ul>
+<li>开发周期长</li>
+<li>不适应需求变化</li>
+<li>很少考虑数据结构</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>面向对象方法：系统分析、系统设计和系统实现的界限不明确，自底向上方法</li>
+<li>原型化方法
+<ul>
+<li>分类
+<ul>
+<li>水平原型：行为原型，用来<strong>探索预期系统的一些特定行为，并达到细化需求的目的</strong>。用在界面上</li>
+<li>垂直原型：结构化原型，主要<strong>用在复杂的算法实现上</strong></li>
+</ul>
+</li>
+<li>特点
+<ul>
+<li>开发周期缩短、成本和风险降低、速度加快，获得较高的综合开发效益</li>
+<li>以<strong>用户为中心</strong>来开发，增加了用户的满意度</li>
+<li>因为用户参与了系统开发的全过程，<strong>有利于系统的移交，和运行维护</strong></li>
+</ul>
+</li>
+<li>缺点
+<ul>
+<li>适合<strong>分析层面难度大、技术层面难度不大的系统</strong>：对<strong>技术层面难度大的系统，不适合</strong></li>
+</ul>
+</li>
+</ul>
+</li>
+<li>面向服务
+<ul>
+<li>将接口的定义和实现进行解耦</li>
+<li>使信息系统快速响应需求和环境变化</li>
+<li><strong>提高系统的可复用性、信息资源共享和系统之间的互操作性</strong></li>
+</ul>
+</li>
+</ul>
+<h2 id="中间件"><a class="header" href="#中间件">中间件</a></h2>
+<p>三大层次</p>
+<ul>
+<li>底层型中间件</li>
+<li>通用型中间件</li>
+<li>集成型中间件</li>
+</ul>
+<p>为完成不同层次的集成，可采用的技术有：</p>
+<ul>
+<li>为了完成系统底层传输层的集成，可以采用<strong>CORBA</strong>技术</li>
+<li>为了完成不同系统的信息传递，可以采用<strong>消息中间件</strong>产品。</li>
+<li>为了完成不同硬件和操作系统的集成，可以采用<strong>J2EE中间件</strong>产品</li>
+</ul>
+<h2 id="软件需求分类"><a class="header" href="#软件需求分类">软件需求分类</a></h2>
+<p>软件需求的基本特征：<strong>可验证性</strong>。分类：</p>
+<ul>
+<li>第一分类方法
+<ul>
+<li>业务需求：<strong>反映企业或客户对系统高层次的目标要求</strong></li>
+<li>用户需求：<strong>用户的具体目标</strong></li>
+<li>系统需求：**从系统的角度说明软件需求，**包括
+<ul>
+<li>功能需求：系统为用户提供的某项功能，使用户的业务目标得以满足</li>
+<li>非功能需求：可维护性、效率、性能等需求</li>
+<li>设计约束：限制条件或补充规约</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>QFD的分类方法
+<ul>
+<li>常规需求</li>
+<li>期望需求</li>
+<li>意外需求</li>
+</ul>
+</li>
+</ul>
+<h2 id="sa方法需求分析"><a class="header" href="#sa方法需求分析">SA方法需求分析</a></h2>
+<p>建立的模型核心是<strong>数据字典</strong>，分为三个层次的模型</p>
+<ul>
+<li><strong>数据模型：实体联系图E-R图</strong></li>
+<li><strong>功能模型：数据流图DFD</strong></li>
+<li><strong>行为模型：状态转换图STD</strong></li>
+</ul>
+<h2 id="设计模式"><a class="header" href="#设计模式">设计模式</a></h2>
+<p>包含<strong>模式名称、问题、目的、解决方案、效果、示例代码和相关设计模式等基本要素</strong>。分类：</p>
+<ul>
+<li>处理范围不同，分为
+<ul>
+<li>类模式：类与子类的关系，<strong>静态关系</strong></li>
+<li>对象模式：对象之间关系，<strong>动态性关系</strong></li>
+</ul>
+</li>
+<li>目的和用途不同，分为
+<ul>
+<li>创建型模式：创建对象</li>
+<li>结构型模式：处理类或对象的组合</li>
+<li>行为型模式：描述类或对象的交互和职责分配</li>
+</ul>
+</li>
+</ul>
+<h2 id="软件测试方法"><a class="header" href="#软件测试方法">软件测试方法</a></h2>
+<ul>
+<li>静态测试：采用人工检测和计算机辅助静态测试
+<ul>
+<li>对文档的测试：检查单checklist方式</li>
+<li>代码的测试：
+<ul>
+<li><strong>桌前检查</strong></li>
+<li><strong>代码走查</strong></li>
+<li><strong>代码审查</strong></li>
+</ul>
+</li>
+</ul>
+</li>
+<li>动态测试：白盒和黑盒测试
+<ul>
+<li>白盒测试：结构测试，用于单元测试中
+<ul>
+<li>控制流测试</li>
+<li>数据流测试</li>
+<li>程序编译测试</li>
+</ul>
+</li>
+<li>黑盒测试：功能测试，用于集成测试、确认测试和系统测试。使用的方法有
+<ul>
+<li>等价类划分</li>
+<li>边界值分析</li>
+<li>判定表</li>
+<li>因果图</li>
+<li>状态图</li>
+<li>随机测试</li>
+<li>猜错法和正交试验法</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h2 id="软件测试分类"><a class="header" href="#软件测试分类">软件测试分类</a></h2>
+<ul>
+<li>单元测试：模块测试。检查每个模块是否正确实现设计说明中的功能、性能、接口和其他约束条件</li>
+<li>集成测试：检查模块之间，及模块和已集成的软件之间的接口关系，验证已集成的软件是否符合设计要求</li>
+<li>确认测试：验证功能、性能等是否符合用户需求
+<ul>
+<li><strong>内部确认测试</strong></li>
+<li><strong>Alpha和beta测试：开发环境和用户实际环境测试</strong></li>
+<li><strong>验收测试：以用户为主进行测试</strong></li>
+</ul>
+</li>
+<li>系统测试：真实系统工作环境，验证完整的软件是否满足设计文档和开发合同的要求</li>
+<li>配置项测试：</li>
+<li>回归测试**：测试软件变更后，变更部分的正确性和对变更需求的符合性，对原有功能、性能等不损害性**</li>
+</ul>
+<p>**</p>
+<h2 id="通用软件架构分类"><a class="header" href="#通用软件架构分类">通用软件架构分类</a></h2>
+<ul>
+<li>数据流风格：批处理序列架构，管道/过滤器</li>
+<li>调用/返回风格：主程序/子程序，数据抽象和面向对象</li>
+<li>独立构件风格：进程通信和事件驱动</li>
+<li>虚拟机风格：解释器和基于规则的系统</li>
+<li>仓库风格：数据库，黑板系统，超文本系统</li>
+</ul>
+<h2 id="软件架构评估方式"><a class="header" href="#软件架构评估方式">软件架构评估方式</a></h2>
+<ul>
+<li>调查问卷或检查表</li>
+<li><strong>基于场景方式：最常见</strong>
+<ul>
+<li><strong>分析方法</strong>
+<ul>
+<li>架构权衡分析法ATAM</li>
+<li>软件架构分析法SAAM</li>
+<li>成本效益分析法CBAM</li>
+</ul>
+</li>
+<li>对场景的描述
+<ul>
+<li>刺激</li>
+<li>环境</li>
+<li>响应</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>基于度量</li>
+</ul>
+<h2 id="评审和审计过程"><a class="header" href="#评审和审计过程">评审和审计过程</a></h2>
+<ol>
+<li><strong>管理评审</strong>：监控进展，决定计划和进度的状态，确认需求及其系统分配，或评价用于达到目标适应性的管理方法的有效性</li>
+<li><strong>技术评审</strong>：评价软件产品，以确定其对使用意图的适合性，表明产品是否满足要求</li>
+<li>检查：检测和识别软件产品异常，<strong>正式的</strong></li>
+<li>走查：评价软件产品，走查也可以用于培训软件产品的听众软件，<strong>随意的</strong></li>
+<li><strong>软件审计</strong>：提供软件产品和过程对于可应用的规则、标准、指南、计划和流程的遵从性的独立评价，<strong>审计是事后进行的</strong></li>
+</ol>
+<p>**</p>
+<h1 id="平均无故障时间公式"><a class="header" href="#平均无故障时间公式">平均无故障时间公式</a></h1>
+<ul>
+<li><strong>平均无故障时间（MTTF）</strong>：计算机平均能正常运行多长时间才发生一次故障</li>
+<li><strong>平均维修时间（MTTR，可维护性）</strong>：故障后维修和重新恢复所花费的时间</li>
+<li><strong>可用性</strong>：系统正常运行时间的百分比，公式为
+<ul>
+<li>MTTF / (MTTF+MTTR) * 100%</li>
+</ul>
+</li>
+</ul>
+<h1 id="能力成熟度模型cmmi"><a class="header" href="#能力成熟度模型cmmi">能力成熟度模型CMMI</a></h1>
+<ul>
+<li>
+<p>CMMI是最著名的<strong>软件过程管理</strong>，分为<strong>阶段式模型和连续式模型</strong>（两种表示方法各有优缺点，都采用统一的24个过程域，对同一组织进行CMMI评估，结果是相同的）</p>
+<ul>
+<li>阶段式：表示组织的成熟度</li>
+<li>连续式：表示组织的过程能力</li>
+<li><strong>24个过程域</strong>分为
+<ul>
+<li>过程管理</li>
+<li>项目管理</li>
+<li>工程</li>
+<li>支持
+|   | 项目管理 | 过程管理 | 工程 | 支持 |
+| --- | --- | --- | --- | --- |
+| 组成 | 集成项目管理IPM项目监督与控制PMC项目计划PP量化项目管理QPM需求管理REQM风险管理RSKM供方协议管理SAM | 组织级过程定义OPD组织级过程关注OPF组织级绩效管理OPM组织级过程性能OPP组织级培训OT | 产品集成PI需求开发RD技术解决方案TS确认VAL验证VER | 原因分析与解决CAR配置管理CM决策分析与解决DAR度量与分析MA过程与产品质量保证PPQA |</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p><strong>CMMI五层分级</strong></p>
+<ul>
+<li>CMMI1初始级：随意混乱，没有稳定的环境</li>
+<li>CMMI2已管理级：产品和服务满足其规定的过程描述、标准和规程</li>
+<li>CMMI3已定义级：过程得到清晰的说明和理解</li>
+<li>CMMI4已量化级：建立了质量与过程性能的量化目标（成熟度3级和4级的关键区别是<strong>对过程性能的可预测性</strong>）</li>
+<li>CMMI5优化级：组织给予需要的量化理解，不断的改进其进程</li>
+</ul>
+</li>
+</ul>
+<h1 id="uml"><a class="header" href="#uml">UML</a></h1>
+<ul>
+<li>面向对象分析阶段的<strong>核心工作是建立系统的用例模型和分析模型</strong></li>
+</ul>
+<h2 id="uml语言特点"><a class="header" href="#uml语言特点">UML语言特点</a></h2>
+<ul>
+<li>一种可视化的建模语言，不是程序设计语言</li>
+<li>不是过程，也不是方法，但允许任何一种过程和方法使用它</li>
+<li><strong>最适合迭代式开发过程</strong></li>
+</ul>
+<h2 id="uml的四种关系"><a class="header" href="#uml的四种关系">UML的四种关系</a></h2>
+<ul>
+<li>依赖：语义关系，一个事物变化会影响另一个事物的语义</li>
+<li>关联：一组对象之间连接的结构关系</li>
+<li>泛化：一般化和特殊化的关系</li>
+<li>实现：类之间的语义关系</li>
+</ul>
+<h2 id="uml的14种图"><a class="header" href="#uml的14种图">UML的14种图</a></h2>
+<table><thead><tr><th><strong>类图</strong></th><th>描述一组类、接口、协作和它们之间的关系，最常见的图</th><th><img src=".assets/1584955294680-b5b9fd1b-088c-427d-8638-744f041e7b78.png" alt="image.png" /></th></tr></thead><tbody>
+<tr><td><strong>对象图</strong></td><td>描述一组对象和他们之间的关系，是类图中事物实例的静态快照</td><td><img src=".assets/1584955309639-80704f7c-73c0-4733-bcbc-d72c7ba04af1.png" alt="image.png" /></td></tr>
+<tr><td>构件图</td><td>一个封装的类和他的接口、端口和内嵌的构件和连接件的内部结构</td><td><img src=".assets/1584955388627-8b705fe5-1aff-449c-b8eb-83f37eca6aca.png" alt="image.png" /></td></tr>
+<tr><td>组合结构图</td><td>结构化类的内部结构和内部内容</td><td> </td></tr>
+<tr><td><strong>用例图</strong></td><td>一组用例、参与者和他们之间的关系，包括<strong>基于基本流程的“角色”关系</strong></td><td><img src=".assets/1585012961962-72624bea-dae8-4efe-8f6a-d14e22dda296.png" alt="image.png" /></td></tr>
+<tr><td>序列图</td><td>顺序图，展现一种交互，由一组对象或参与者和他们之间可能发送的消息构成。按<strong>执行者角色、控制类、用户接口、业务层、后台数据库</strong>从左向右排列强调对象的时序</td><td><img src=".assets/1585012995091-b9bf7bf6-9eba-435d-8dbd-6054f32960fa.png" alt="image.png" /></td></tr>
+<tr><td>通信图</td><td>强调收发消息的对象之间组织关系</td><td><img src=".assets/1585013011736-0967dc04-dd4c-4c9b-9667-42374c0acc28.png" alt="image.png" /></td></tr>
+<tr><td>定时图</td><td>计时图，关系消息的相对顺序</td><td><img src=".assets/1585013023397-4a442108-7c28-4295-b370-330439be6139.png" alt="image.png" /></td></tr>
+<tr><td>状态图</td><td>一个状态机，由状态、转移、事件和活动组成</td><td><img src=".assets/1585013032856-dd7f101d-332f-4b38-a338-27e1ad63e7f4.png" alt="image.png" /></td></tr>
+<tr><td>活动图</td><td>展示计算内部一步步的控制流和数据流</td><td><img src=".assets/1585013061048-ea59e7e7-a290-4f0d-a320-bed810526a7e.png" alt="image.png" /></td></tr>
+<tr><td>部署图</td><td>对运行时的处理节点及在其中生存的构件的配置</td><td><img src=".assets/1585013101584-4aab7f6c-75c7-42f5-b7b3-1be3912b50da.png" alt="image.png" /></td></tr>
+<tr><td>制品图</td><td>描述一个系统的物理结构</td><td><img src=".assets/1585013120753-f083b0ee-e8a6-4066-8e4c-ebdb605b6554.png" alt="image.png" /></td></tr>
+<tr><td>包图</td><td>由模型本身分解而成的组织单元</td><td><img src=".assets/1585013142824-54e4a1fb-1e74-4cd4-adc2-c6c1489fa346.png" alt="image.png" /></td></tr>
+<tr><td>交互概览图</td><td>活动图和顺序图的混合物</td><td> </td></tr>
+</tbody></table>
+<h2 id="uml的5个系统视图"><a class="header" href="#uml的5个系统视图">UML的5个系统视图</a></h2>
+<ul>
+<li>逻辑视图：设计视图，类、子系统、包和用例实现的子集</li>
+<li>进程视图：逻辑视图的一次执行实例，并发和同步的结构</li>
+<li>实现视图：文件和构件进行建模</li>
+<li>部署视图：软件到硬件的映射和分布结构</li>
+<li>用例视图：<strong>最基本的需求分析模型</strong></li>
+</ul>
+<p> </p>
+<h2 id="类之间的关系"><a class="header" href="#类之间的关系">类之间的关系</a></h2>
+<ul>
+<li>关联：对象之间的关系</li>
+<li>依赖：一个类变化引起一个类变化</li>
+<li>泛化：<strong>继承关系是泛化关系的反关系</strong></li>
+<li>聚合：整体和部分的关系，<strong>部分与整体的生命周期不相同</strong></li>
+<li>组合：整体与部分的关系，<strong>部分和整体的生命周期相同</strong></li>
+<li>实现：接口是实现的关联</li>
+</ul>
+<p><img src=".assets/1585013174091-1f07f274-865c-47e3-bbe1-8d3fd58684dd.png" alt="image.png" /></p>
+<h1 id="eai企业应用集成"><a class="header" href="#eai企业应用集成">EAI企业应用集成</a></h1>
+<ul>
+<li>表示集成：界面集成，是最常用的集成，<strong>黑盒集成</strong></li>
+<li>数据集成：白盒集成</li>
+<li>控制集成：功能集成或应用集成，在<strong>业务逻辑层</strong>对应用进行集成</li>
+<li>业务流程集成：过程集成，由一系列基于标准的、统一数据格式的工作流组成</li>
+<li>企业之间的应用集成：集成供应链</li>
+</ul>
+<p><img src=".assets/1585013210193-8b2f6a0a-7261-4474-93fa-b023fae3f31f.png" alt="image.png" /></p>
+<h1 id="新兴技术"><a class="header" href="#新兴技术">新兴技术</a></h1>
+<h2 id="云计算分类"><a class="header" href="#云计算分类">云计算分类</a></h2>
+<ul>
+<li>IaaS基础设施即服务：硬件、计算能力、存储空间</li>
+<li>PaaS平台即服务：虚拟的操作系统、数据库管理系统、web应用</li>
+<li>SaaS软件即服务：应用软件、组件、工作流等虚拟化软件</li>
+</ul>
+<h2 id="cps信息物理系统"><a class="header" href="#cps信息物理系统">CPS信息物理系统</a></h2>
+<p>CPS是一个综合计算、网络和物理环境的多维复杂系统，通过<strong>3C（computer、communication、control）</strong>，<strong>是智能制造的核心。</strong></p>
+<h2 id="智慧城市"><a class="header" href="#智慧城市">智慧城市</a></h2>
+<h3 id="智能的特点"><a class="header" href="#智能的特点">智能的特点</a></h3>
+<ul>
+<li>感知能力：获取外部信息的能力</li>
+<li><strong>记忆和思维能力</strong>：对信息进行分析、计算、比较、判断、联想、决策</li>
+<li>学习和自适应能力：学习积累知识，使自己能够适应环境变化</li>
+<li>行动决策能力：对外界的刺激做出反应，形成决策并传达相应的信息</li>
+</ul>
+<h3 id="智慧城市建设"><a class="header" href="#智慧城市建设">智慧城市建设</a></h3>
+<ul>
+<li>传感器或信息采集设备<strong>获取城市系统数据</strong></li>
+<li>通过网络将城市数据分析为<strong>信息</strong></li>
+<li>通过<strong>充分共享、智能挖掘</strong>将信息变为知识</li>
+<li>结合信息技术，将知识应用到各行各业<strong>形成智慧</strong></li>
+</ul>
+<h3 id="智慧城市的五个功能层"><a class="header" href="#智慧城市的五个功能层">智慧城市的五个功能层</a></h3>
+<ol>
+<li>物联感知层</li>
+<li>通信网络层</li>
+<li>计算和存储层</li>
+<li>数据及服务支撑层</li>
+<li>智慧应用层</li>
+</ol>
+<h3 id="智慧城市三个支撑体系"><a class="header" href="#智慧城市三个支撑体系">智慧城市三个支撑体系</a></h3>
+<ul>
+<li>安全保障体系</li>
+<li>建设和运营管理体系</li>
+<li>标准规范体系</li>
+</ul>
+<h2 id="区块链"><a class="header" href="#区块链">区块链</a></h2>
+<h3 id="特点"><a class="header" href="#特点">特点</a></h3>
+<ul>
+<li><strong>分布式存储、点对点传输、共识机制（不同节点建立信息、获取权益的数学算法）、加密算法</strong></li>
+</ul>
+<h3 id="分层"><a class="header" href="#分层">分层</a></h3>
+<ul>
+<li>数据层：底层数据区块、数据加密、时间戳</li>
+<li>网络层：分布式组网、数据传播机制、数据验证机制</li>
+<li>共识层：共识算法</li>
+<li>激励层：经济激励的发行机制和分配机制</li>
+<li>合约层：各类脚本、算法、智能合约</li>
+<li>应用层：区块链应用场景</li>
+</ul>
+<h2 id="商业智能bi"><a class="header" href="#商业智能bi">商业智能BI</a></h2>
+<ul>
+<li>内容
+<ul>
+<li>数据仓库、联机事务处理OLTP、 联机分析处理OLAP、数据挖掘、数据备份和恢复</li>
+</ul>
+</li>
+<li>特点
+<ul>
+<li>数据量大、运作复杂、<strong>数据仓库</strong>ETL、数据统计和分析</li>
+</ul>
+</li>
+<li>三个层次
+<ul>
+<li>数据报表</li>
+<li>多维数据分析</li>
+<li>数据挖掘</li>
+</ul>
+</li>
+</ul>
+<h2 id="数据仓库"><a class="header" href="#数据仓库">数据仓库</a></h2>
+<p>用于支持管理决策<img src=".assets/1584955073680-174c0a8e-db2b-4f23-94f4-2ac27cd0c068.png" alt="image.png" /></p>
+<ul>
+<li>ROLAP：基本数据和聚合数据都放在<strong>RDBMS</strong>中</li>
+<li>MOLAP：基本数据和聚合数据都放在<strong>多维数据库</strong>中</li>
+<li>HOLAP：<strong>基本数据放在RDBMS</strong>，<strong>聚合数据放在多维数据库</strong></li>
+</ul>
+<p>**</p>
+<h2 id="互联网特点"><a class="header" href="#互联网特点">互联网+特点</a></h2>
+<ol>
+<li>跨界融合</li>
+<li>创新驱动</li>
+<li>重塑结构</li>
+<li>尊重人性</li>
+<li>开放生态</li>
+<li>连接一切</li>
+</ol>
+<h1 id="工业化和信息化融合的含义"><a class="header" href="#工业化和信息化融合的含义">工业化和信息化融合的含义</a></h1>
+<ol>
+<li>信息化与工业化发展战略的融合</li>
+<li>信息资源与材料、能源等工业资源的融合</li>
+<li>虚拟经济和工业实体经济的融合</li>
+<li>信息技术与工业技术、IT设备与工业装备的融合</li>
+</ol>
+<h1 id="监理活动"><a class="header" href="#监理活动">监理活动</a></h1>
+<h2 id="四控三管一协调"><a class="header" href="#四控三管一协调">四控、三管、一协调</a></h2>
+<p><strong>监理活动的主要内容</strong></p>
+<ul>
+<li>四控：
+<ul>
+<li>质量控制</li>
+<li>进度控制</li>
+<li>投资控制</li>
+<li>变更控制</li>
+</ul>
+</li>
+<li>三管
+<ul>
+<li>合同管理</li>
+<li>信息管理</li>
+<li>安全管理</li>
+</ul>
+</li>
+<li>一协调
+<ul>
+<li>协调有关单位和人员间的工作关系</li>
+</ul>
+</li>
+<li>三个文件
+<ul>
+<li>监理大纲</li>
+<li>监理规划</li>
+<li>监理实施细则</li>
+</ul>
+</li>
+</ul>
+<h2 id="总监理工程师任务管人管钱管工期"><a class="header" href="#总监理工程师任务管人管钱管工期">总监理工程师任务（<strong>管人、管钱、管工期</strong>）</a></h2>
+<ul>
+<li>主持编写监理规划</li>
+<li>签发工程开工/复工报审表、监理通知、工程款支付证书，工程竣工监理报告</li>
+<li>调节合同争议、处理索赔、审批工程延期</li>
+<li>监理人员的调配、调换</li>
+</ul>
+<h1 id="企业系统规划"><a class="header" href="#企业系统规划">企业系统规划</a></h1>
+<h2 id="步骤"><a class="header" href="#步骤">步骤</a></h2>
+<table><thead><tr><th>1. 项目确定1. 准备工作1. 定义企业过程1. 识别定义数据类1. 分析现有系统1. 确定管理部门对系统的要求1. 提出判断和结论1. 制定建议书和开发计划1. 成果报告</th><th><img src=".assets/1585013405924-fad97d45-4e26-406b-b91e-a84e075049ff.png" alt="image.png" /></th></tr></thead><tbody>
+</tbody></table>
+<h2 id="信息系统的规划工具"><a class="header" href="#信息系统的规划工具">信息系统的规划工具</a></h2>
+<ul>
+<li>制定计划：PERT图、甘特图</li>
+<li>访谈：调查表、调查提纲</li>
+<li>确定各层管理人员需求，梳理流程：会谈、正式会议</li>
+<li>企业组织结构与企业过程的关系，指出过程决策人：<strong>过程/组织矩阵（P/O矩阵）</strong></li>
+</ul>
+<p><img src=".assets/1585013427832-bc4d2fd3-3f39-4713-a674-a89cad10bc3d.png" alt="image.png" /></p>
+<ul>
+<li>归纳数据类和企业资源：<strong>资源/数据矩阵（R/D矩阵）</strong></li>
+</ul>
+<p><img src=".assets/1585013445109-3894dd6d-1968-4c70-b8eb-10a5afd46000.png" alt="image.png" /></p>
+<ul>
+<li>功能法（过程法），利用所识别的企业过程，分析每个过程的输入数据类和输出数据类，与RD矩阵进行比较并调整，最后归纳出系统的数据类：<strong>IPO</strong>**（输入****-<strong><strong>处理</strong></strong>-**<strong>输出）图</strong></li>
+</ul>
+<p>**</p>
+<ul>
+<li>**过程/数据矩阵（CU矩阵）：**企业过程和数据类定义好后，以企业过程为行，以数据类为列，按照企业过程生成数据类关系填写c (Create)，使用数据类关系填写u(User)</li>
+</ul>
+<p><img src=".assets/1585013475230-f56d151c-9239-42f6-97cf-bd50c7d2d197.png" alt="image.png" /></p>
+<h1 id="crm客户关系管理"><a class="header" href="#crm客户关系管理">CRM客户关系管理</a></h1>
+<p>要素</p>
+<ul>
+<li>不仅以<strong>客户为中心</strong>的信息系统，更是一种市场管理策略</li>
+<li>注重客户满意度，提升企业获得利润的能力</li>
+<li>要求企业对业务功能重新设计，将业务中心转移到客户，对不同客户采取不同的策略</li>
+</ul>
+<h1 id="电子政务"><a class="header" href="#电子政务">电子政务</a></h1>
+<ul>
+<li>G2G政府对政府</li>
+<li>G2B政府对企业</li>
+<li>G2C政府对公众</li>
+<li>G2E政府对公务员</li>
+</ul>
+<p><img src=".assets/1585013306113-0f2253ec-04cf-4921-b12f-a0040cc1dcf9.png" alt="image.png" /></p>
+
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+                            <a rel="prev" href="../../index.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                <i class="fa fa-angle-left"></i>
+                            </a>
+                            <a rel="next" href="../教材基础/2项目管理基础.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                                <i class="fa fa-angle-right"></i>
+                            </a>
+                        <div style="clear: both"></div>
+                    </nav>
+                </div>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+                    <a rel="prev" href="../../index.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                        <i class="fa fa-angle-left"></i>
+                    </a>
+                    <a rel="next" href="../教材基础/2项目管理基础.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                        <i class="fa fa-angle-right"></i>
+                    </a>
+            </nav>
+
+        </div>
+
+        <script type="text/javascript">
+            window.playground_copyable = true;
+        </script>
+        <script src="../elasticlunr.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../mark.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../searcher.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../clipboard.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../highlight.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../book.js" type="text/javascript" charset="utf-8"></script>
+
+        <!-- Custom JS scripts -->
+    </body>
+</html>

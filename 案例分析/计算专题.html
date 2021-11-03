@@ -1,0 +1,368 @@
+<!DOCTYPE HTML>
+<html lang="en" class="sidebar-visible no-js light">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>计算专题 - Project Manager Examine Notes</title>
+        <!-- Custom HTML head -->
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff" />
+
+        <link rel="icon" href="../favicon.svg">
+        <link rel="shortcut icon" href="../favicon.png">
+        <link rel="stylesheet" href="../css/variables.css">
+        <link rel="stylesheet" href="../css/general.css">
+        <link rel="stylesheet" href="../css/chrome.css">
+        <link rel="stylesheet" href="../css/print.css" media="print">
+        <!-- Fonts -->
+        <link rel="stylesheet" href="../FontAwesome/css/font-awesome.css">
+        <link rel="stylesheet" href="../fonts/fonts.css">
+        <!-- Highlight.js Stylesheets -->
+        <link rel="stylesheet" href="../highlight.css">
+        <link rel="stylesheet" href="../tomorrow-night.css">
+        <link rel="stylesheet" href="../ayu-highlight.css">
+
+        <!-- Custom theme stylesheets -->
+    </head>
+    <body>
+        <!-- Provide site root to javascript -->
+        <script type="text/javascript">
+            var path_to_root = "../";
+            var default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "navy" : "light";
+        </script>
+
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script type="text/javascript">
+            try {
+                var theme = localStorage.getItem('mdbook-theme');
+                var sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script type="text/javascript">
+            var theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
+            if (theme === null || theme === undefined) { theme = default_theme; }
+            var html = document.querySelector('html');
+            html.classList.remove('no-js')
+            html.classList.remove('light')
+            html.classList.add(theme);
+            html.classList.add('js');
+        </script>
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script type="text/javascript">
+            var html = document.querySelector('html');
+            var sidebar = 'hidden';
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            }
+            html.classList.remove('sidebar-visible');
+            html.classList.add("sidebar-" + sidebar);
+        </script>
+
+        <nav id="sidebar" class="sidebar" aria-label="Table of contents">
+            <div class="sidebar-scrollbox">
+                <ol class="chapter"><li class="chapter-item expanded "><a href="../../index.html"><strong aria-hidden="true">1.</strong> README</a></li><li class="chapter-item expanded "><div><strong aria-hidden="true">2.</strong> 教材基础</div></li><li><ol class="section"><li class="chapter-item expanded "><a href="../教材基础/1信息化.html"><strong aria-hidden="true">2.1.</strong> 信息化</a></li><li class="chapter-item expanded "><a href="../教材基础/2项目管理基础.html"><strong aria-hidden="true">2.2.</strong> 项目管理基础</a></li><li class="chapter-item expanded "><a href="../教材基础/3立项管理.html"><strong aria-hidden="true">2.3.</strong> 立项管理</a></li><li class="chapter-item expanded "><a href="../教材基础/4整体管理.html"><strong aria-hidden="true">2.4.</strong> 整体管理</a></li><li class="chapter-item expanded "><a href="../教材基础/5范围管理.html"><strong aria-hidden="true">2.5.</strong> 范围管理</a></li><li class="chapter-item expanded "><a href="../教材基础/6进度管理.html"><strong aria-hidden="true">2.6.</strong> 进度管理</a></li><li class="chapter-item expanded "><a href="../教材基础/7成本管理.html"><strong aria-hidden="true">2.7.</strong> 成本管理</a></li><li class="chapter-item expanded "><a href="../教材基础/8质量管理.html"><strong aria-hidden="true">2.8.</strong> 质量管理</a></li><li class="chapter-item expanded "><a href="../教材基础/9人力资源管理.html"><strong aria-hidden="true">2.9.</strong> 人力资源管理</a></li><li class="chapter-item expanded "><a href="../教材基础/10沟通和干系人管理.html"><strong aria-hidden="true">2.10.</strong> 沟通和干系人管理</a></li><li class="chapter-item expanded "><a href="../教材基础/11风险管理.html"><strong aria-hidden="true">2.11.</strong> 风险管理</a></li><li class="chapter-item expanded "><a href="../教材基础/12采购管理.html"><strong aria-hidden="true">2.12.</strong> 采购管理</a></li><li class="chapter-item expanded "><a href="../教材基础/13合同管理.html"><strong aria-hidden="true">2.13.</strong> 合同管理</a></li><li class="chapter-item expanded "><a href="../教材基础/14文档和配置管理.html"><strong aria-hidden="true">2.14.</strong> 文档和配置管理</a></li><li class="chapter-item expanded "><a href="../教材基础/15组织级项目管理.html"><strong aria-hidden="true">2.15.</strong> 组织级项目管理</a></li><li class="chapter-item expanded "><a href="../教材基础/16流程管理.html"><strong aria-hidden="true">2.16.</strong> 流程管理</a></li><li class="chapter-item expanded "><a href="../教材基础/17项目集.html"><strong aria-hidden="true">2.17.</strong> 项目集</a></li><li class="chapter-item expanded "><a href="../教材基础/18信息安全管理.html"><strong aria-hidden="true">2.18.</strong> 信息安全管理</a></li><li class="chapter-item expanded "><a href="../教材基础/19测试管理.html"><strong aria-hidden="true">2.19.</strong> 测试管理</a></li><li class="chapter-item expanded "><a href="../教材基础/20法律法规.html"><strong aria-hidden="true">2.20.</strong> 法律法规</a></li><li class="chapter-item expanded "><a href="../教材基础/21技术标准.html"><strong aria-hidden="true">2.21.</strong> 技术标准</a></li></ol></li><li class="chapter-item expanded "><div><strong aria-hidden="true">3.</strong> 案例分析</div></li><li><ol class="section"><li class="chapter-item expanded "><a href="../案例分析/案例分析简介.html"><strong aria-hidden="true">3.1.</strong> 案例分析简介</a></li><li class="chapter-item expanded "><a href="../案例分析/常见问题和措施汇总.html"><strong aria-hidden="true">3.2.</strong> 常见问题和措施汇总</a></li><li class="chapter-item expanded "><a href="../案例分析/计算专题.html" class="active"><strong aria-hidden="true">3.3.</strong> 计算专题</a></li><li class="chapter-item expanded "><a href="../案例分析/理论题考点汇总.html"><strong aria-hidden="true">3.4.</strong> 理论题考点汇总</a></li></ol></li><li class="chapter-item expanded "><div><strong aria-hidden="true">4.</strong> 论文</div></li><li><ol class="section"><li class="chapter-item expanded "><a href="../论文/十大领域论文.html"><strong aria-hidden="true">4.1.</strong> 十大领域论文</a></li></ol></li><li class="chapter-item expanded "><div><strong aria-hidden="true">5.</strong> 错题记录</div></li><li><ol class="section"><li class="chapter-item expanded "><a href="../错题记录/历年上午真题.html"><strong aria-hidden="true">5.1.</strong> 历年上午真题</a></li><li class="chapter-item expanded "><a href="../错题记录/案例分析真题.html"><strong aria-hidden="true">5.2.</strong> 案例分析真题</a></li></ol></li></ol>
+            </div>
+            <div id="sidebar-resize-handle" class="sidebar-resize-handle"></div>
+        </nav>
+
+        <div id="page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                <div id="menu-bar-hover-placeholder"></div>
+                <div id="menu-bar" class="menu-bar sticky bordered">
+                    <div class="left-buttons">
+                        <button id="sidebar-toggle" class="icon-button" type="button" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
+                            <i class="fa fa-bars"></i>
+                        </button>
+                        <button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
+                            <i class="fa fa-paint-brush"></i>
+                        </button>
+                        <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                            <li role="none"><button role="menuitem" class="theme" id="light">Light (default)</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="rust">Rust</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
+                        </ul>
+                        <button id="search-toggle" class="icon-button" type="button" title="Search. (Shortkey: s)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="S" aria-controls="searchbar">
+                            <i class="fa fa-search"></i>
+                        </button>
+                    </div>
+
+                    <h1 class="menu-title">Project Manager Examine Notes</h1>
+
+                    <div class="right-buttons">
+                        <a href="../print.html" title="Print this book" aria-label="Print this book">
+                            <i id="print-button" class="fa fa-print"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div id="search-wrapper" class="hidden">
+                    <form id="searchbar-outer" class="searchbar-outer">
+                        <input type="search" id="searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+                    </form>
+                    <div id="searchresults-outer" class="searchresults-outer hidden">
+                        <div id="searchresults-header" class="searchresults-header"></div>
+                        <ul id="searchresults">
+                        </ul>
+                    </div>
+                </div>
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script type="text/javascript">
+                    document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="content" class="content">
+                    <main>
+                        <h1 id="进度类计算"><a class="header" href="#进度类计算">进度类计算</a></h1>
+<h2 id="三点估算pert"><a class="header" href="#三点估算pert">三点估算PERT</a></h2>
+<ul>
+<li>最可能时间tm</li>
+<li>最乐观时间to</li>
+<li>最悲观时间tp</li>
+</ul>
+<h3 id="公式"><a class="header" href="#公式">公式</a></h3>
+<ul>
+<li>活动持续时间**/期望值te=(to+tm*4+tp)/6**</li>
+<li>持续时间<strong>标准差=(tp-to) / 6</strong></li>
+<li><strong>完工概率</strong>：面积法
+<ul>
+<li>期望值te为下图的中轴</li>
+<li>两边对称分布，分别加减标准差，右加左减，得出天数</li>
+<li>图中68%，95%，99%为概率。根据天数和概率即可得到某时间段的完工概率</li>
+</ul>
+</li>
+</ul>
+<p><img src=".assets/1585289036217-6a5f449f-eaa5-4228-9064-3a35cd883b39.png" alt="image.png" /></p>
+<h2 id=""><a class="header" href="#"> </a></h2>
+<h2 id="单代号网络图"><a class="header" href="#单代号网络图">单代号网络图</a></h2>
+<h3 id="工期计算"><a class="header" href="#工期计算">工期计算</a></h3>
+<p>节点表示活动，箭线表示活动之间的关系<img src=".assets/1585289068576-8b23f343-4d61-4503-8fcd-29b10824afe5.png" alt="image.png" /></p>
+<ul>
+<li>最早开始时间（ES）</li>
+<li>最早完成时间（EF）：EF=ES+工期估算</li>
+<li>最迟开始时间（LS）</li>
+<li>最迟完成时间（LF）：LF=LS+工期估算</li>
+</ul>
+<p><img src=".assets/1585289093226-03c65b12-d4a2-47ff-8826-ae5e7ffc01a4.png" alt="image.png" /></p>
+<ul>
+<li>ES和EF：
+<ul>
+<li><strong>第一个节点的ES为0</strong>，然后依次往后计算（正推法）</li>
+<li>遇到两个节点会合到一个节点的，<strong>取EF的最大值</strong></li>
+</ul>
+</li>
+<li>LS和LF：
+<ul>
+<li>最后一个节点的EF=LF，然后从后往前推（逆推法）</li>
+<li>遇到两个节点会合到一个节点的，<strong>取LS的最小值</strong></li>
+</ul>
+</li>
+<li><strong>浮动时间</strong>**/<strong><strong>总时差</strong></strong>      = LS-ES = LF-EF**</li>
+</ul>
+<p>注意：关键路径上的浮动时间为0，肯定的</p>
+<ul>
+<li><strong>自由浮动时间</strong>**/<strong><strong>自由时差</strong></strong>=       min(<strong><strong>后一节点的</strong></strong>ES)- EF**</li>
+<li>**关键路径：从开始到结束的路径中，**<strong>活动历时之和最大的路径</strong></li>
+<li><strong>总工期</strong>**：关键路径的历时之和**</li>
+</ul>
+<p><img src=".assets/1585289117693-2a12e441-42fd-4bc1-aced-c3efd60ea6a1.png" alt="image.png" /></p>
+<h3 id="规律总结"><a class="header" href="#规律总结">规律总结</a></h3>
+<p>不画上面的网络图，直接根据规律计算，与上面填图的原理是一样的。规律如下</p>
+<ol>
+<li>从起点到终点最大长度为关键路径，<strong>关键路径上活动之和为总工期</strong>，关键路径上活动为关键活动</li>
+<li><strong>关键路径上活动总时差=自由时差=0</strong></li>
+<li><strong>非关键路径上活动总时差</strong>=<strong>关键路径长度-经过这个节点最大非关键路径长度</strong></li>
+<li><strong>非关键路径上活动自由时差</strong>
+<ol>
+<li>紧后工作是关键工作，总时差=自由时差，总时差计算方法看3</li>
+<li>紧后工作不是关键工作，自由时差=0</li>
+<li>紧后工作有关键工作和非关键工作，自由时差=0</li>
+</ol>
+</li>
+</ol>
+<h2 id="双代号网络图规律总结"><a class="header" href="#双代号网络图规律总结">双代号网络图规律总结</a></h2>
+<p><img src=".assets/1585289206927-3fad3c49-841f-47ba-8d73-4667da87df9d.png" alt="image.png" /></p>
+<ul>
+<li><strong>关键路径</strong>：<strong>全实线</strong>组成的路径</li>
+<li>关键路径上的活动的自由时差=总时差=0</li>
+<li>某活动的<strong>自由时差=本任务到下一节点的波形线的长度</strong></li>
+<li>某活动的<strong>总时差=以该任务为起点，到达重点的路径中波形线之和的最小值</strong></li>
+<li>某活动拖延时间对项目进度的影响
+<ul>
+<li>非关键活动：如果拖延时间大于总时差，则影响为两者差值</li>
+<li>关键活动：该节点关键路径长度变化，重新选择关键路径，比较新旧关键路径的差值 </li>
+</ul>
+</li>
+</ul>
+<h1 id="成本类计算"><a class="header" href="#成本类计算">成本类计算</a></h1>
+<h2 id="挣值分析计算"><a class="header" href="#挣值分析计算">挣值分析计算</a></h2>
+<h3 id="四个参数"><a class="header" href="#四个参数">四个参数</a></h3>
+<ul>
+<li><strong>BAC</strong>：全部计划工作的价值，成本基准</li>
+<li><strong>计划成本PV</strong>：预算值，<strong>按计划到目前为止应该花费的预算（要干的活）</strong></li>
+<li><strong>挣值EV</strong>：到目前为止，完成的工作按计划应该花费的预算**（干完的活）**
+<ul>
+<li><strong>EV = PV * 百分比</strong></li>
+</ul>
+</li>
+<li><strong>实际成本AC</strong>：到目前为止，完成的工作实际的花费**（实际花费）**</li>
+</ul>
+<p><img src=".assets/1585289307336-3c49a47a-923c-4f08-90a8-34da3878b3b0.png" alt="image.png" /></p>
+<h3 id="四个指标"><a class="header" href="#四个指标">四个指标</a></h3>
+<ul>
+<li><strong>SV进度偏差</strong>：SV=EV-PV</li>
+<li><strong>CV成本偏差</strong>：CV=EV-AC</li>
+<li><strong>进度执行指数SPI</strong>：SPI=EV/PV</li>
+<li><strong>成本执行指数CPI</strong>：CPI=EV/AC</li>
+</ul>
+<h3 id="完工预算公式"><a class="header" href="#完工预算公式">完工预算公式</a></h3>
+<ul>
+<li><strong>完成尚需估算ETC：</strong>
+<ul>
+<li>**非典型偏差计算：**<strong>ETC=BAC-<strong><strong>截至目前累加</strong></strong>EV</strong></li>
+<li><strong>典型的偏差计算：<strong><strong>ETC=</strong></strong>（<strong><strong>BAC-<strong><strong>截至目前累加</strong></strong>EV</strong></strong>）****/ <strong><strong>累加</strong></strong>CPI</strong></li>
+</ul>
+</li>
+<li><strong>完成时估算EAC：</strong>
+<ul>
+<li>**非典型和典型通用：**<strong>EAC=AC+ETC</strong></li>
+<li>**典型：**<strong>EAC=BAC/CPI</strong></li>
+</ul>
+</li>
+<li><strong>完工尚需绩效指数：</strong>
+<ul>
+<li>TCPI=（BAC-EV)/(BAC-AC)</li>
+<li>TCPI=（BAC-EV)/(EAC-AC)</li>
+</ul>
+</li>
+<li>**完工偏差VAC：**<strong>VAC=BAC-EAC</strong></li>
+</ul>
+<h2 id="问答素材"><a class="header" href="#问答素材">问答素材</a></h2>
+<h3 id="进度落后成本超支可以采取的措施"><a class="header" href="#进度落后成本超支可以采取的措施">进度落后，成本超支可以采取的措施：</a></h3>
+<ol>
+<li>用高效人员代替低效人员；</li>
+<li>加班或赶工在预防风险的情况下并行施工；</li>
+<li>提高资源利用率；</li>
+<li>加强、改进沟通，提高效率；</li>
+<li>尽可能一次性把事情做对，减少返工。</li>
+<li>加强沟通</li>
+<li>增强优质资源</li>
+<li>外包和缩小项目范围</li>
+</ol>
+<h3 id="进度落后成本节约可以采取的措施"><a class="header" href="#进度落后成本节约可以采取的措施">进度落后，成本节约可以采取的措施：</a></h3>
+<ol>
+<li>赶工（例如全体加班方式）加快进度</li>
+<li>使用高效资源来替换低效资源加快进度</li>
+<li>改进方法，提高工作效率</li>
+</ol>
+<h3 id="进度超前成本超支可以采取的措施"><a class="header" href="#进度超前成本超支可以采取的措施">进度超前，成本超支可以采取的措施：</a></h3>
+<ol>
+<li>整个项目需要抽出部分人员以放慢工作进度;</li>
+<li>整个项目存在成本超支现象，需要采取控制成本措施;</li>
+<li>项目中区分不同的任务，采取不同的成本及进度措施;</li>
+<li>必要时调整成本基准。</li>
+<li>优化施工方案、提高效率、加强质量管理减少返工、加强沟通，以降低成本；</li>
+<li>在确保进度按期完成的基础上，可以降低进度以节约成本；</li>
+<li>总结项目进度“提前”的经验，并记录下来，把这经验传播到项目的其他班组，甚至其他项目或未来的项目</li>
+</ol>
+<h3 id="进度超前成本节约可以采取的措施"><a class="header" href="#进度超前成本节约可以采取的措施">进度超前，成本节约可以采取的措施：</a></h3>
+<ol>
+<li>抽调部分人员用于其他项目</li>
+<li>加强质量控制，密切监控项目</li>
+<li>必要时调整计划或基准等方法改进，或者改变相关计划</li>
+</ol>
+<h1 id="rj45水晶头数目计算"><a class="header" href="#rj45水晶头数目计算">RJ45水晶头数目计算</a></h1>
+<p>公式：<strong>（n x 4）+（n x 4 x 15%)</strong>，n为节点个数</p>
+<h1 id="静态投资回收期和动态投资回收期"><a class="header" href="#静态投资回收期和动态投资回收期">静态投资回收期和动态投资回收期</a></h1>
+<h2 id="静态投资回收期"><a class="header" href="#静态投资回收期">静态投资回收期</a></h2>
+<p>不考虑贴现率，直接计算每年的收益和亏损</p>
+<h2 id="动态投资回收期"><a class="header" href="#动态投资回收期">动态投资回收期</a></h2>
+<p>需要考虑每年的贴现率，<strong>每年贴现系数 = 1 / （1 + i）^ n，n为第几年</strong>每年贴现系数乘以每年的收益，才是真正的收益。
+如下图的收益计算结果：<img src=".assets/1586329243071-4e014192-4442-44a6-bd15-8bcc8fa9aaea.png" alt="image.png" /></p>
+<h1 id="伏格尔法解决运输问题"><a class="header" href="#伏格尔法解决运输问题">伏格尔法解决运输问题</a></h1>
+<p>伏格尔法又称差值法，该方法考虑到，某产地的产品如不能按最小运费就近供应，就考虑次小运费，这就有一个差额。差额越大，说明不能按最小运费调运时，运费增加越多。因而对差额最大处，就应当采用最小运费调运。同理也适用于产销量分配和销售人员分配等变种问题。</p>
+<h2 id="算法步骤"><a class="header" href="#算法步骤">算法步骤</a></h2>
+<ol>
+<li>计算单位运价表中同行/同列的最小运费与次小运费之差，分别列在单位运价表的最右列和最下行（行差和列差）</li>
+<li>对行差/列差进行对比，找出最大差额。以与最大差额值同行（或同列）的最小运价为准，根据所在行的产量，最大限度地满足所在列的需求；一旦需求（或库存）被彻底满足（或库存调光），则随即划去该列和该列的所有运价信息。</li>
+<li>重新计算同行同列的最小运费与次小运费之差，并对其它未被确定调拨值的行列，重复第二步的处理，直至构造出调拨方案</li>
+</ol>
+<h2 id="例题"><a class="header" href="#例题">例题</a></h2>
+<p><img src=".assets/1586331785965-803cb97b-8aa0-49ef-90c1-7967481e1412.png" alt="image.png" /></p>
+<ul>
+<li>Step 1：计算每列的运费的最小和次小的差值，选取差值最大的一列，这里可以看到是B2列</li>
+</ul>
+<p><img src=".assets/1586331893576-968fc971-6900-478a-ab89-489c9f773f5b.png" alt="image.png" /></p>
+<ul>
+<li>step 2：先满足B2的需要，A3到B2的运费最低，所以A3-&gt;B2=28，A3还剩16</li>
+<li>Step 3：B2满足后，再从B1，B3，B4找差值最大的一列，这时选择的应该是B4列</li>
+<li>Step 4：依然是A3到B4的运费最低，所以A3-B4=16， B4还需要8，A2的运费低，所以A2-&gt;B4=8，A2还剩12</li>
+<li>Step 5：此时只剩B1，B3和A1，A2，再次重复step 1的操作，计算差值，如下：</li>
+</ul>
+<p><img src=".assets/1586332989844-c6ffa9d7-3a9a-42f7-a1bd-b8821599e45d.png" alt="image.png" /></p>
+<ul>
+<li>Step 6：先满足B1，A2运费低，所以A2-&gt;B1=12，B1还需要4，所以A1-&gt;B1=4.</li>
+<li>Step7：现在只剩B3了，A1-&gt;B3=28</li>
+</ul>
+<p>所以最后的总运费为：28<em>5+16</em>6+9<em>8+12</em>2+4<em>4+28</em>4=460</p>
+
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+                            <a rel="prev" href="../案例分析/常见问题和措施汇总.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                <i class="fa fa-angle-left"></i>
+                            </a>
+                            <a rel="next" href="../案例分析/理论题考点汇总.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                                <i class="fa fa-angle-right"></i>
+                            </a>
+                        <div style="clear: both"></div>
+                    </nav>
+                </div>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+                    <a rel="prev" href="../案例分析/常见问题和措施汇总.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                        <i class="fa fa-angle-left"></i>
+                    </a>
+                    <a rel="next" href="../案例分析/理论题考点汇总.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                        <i class="fa fa-angle-right"></i>
+                    </a>
+            </nav>
+
+        </div>
+
+        <script type="text/javascript">
+            window.playground_copyable = true;
+        </script>
+        <script src="../elasticlunr.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../mark.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../searcher.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../clipboard.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../highlight.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../book.js" type="text/javascript" charset="utf-8"></script>
+
+        <!-- Custom JS scripts -->
+    </body>
+</html>

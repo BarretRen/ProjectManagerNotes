@@ -1,0 +1,235 @@
+<!DOCTYPE HTML>
+<html lang="en" class="sidebar-visible no-js light">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>项目管理基础 - Project Manager Examine Notes</title>
+        <!-- Custom HTML head -->
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff" />
+
+        <link rel="icon" href="../favicon.svg">
+        <link rel="shortcut icon" href="../favicon.png">
+        <link rel="stylesheet" href="../css/variables.css">
+        <link rel="stylesheet" href="../css/general.css">
+        <link rel="stylesheet" href="../css/chrome.css">
+        <link rel="stylesheet" href="../css/print.css" media="print">
+        <!-- Fonts -->
+        <link rel="stylesheet" href="../FontAwesome/css/font-awesome.css">
+        <link rel="stylesheet" href="../fonts/fonts.css">
+        <!-- Highlight.js Stylesheets -->
+        <link rel="stylesheet" href="../highlight.css">
+        <link rel="stylesheet" href="../tomorrow-night.css">
+        <link rel="stylesheet" href="../ayu-highlight.css">
+
+        <!-- Custom theme stylesheets -->
+    </head>
+    <body>
+        <!-- Provide site root to javascript -->
+        <script type="text/javascript">
+            var path_to_root = "../";
+            var default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "navy" : "light";
+        </script>
+
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script type="text/javascript">
+            try {
+                var theme = localStorage.getItem('mdbook-theme');
+                var sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script type="text/javascript">
+            var theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
+            if (theme === null || theme === undefined) { theme = default_theme; }
+            var html = document.querySelector('html');
+            html.classList.remove('no-js')
+            html.classList.remove('light')
+            html.classList.add(theme);
+            html.classList.add('js');
+        </script>
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script type="text/javascript">
+            var html = document.querySelector('html');
+            var sidebar = 'hidden';
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            }
+            html.classList.remove('sidebar-visible');
+            html.classList.add("sidebar-" + sidebar);
+        </script>
+
+        <nav id="sidebar" class="sidebar" aria-label="Table of contents">
+            <div class="sidebar-scrollbox">
+                <ol class="chapter"><li class="chapter-item expanded "><a href="../../index.html"><strong aria-hidden="true">1.</strong> README</a></li><li class="chapter-item expanded "><div><strong aria-hidden="true">2.</strong> 教材基础</div></li><li><ol class="section"><li class="chapter-item expanded "><a href="../教材基础/1信息化.html"><strong aria-hidden="true">2.1.</strong> 信息化</a></li><li class="chapter-item expanded "><a href="../教材基础/2项目管理基础.html" class="active"><strong aria-hidden="true">2.2.</strong> 项目管理基础</a></li><li class="chapter-item expanded "><a href="../教材基础/3立项管理.html"><strong aria-hidden="true">2.3.</strong> 立项管理</a></li><li class="chapter-item expanded "><a href="../教材基础/4整体管理.html"><strong aria-hidden="true">2.4.</strong> 整体管理</a></li><li class="chapter-item expanded "><a href="../教材基础/5范围管理.html"><strong aria-hidden="true">2.5.</strong> 范围管理</a></li><li class="chapter-item expanded "><a href="../教材基础/6进度管理.html"><strong aria-hidden="true">2.6.</strong> 进度管理</a></li><li class="chapter-item expanded "><a href="../教材基础/7成本管理.html"><strong aria-hidden="true">2.7.</strong> 成本管理</a></li><li class="chapter-item expanded "><a href="../教材基础/8质量管理.html"><strong aria-hidden="true">2.8.</strong> 质量管理</a></li><li class="chapter-item expanded "><a href="../教材基础/9人力资源管理.html"><strong aria-hidden="true">2.9.</strong> 人力资源管理</a></li><li class="chapter-item expanded "><a href="../教材基础/10沟通和干系人管理.html"><strong aria-hidden="true">2.10.</strong> 沟通和干系人管理</a></li><li class="chapter-item expanded "><a href="../教材基础/11风险管理.html"><strong aria-hidden="true">2.11.</strong> 风险管理</a></li><li class="chapter-item expanded "><a href="../教材基础/12采购管理.html"><strong aria-hidden="true">2.12.</strong> 采购管理</a></li><li class="chapter-item expanded "><a href="../教材基础/13合同管理.html"><strong aria-hidden="true">2.13.</strong> 合同管理</a></li><li class="chapter-item expanded "><a href="../教材基础/14文档和配置管理.html"><strong aria-hidden="true">2.14.</strong> 文档和配置管理</a></li><li class="chapter-item expanded "><a href="../教材基础/15组织级项目管理.html"><strong aria-hidden="true">2.15.</strong> 组织级项目管理</a></li><li class="chapter-item expanded "><a href="../教材基础/16流程管理.html"><strong aria-hidden="true">2.16.</strong> 流程管理</a></li><li class="chapter-item expanded "><a href="../教材基础/17项目集.html"><strong aria-hidden="true">2.17.</strong> 项目集</a></li><li class="chapter-item expanded "><a href="../教材基础/18信息安全管理.html"><strong aria-hidden="true">2.18.</strong> 信息安全管理</a></li><li class="chapter-item expanded "><a href="../教材基础/19测试管理.html"><strong aria-hidden="true">2.19.</strong> 测试管理</a></li><li class="chapter-item expanded "><a href="../教材基础/20法律法规.html"><strong aria-hidden="true">2.20.</strong> 法律法规</a></li><li class="chapter-item expanded "><a href="../教材基础/21技术标准.html"><strong aria-hidden="true">2.21.</strong> 技术标准</a></li></ol></li><li class="chapter-item expanded "><div><strong aria-hidden="true">3.</strong> 案例分析</div></li><li><ol class="section"><li class="chapter-item expanded "><a href="../案例分析/案例分析简介.html"><strong aria-hidden="true">3.1.</strong> 案例分析简介</a></li><li class="chapter-item expanded "><a href="../案例分析/常见问题和措施汇总.html"><strong aria-hidden="true">3.2.</strong> 常见问题和措施汇总</a></li><li class="chapter-item expanded "><a href="../案例分析/计算专题.html"><strong aria-hidden="true">3.3.</strong> 计算专题</a></li><li class="chapter-item expanded "><a href="../案例分析/理论题考点汇总.html"><strong aria-hidden="true">3.4.</strong> 理论题考点汇总</a></li></ol></li><li class="chapter-item expanded "><div><strong aria-hidden="true">4.</strong> 论文</div></li><li><ol class="section"><li class="chapter-item expanded "><a href="../论文/十大领域论文.html"><strong aria-hidden="true">4.1.</strong> 十大领域论文</a></li></ol></li><li class="chapter-item expanded "><div><strong aria-hidden="true">5.</strong> 错题记录</div></li><li><ol class="section"><li class="chapter-item expanded "><a href="../错题记录/历年上午真题.html"><strong aria-hidden="true">5.1.</strong> 历年上午真题</a></li><li class="chapter-item expanded "><a href="../错题记录/案例分析真题.html"><strong aria-hidden="true">5.2.</strong> 案例分析真题</a></li></ol></li></ol>
+            </div>
+            <div id="sidebar-resize-handle" class="sidebar-resize-handle"></div>
+        </nav>
+
+        <div id="page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                <div id="menu-bar-hover-placeholder"></div>
+                <div id="menu-bar" class="menu-bar sticky bordered">
+                    <div class="left-buttons">
+                        <button id="sidebar-toggle" class="icon-button" type="button" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
+                            <i class="fa fa-bars"></i>
+                        </button>
+                        <button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
+                            <i class="fa fa-paint-brush"></i>
+                        </button>
+                        <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                            <li role="none"><button role="menuitem" class="theme" id="light">Light (default)</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="rust">Rust</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
+                        </ul>
+                        <button id="search-toggle" class="icon-button" type="button" title="Search. (Shortkey: s)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="S" aria-controls="searchbar">
+                            <i class="fa fa-search"></i>
+                        </button>
+                    </div>
+
+                    <h1 class="menu-title">Project Manager Examine Notes</h1>
+
+                    <div class="right-buttons">
+                        <a href="../print.html" title="Print this book" aria-label="Print this book">
+                            <i id="print-button" class="fa fa-print"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div id="search-wrapper" class="hidden">
+                    <form id="searchbar-outer" class="searchbar-outer">
+                        <input type="search" id="searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+                    </form>
+                    <div id="searchresults-outer" class="searchresults-outer hidden">
+                        <div id="searchresults-header" class="searchresults-header"></div>
+                        <ul id="searchresults">
+                        </ul>
+                    </div>
+                </div>
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script type="text/javascript">
+                    document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="content" class="content">
+                    <main>
+                        <p>分值：2分</p>
+<h1 id="5大过程组和具体过程的对应关系"><a class="header" href="#5大过程组和具体过程的对应关系">5大过程组和具体过程的对应关系</a></h1>
+<table><thead><tr><th>十大领域</th><th>启动</th><th>规划</th><th>执行</th><th>监控</th><th>结束</th></tr></thead><tbody>
+<tr><td>整合管理</td><td>1.制定项目章程</td><td>2.制定项目管理计划</td><td>3.指导与管理项目</td><td>4.监控项目工作    5.实施整体变更控制</td><td>6.结束项目或阶段</td></tr>
+<tr><td>进度管理</td><td></td><td>1.规划进度管理    2.定义活动    3.排列活动顺序    4.估算活动资源    5.估算活动持续时间    6.制定进度管理计划</td><td></td><td>7.控制进度</td><td></td></tr>
+<tr><td>成本管理</td><td></td><td>1.规划成本管理    2.估算成本    3.制定预算</td><td></td><td>4.控制成本</td><td></td></tr>
+<tr><td>质量管理</td><td></td><td>1.规划质量管理</td><td>2.实施质量保证</td><td>3.控制质量</td><td></td></tr>
+<tr><td>范围管理</td><td></td><td>1.规划范围管理    2.收集需求    3.定义范围    4.创建工作分解结构</td><td></td><td>5.确认范围    6.控制范围</td><td></td></tr>
+<tr><td>风险管理</td><td></td><td>1.规划风险管理    2.识别风险    3.实施定性风险分析    4.试试定量风险分析    5.定制风险分析</td><td></td><td>6.控制风险</td><td></td></tr>
+<tr><td>沟通管理</td><td></td><td>1.规划沟通管理</td><td>2.管理沟通</td><td>3.控制沟通</td><td></td></tr>
+<tr><td>采购管理</td><td></td><td>1.规划采购管理</td><td>2.实施采购</td><td>3.控制采购</td><td>4.结束采购</td></tr>
+<tr><td>人力资源管理</td><td></td><td>1.规划人力资源管理</td><td>2.组建项目团队    3.建设项目团队    4.管理项目团队</td><td></td><td></td></tr>
+<tr><td>干系人管理</td><td>1.识别干系人</td><td>2.规划干系人管理</td><td>3.管理干系人参与</td><td>4.控制干系人参与</td><td></td></tr>
+</tbody></table>
+<p> </p>
+<h1 id="三种主要的组织结构"><a class="header" href="#三种主要的组织结构">三种主要的组织结构</a></h1>
+<p>项目经理的权限<strong>从大到小</strong>依次为：项目型--矩阵型--职能型<img src=".assets/1585031850976-bde0992e-9a06-47cc-a792-c6b62741fee1.png" alt="image.png" /></p>
+<h2 id="项目型"><a class="header" href="#项目型">项目型</a></h2>
+<p><img src=".assets/1585031873017-49f562a1-9e7b-4187-80e9-7ab6baa078e5.png" alt="image.png" /></p>
+<h2 id="平衡矩阵型"><a class="header" href="#平衡矩阵型">平衡矩阵型</a></h2>
+<p><img src=".assets/1585031898191-6b6aca39-bbfb-4d2d-bfef-3d824bc06adb.png" alt="image.png" /></p>
+<h2 id="职能型"><a class="header" href="#职能型">职能型</a></h2>
+<p><img src=".assets/1585031915205-0f0b70c9-ee78-42fa-8961-c5dd7971eb3f.png" alt="image.png" /></p>
+<h2 id="优缺点对比"><a class="header" href="#优缺点对比">优缺点对比</a></h2>
+<table><thead><tr><th> </th><th>简单介绍</th><th>优点</th><th>缺点</th></tr></thead><tbody>
+<tr><td>项目型</td><td>将所有的能兵强将集结在一起，财务部、业务部、IT管理部等的精英们脱离原有的岗位，形成一个正式的部门，并由项目经理领导。这样的优势是项目经理的权利很强、资源充足。</td><td>1.    项目经理对项目可以负全责2.    项目目标单一，可以以项目为中心、有利于项目顺利进行3.    避免多重领导4.    组织结构简单，交流简单，快速</td><td>1.    资源不能共享2.    各个独立的项目处于相对封闭状态，不利于公司政策的贯彻3.    对项目组织的成员缺少一种事业上的连续性和安全感4.    项目组织之间处于分割状态，缺少信息交流</td></tr>
+<tr><td>矩阵型</td><td>兼具项目型和矩阵型的特点；分为<strong>弱矩阵，平衡矩阵，强矩阵</strong>：项目经理&gt;职能经理。强矩阵项目经理=职能经理。平衡矩阵项目经理&lt;职能经理。弱矩阵</td><td>1.    专职的项目经理负责整个项目，项目为中心2.    公司的多个项目可以共享各个职能部门的资源3.    即利于项目目标的实现，又利于公司目标方针的贯彻4.    项目成员的顾虑减少了</td><td>1.    容易引起职能经理和项目经理权力的冲突2.    资源共享也能引起项目之间的冲突3.    项目成员有多头领导</td></tr>
+<tr><td>职能型</td><td>项目经理无权无资源，所有项目人员还在属部门里面供职，仅仅花费小部分的时间来处理项目的事情。还有相应的职能经理，双重管理。</td><td>1.    可以充分发挥职能部门的资源集中优势2.    部门的专家可以同时为部门内不同项目使用3.    便于相互交流，相互支援，可以随时增派人员4.    可以将项目和本部门的职能工作</td><td>1.    项目和部门利益发生冲突，职能部门更重视本部门的目标，会忽视项目目标2.    资源平衡会出现问题3.    权利分割不利于各个职能部门的交流和团结协作4.    行政隶属关系使得项目经理没有充分的权利</td></tr>
+</tbody></table>
+<p> </p>
+<h1 id="开发模型"><a class="header" href="#开发模型">开发模型</a></h1>
+<h2 id="螺旋模型"><a class="header" href="#螺旋模型">螺旋模型</a></h2>
+<p>四个阶段</p>
+<ol>
+<li>制定计划</li>
+<li>风险分析</li>
+<li>实施工程</li>
+<li>客户评估</li>
+</ol>
+<p>一个强调：风险分析 </p>
+<h2 id="迭代式开发模型"><a class="header" href="#迭代式开发模型">迭代式开发模型</a></h2>
+<p>四个阶段</p>
+<ol>
+<li>初始：阐述项目范围，选择可行的系统构架，计划和准备业务案例</li>
+<li>细化：细化过程和基础设施，选择构件</li>
+<li>构造：资源管理、控制和过程最优化</li>
+<li>移交：根据完整的构想和需求集的验收标准评估实施基线</li>
+</ol>
+<h1 id="prince2管理方法"><a class="header" href="#prince2管理方法">PRINCE2管理方法</a></h1>
+<p><strong>基于流程的结构化</strong>项目管理方法<strong>四要素</strong>：原则，流程，主题，项目环境<strong>七个原则</strong></p>
+<ol>
+<li>持续业务验证</li>
+<li>吸取经验教训</li>
+<li>明确定义的角色和职责</li>
+<li>按阶段管理</li>
+<li>例外管理</li>
+<li>关注产品</li>
+<li>根据项目环境剪裁</li>
+</ol>
+
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+                            <a rel="prev" href="../教材基础/1信息化.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                <i class="fa fa-angle-left"></i>
+                            </a>
+                            <a rel="next" href="../教材基础/3立项管理.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                                <i class="fa fa-angle-right"></i>
+                            </a>
+                        <div style="clear: both"></div>
+                    </nav>
+                </div>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+                    <a rel="prev" href="../教材基础/1信息化.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                        <i class="fa fa-angle-left"></i>
+                    </a>
+                    <a rel="next" href="../教材基础/3立项管理.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                        <i class="fa fa-angle-right"></i>
+                    </a>
+            </nav>
+
+        </div>
+
+        <script type="text/javascript">
+            window.playground_copyable = true;
+        </script>
+        <script src="../elasticlunr.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../mark.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../searcher.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../clipboard.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../highlight.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../book.js" type="text/javascript" charset="utf-8"></script>
+
+        <!-- Custom JS scripts -->
+    </body>
+</html>
