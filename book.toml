@@ -4,3 +4,7 @@ language = "en"
 multilingual = false
 src = "src"
 title = "Project Manager Examine Notes"
+
+[output.html.fold]
+enable = true
+level = 0
